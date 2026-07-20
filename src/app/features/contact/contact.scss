@@ -1,0 +1,121 @@
+.page-hero {
+  background: radial-gradient(circle at 20% 20%, rgba(200, 167, 78, 0.16), transparent 55%),
+    var(--brand-secondary);
+  padding-block: clamp(40px, 6vw, 72px);
+  text-align: center;
+}
+
+.page-hero__icon {
+  font-size: 46px;
+  color: var(--brand-gold);
+}
+
+.page-hero h1 {
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  margin: 8px 0 6px;
+}
+
+.page-hero p {
+  color: var(--brand-muted);
+  margin: 0;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  background: #fff;
+  padding: 32px;
+  border-radius: var(--brand-radius);
+  box-shadow: var(--brand-shadow);
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.field label {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--brand-ink);
+}
+
+.field input,
+.field select,
+.field textarea {
+  padding: 12px 14px;
+  border: 1.5px solid #e4ddcd;
+  border-radius: 10px;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  background: #fff;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+  outline: none;
+  border-color: var(--brand-gold);
+  box-shadow: 0 0 0 3px rgba(200, 167, 78, 0.18);
+}
+
+.err {
+  color: #c0392b;
+  font-size: 0.8rem;
+}
+
+.contact__info {
+  background: linear-gradient(160deg, var(--brand-gold-dark), #7d6428);
+  color: #fff;
+  padding: 32px;
+  border-radius: var(--brand-radius);
+  box-shadow: var(--brand-shadow);
+}
+
+.contact__info h3,
+.contact__info h4 {
+  color: #fff;
+}
+
+.contact__info p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 14px;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.contact__info .material-icons {
+  color: var(--brand-gold-light);
+}
+
+.contact__hours {
+  margin-top: 26px;
+  padding-top: 22px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 860px) {
+  .contact {
+    grid-template-columns: 1fr;
+  }
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,66 @@
+<div class="page-head">
+  <div>
+    <nav class="crumbs">
+      <a routerLink="/admin/events">Events</a><span>›</span>
+      <span>{{ isEdit() ? 'Edit' : 'Create' }}</span>
+    </nav>
+    <h1>{{ isEdit() ? 'Edit Event' : 'Create Event' }}</h1>
+  </div>
+</div>
+
+<form class="form-card" [formGroup]="form" (ngSubmit)="save()">
+  <mat-form-field appearance="outline" class="full">
+    <mat-label>Event Name</mat-label>
+    <input matInput formControlName="title" placeholder="e.g. Arangetram1 @ UTSA" />
+    @if (form.controls.title.touched && form.controls.title.invalid) {
+      <mat-error>Title is required (min 3 characters).</mat-error>
+    }
+  </mat-form-field>
+
+  <div class="grid-2">
+    <mat-form-field appearance="outline">
+      <mat-label>Category</mat-label>
+      <mat-select formControlName="category">
+        @for (cat of categories; track cat.slug) {
+          <mat-option [value]="cat.key">{{ cat.label }}</mat-option>
+        }
+      </mat-select>
+      @if (form.controls.category.touched && form.controls.category.invalid) {
+        <mat-error>Please select a category.</mat-error>
+      }
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Event Date</mat-label>
+      <input matInput [matDatepicker]="picker" formControlName="eventDate" />
+      <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+  </div>
+
+  <mat-form-field appearance="outline" class="full">
+    <mat-label>Location</mat-label>
+    <input matInput formControlName="location" placeholder="e.g. UTSA, San Antonio" />
+    @if (form.controls.location.touched && form.controls.location.invalid) {
+      <mat-error>Location is required.</mat-error>
+    }
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" class="full">
+    <mat-label>Description</mat-label>
+    <textarea matInput rows="4" formControlName="description"
+      placeholder="Describe the decoration theme, colours and highlights…"></textarea>
+  </mat-form-field>
+
+  <mat-checkbox formControlName="isFeatured" color="primary">
+    Mark as featured (shown on the home page)
+  </mat-checkbox>
+
+  <div class="form-actions">
+    <button type="button" class="btn-ghost" (click)="cancel()">Cancel</button>
+    <button type="submit" class="btn-gold">
+      <span class="material-icons">save</span>
+      {{ isEdit() ? 'Save Changes' : 'Save & Add Photos' }}
+    </button>
+  </div>
+</form>

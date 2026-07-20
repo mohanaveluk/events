@@ -1,0 +1,50 @@
+@if (event(); as ev) {
+  <section class="detail-hero" [style.backgroundImage]="'url(' + ev.coverImage + ')'">
+    <div class="detail-hero__overlay"></div>
+    <div class="container detail-hero__content fade-in">
+      <nav class="crumbs">
+        <a routerLink="/">Home</a><span>›</span>
+        <a [routerLink]="['/', categorySlug()]">{{ ev.category }}</a><span>›</span>
+        <span>{{ ev.title }}</span>
+      </nav>
+      <span class="detail-hero__cat">{{ ev.category }}</span>
+      <h1>{{ ev.title }}</h1>
+      <div class="detail-hero__meta">
+        <span><span class="material-icons">event</span>{{ ev.eventDate | dayjsDate }}</span>
+        <span><span class="material-icons">place</span>{{ ev.location }}</span>
+        <span><span class="material-icons">photo_library</span>{{ ev.totalPhotos }} Photos</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="container section">
+    <p class="detail-desc">{{ ev.description }}</p>
+
+    @if (ev.photos.length) {
+      <h2 class="detail-gallery-title">Gallery</h2>
+      <app-masonry-grid [photos]="ev.photos" />
+    } @else {
+      <app-empty-state
+        icon="add_photo_alternate"
+        title="No photos uploaded yet"
+        message="Photos for this event will appear here once uploaded."
+      />
+    }
+
+    <div class="detail-back">
+      <a class="btn-ghost" [routerLink]="['/', categorySlug()]">
+        <span class="material-icons">arrow_back</span> Back to {{ ev.category }}
+      </a>
+    </div>
+  </div>
+} @else {
+  <div class="container section">
+    <app-empty-state
+      icon="search_off"
+      title="Event not found"
+      message="This event may have been removed."
+    >
+      <a class="btn-gold" routerLink="/">Back to Home</a>
+    </app-empty-state>
+  </div>
+}

@@ -1,0 +1,107 @@
+{
+  "events": [
+    {
+      "id": "arangetram-1",
+      "title": "Arangetram @ UTSA",
+      "category": "Arangetram",
+      "location": "UTSA Downtown, San Antonio",
+      "eventDate": "2026-06-27T00:00:00",
+      "isFeatured": true,
+      "description": "An elegant Arangetram celebration at UTSA, San Antonio, styled with premium florals, custom backdrops and warm ambient lighting by Palmo Event Decorations.",
+      "source": "https://storage.googleapis.com/inv-images/matrimony/gallery/58680adb-4931-44eb-86c5-8466c395f9cd/",
+      "images": [
+              "b932ae92-7184-4363-a64e-b8b442a070a1-PXL_20260627_215411072_50-thumbnail.jpg",
+              "4c371dd1-299a-4fc2-8623-d2c722ea7c2e-PXL_20260627_215348059.MP_50-thumbnail.jpg",
+              "085599df-7a67-4323-a6f3-7ad429c6b93c-PXL_20260627_220041790_50-thumbnail.jpg",
+              "13de8735-1ea7-4283-9f7d-bfd0e3bf6f82-PXL_20260627_215407067_50-thumbnail.jpg",
+              "2026bbe7-7305-4467-b25c-64c2c58409cf-PXL_20260627_220149667_50-thumbnail.jpg",
+              "3ba2ac95-dac7-4528-bd46-51843f8621f7-PXL_20260627_220207187_50-thumbnail.jpg",
+              "4ee1fa00-24b3-4558-b936-2fe5983bce49-PXL_20260627_220408889_50-thumbnail.jpg",
+              "5e640ffc-48a5-41cd-95f6-594ed7fa8469-PXL_20260627_215149437_3_57-thumbnail.jpg",
+              "6a82119e-85c8-45fc-aa52-4bcc67d1e273-PXL_20260627_220454897.MP_50-thumbnail.jpg",
+              "9ee3196c-874a-4741-a8a6-a0e445d36b23-PXL_20260627_220325229.MP_50-thumbnail.jpg",
+              "b20f47b2-395a-42e8-8b72-d921482775a0-PXL_20260627_215001008_50-thumbnail.jpg",
+              "b6258d15-e650-4d41-b647-4dc9f8b5bbc4-PXL_20260627_220211345.MP_50-thumbnail.jpg",
+              "ec8f2abc-2838-4aed-896c-a68f84d800a7-PXL_20260627_215153507_50-thumbnail.jpg",
+              "0751b5b5-deca-4dff-a66c-d7aa5a1a2e86-PXL_20260627_215007149.MP_50-thumbnail.jpg",
+              "07b73b91-db46-4162-9004-47e9a3529317-PXL_20260627_220345969.MP_50-thumbnail.jpg",
+              "417fe5da-3277-4664-96f3-5ec12f9622c1-PXL_20260627_215012689.MP_50-thumbnail.jpg",
+              "34e27126-46f4-46fd-ae81-6a5075569bdf-PXL_20260627_215029930_50-thumbnail.jpg"
+            ],
+      "original":[
+            "7c96710d-1076-49a5-a00e-fa5aff68aa4a-PXL_20260627_215411072_50-original.jpg",
+            "607d26b9-91fe-4f04-b89f-dc52279cfdac-PXL_20260627_215348059.MP_50-original.jpg",           
+            "d83e5648-4a17-4fb1-acdb-ffa9c38943f0-PXL_20260627_220041790_50-original.jpg",
+            "0fd0265d-d846-4736-9315-cf2eea88f734-PXL_20260627_215407067_50-original.jpg",
+            "cfa512b3-884a-44df-ae16-375a70733a03-PXL_20260627_220149667_50-original.jpg",
+            "3c1b6e86-4fc9-4b1e-8b9b-4aa4b9aad461-PXL_20260627_220207187_50-original.jpg",
+            "507fe2c8-21fe-4d41-953f-e760a391cae4-PXL_20260627_220408889_50-original.jpg",
+            "050c3d9d-4fe6-4898-b326-a27ddb74ff21-PXL_20260627_215149437_3_57-original.jpg",
+            "e03eca76-d582-46a7-a229-e77523fe09eb-PXL_20260627_220454897.MP_50-original.jpg",
+            "307c8eb6-5a5e-4a6e-ad44-3307b6023b1e-PXL_20260627_220325229.MP_50-original.jpg",
+            "7067b360-aafd-4714-ac35-822ab554456d-PXL_20260627_215001008_50-original.jpg",
+            "d9dbdbf8-3c8e-4a11-a888-7ba59e690418-PXL_20260627_220211345.MP_50-original.jpg",
+            "4a4785dc-d94e-45b3-b7b2-6f5a4480611b-PXL_20260627_215153507_50-original.jpg",
+            "776507a8-b1f4-4fa3-9776-ae1396d42095-PXL_20260627_215007149.MP_50-original.jpg",
+            "1f603edf-c36b-45b4-8132-e7144eacfd54-PXL_20260627_220345969.MP_50-original.jpg",
+            "9206995e-7a4b-4fc5-b949-046f2108f55a-PXL_20260627_215012689.MP_50-original.jpg",
+            "6372f3b1-a9c9-4e48-a1d9-c66e3d146ce4-PXL_20260627_215029930_50-original.jpg"
+
+      ]
+    },
+    {
+      "id": "arangetram-2",
+      "title": "Arangetram @ Carver",
+      "category": "Arangetram",
+      "location": "Carver Center, San Antonio",
+      "eventDate": "2025-10-12T00:00:00",
+      "isFeatured": false,
+      "description": "An elegant Arangetram celebration at Carver Center, San Antonio, styled with premium florals, custom backdrops and warm ambient lighting by Palmo Event Decorations.",
+      "source": "",
+      "images": [
+            "https://storage.googleapis.com/inv-images/matrimony/gallery/d316682a-3d1e-4f0f-bc1a-3fd1a417d406/f97e16e7-0b69-44e2-9cf5-95c93d22444a-7Y9A2896_3_34-thumbnail.jpg",
+            "https://storage.googleapis.com/inv-images/matrimony/gallery/d316682a-3d1e-4f0f-bc1a-3fd1a417d406/e34dfa19-2149-4a4c-a5cd-807491ecaf38-7Y9A2894_2_32-thumbnail.jpg",
+            "https://storage.googleapis.com/inv-images/matrimony/gallery/d316682a-3d1e-4f0f-bc1a-3fd1a417d406/15f46d7e-3e4a-4308-90f0-86131c6bc6ec-7Y9A2909_3_36-thumbnail.jpg",
+            "https://storage.googleapis.com/inv-images/matrimony/gallery/d316682a-3d1e-4f0f-bc1a-3fd1a417d406/93fbc97a-893a-4838-9df3-e237d6d29f35-7Y9A2874_1_32-thumbnail.jpg",
+            "https://storage.googleapis.com/inv-images/matrimony/gallery/d316682a-3d1e-4f0f-bc1a-3fd1a417d406/c567b213-bd2a-42b8-a58f-cb81a2e93fb8-7Y9A2881_1_30-thumbnail.jpg",
+            "https://storage.googleapis.com/inv-images/matrimony/gallery/d316682a-3d1e-4f0f-bc1a-3fd1a417d406/bdbe2fc0-0908-4db1-85b2-b8da3c9f9118-7Y9A2883_30-thumbnail.jpg",
+            "https://storage.googleapis.com/inv-images/matrimony/gallery/d316682a-3d1e-4f0f-bc1a-3fd1a417d406/81120aa7-8ccf-429c-8560-f2ec43e29903-7Y9A2898_31-thumbnail.jpg",
+            "https://storage.googleapis.com/inv-images/matrimony/gallery/d316682a-3d1e-4f0f-bc1a-3fd1a417d406/607483d6-4dc7-481c-9c8a-0809b1d2bb41-7Y9A2919_1_37-thumbnail.jpg",
+            "https://storage.googleapis.com/inv-images/matrimony/gallery/d316682a-3d1e-4f0f-bc1a-3fd1a417d406/34e67aea-8f4d-4a8b-b40e-3d6bf0562c0e-7Y9A2908_41-thumbnail.jpg",
+            "https://storage.googleapis.com/inv-images/matrimony/gallery/d316682a-3d1e-4f0f-bc1a-3fd1a417d406/4b6a625b-2861-46ac-9f01-7b929d608fa7-7Y9A3350_1_39-thumbnail.jpg",
+            "https://storage.googleapis.com/inv-images/matrimony/gallery/d316682a-3d1e-4f0f-bc1a-3fd1a417d406/0ff59efd-ccc4-46cc-bc10-a0e6919ca17e-7Y9A2896_3_34-thumbnail.jpg",
+            "https://storage.googleapis.com/inv-images/matrimony/gallery/d316682a-3d1e-4f0f-bc1a-3fd1a417d406/fc366ea1-d2f5-4e42-9266-03fa94af31a7-7Y9A2906_2_37-thumbnail.jpg",
+            "https://storage.googleapis.com/inv-images/matrimony/gallery/d316682a-3d1e-4f0f-bc1a-3fd1a417d406/70a4d4ae-114a-4236-9415-81e1f492af57-7Y9A2886_30-thumbnail.jpg",
+            "https://storage.googleapis.com/inv-images/matrimony/gallery/d316682a-3d1e-4f0f-bc1a-3fd1a417d406/865ac5b7-0f9f-4bb0-923a-d7cec166c242-7Y9A2900_1_35-thumbnail.jpg",
+            "https://storage.googleapis.com/inv-images/matrimony/gallery/d316682a-3d1e-4f0f-bc1a-3fd1a417d406/0efb5607-e9cf-4a88-9f1c-28287eeb700f-7Y9A2922_1_42-thumbnail.jpg",
+            "https://storage.googleapis.com/inv-images/matrimony/gallery/d316682a-3d1e-4f0f-bc1a-3fd1a417d406/feba2997-7251-495f-9fdf-fc470cf59eda-7Y9A2920_1_37-thumbnail.jpg",
+            "https://storage.googleapis.com/inv-images/matrimony/gallery/d316682a-3d1e-4f0f-bc1a-3fd1a417d406/faea7879-b228-4067-a820-a7bda65a1d3c-7Y9A3097_35-thumbnail.jpg",
+            "https://storage.googleapis.com/inv-images/matrimony/gallery/d316682a-3d1e-4f0f-bc1a-3fd1a417d406/616a8788-f4b2-462b-9e5d-1cef1afeffed-7Y9A2890_1_37-thumbnail.jpg",
+            "https://storage.googleapis.com/inv-images/matrimony/gallery/d316682a-3d1e-4f0f-bc1a-3fd1a417d406/f0f955bb-d619-446b-8dc9-1226a713f3b8-7Y9A2887_1_34-thumbnail.jpg"
+      ],
+      "original":[
+            "https://storage.googleapis.com/inv-images/matrimony/gallery/d316682a-3d1e-4f0f-bc1a-3fd1a417d406/d54a412c-0bf4-48b7-a83e-9bb1092d7109-7Y9A2896_3_34-original.jpg",
+            "https://storage.googleapis.com/inv-images/matrimony/gallery/d316682a-3d1e-4f0f-bc1a-3fd1a417d406/0dc020ca-909c-40a7-9fa8-d8773f452c51-7Y9A2894_2_32-original.jpg",
+            "https://storage.googleapis.com/inv-images/matrimony/gallery/d316682a-3d1e-4f0f-bc1a-3fd1a417d406/78196f81-2267-46b4-b948-43683bb4da4a-7Y9A2909_3_36-original.jpg",
+            "https://storage.googleapis.com/inv-images/matrimony/gallery/d316682a-3d1e-4f0f-bc1a-3fd1a417d406/657deeeb-3e7b-4e2f-8675-86be77e78f48-7Y9A2874_1_32-original.jpg",
+            "https://storage.googleapis.com/inv-images/matrimony/gallery/d316682a-3d1e-4f0f-bc1a-3fd1a417d406/111b12ee-3370-4a24-8cdf-395ad0b4d3d3-7Y9A2881_1_30-original.jpg",
+            "https://storage.googleapis.com/inv-images/matrimony/gallery/d316682a-3d1e-4f0f-bc1a-3fd1a417d406/e7660597-424f-49d2-bad9-43b9fbde6496-7Y9A2883_30-original.jpg",
+            "https://storage.googleapis.com/inv-images/matrimony/gallery/d316682a-3d1e-4f0f-bc1a-3fd1a417d406/8adb418f-16c3-4c61-b699-0fa6ac489330-7Y9A2898_31-original.jpg",
+            "https://storage.googleapis.com/inv-images/matrimony/gallery/d316682a-3d1e-4f0f-bc1a-3fd1a417d406/dabe035a-c453-4d29-ac6e-98a804c8120f-7Y9A2919_1_37-original.jpg",
+            "https://storage.googleapis.com/inv-images/matrimony/gallery/d316682a-3d1e-4f0f-bc1a-3fd1a417d406/b91d1814-d520-4201-a080-a978ee80a258-7Y9A2908_41-original.jpg",
+            "https://storage.googleapis.com/inv-images/matrimony/gallery/d316682a-3d1e-4f0f-bc1a-3fd1a417d406/62a62494-646d-484d-99f7-b3420e83b513-7Y9A3350_1_39-original.jpg",
+            "https://storage.googleapis.com/inv-images/matrimony/gallery/d316682a-3d1e-4f0f-bc1a-3fd1a417d406/39420883-7861-4a43-9bb6-899012ca5381-7Y9A2896_3_34-original.jpg",
+            "https://storage.googleapis.com/inv-images/matrimony/gallery/d316682a-3d1e-4f0f-bc1a-3fd1a417d406/c4390108-4906-47d8-875c-7b37d9feb9a3-7Y9A2906_2_37-original.jpg",
+            "https://storage.googleapis.com/inv-images/matrimony/gallery/d316682a-3d1e-4f0f-bc1a-3fd1a417d406/d4b3e023-6e66-4cd7-b673-ba09af9e9030-7Y9A2886_30-original.jpg",
+            "https://storage.googleapis.com/inv-images/matrimony/gallery/d316682a-3d1e-4f0f-bc1a-3fd1a417d406/1dea7b42-bc60-4dac-99c9-090b267f2f65-7Y9A2900_1_35-original.jpg",
+            "https://storage.googleapis.com/inv-images/matrimony/gallery/d316682a-3d1e-4f0f-bc1a-3fd1a417d406/8cd0eee0-9703-4263-81a1-769c7c4eecfc-7Y9A2922_1_42-original.jpg",
+            "https://storage.googleapis.com/inv-images/matrimony/gallery/d316682a-3d1e-4f0f-bc1a-3fd1a417d406/5e93d5cc-337c-423a-bb65-2b6a4fd7089e-7Y9A2920_1_37-original.jpg",
+            "https://storage.googleapis.com/inv-images/matrimony/gallery/d316682a-3d1e-4f0f-bc1a-3fd1a417d406/7218c01d-2a2a-4d4f-915b-859ada31651b-7Y9A3097_35-original.jpg",
+            "https://storage.googleapis.com/inv-images/matrimony/gallery/d316682a-3d1e-4f0f-bc1a-3fd1a417d406/0a597686-01f4-4ae5-be27-8481862f0f40-7Y9A2890_1_37-original.jpg",
+            "https://storage.googleapis.com/inv-images/matrimony/gallery/d316682a-3d1e-4f0f-bc1a-3fd1a417d406/c6d16b00-473b-4371-a3a9-bd30342d9623-7Y9A2887_1_34-original.jpg"
+
+      ]
+    }
+    
+  ]
+}

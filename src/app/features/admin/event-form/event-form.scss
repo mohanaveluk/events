@@ -1,0 +1,59 @@
+.page-head {
+  margin-bottom: 22px;
+}
+
+.page-head h1 {
+  margin: 6px 0 0;
+}
+
+.crumbs {
+  display: flex;
+  gap: 8px;
+  color: var(--brand-muted);
+  font-size: 0.85rem;
+}
+
+.crumbs a:hover {
+  color: var(--brand-gold-dark);
+}
+
+.form-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: #fff;
+  border-radius: 16px;
+  padding: 30px;
+  max-width: 720px;
+  box-shadow: var(--brand-shadow);
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 18px;
+}
+
+.full {
+  width: 100%;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+@media (max-width: 600px) {
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+  .form-actions {
+    flex-direction: column-reverse;
+  }
+  .form-actions button {
+    width: 100%;
+    justify-content: center;
+  }
+}

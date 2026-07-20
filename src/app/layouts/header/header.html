@@ -1,0 +1,47 @@
+<header class="header">
+  <div class="container header__inner">
+    <a class="brand" routerLink="/" (click)="closeMenu()">
+      <!-- <span class="brand__mark">P</span> -->
+      <span class="brand__mark">
+        <img src="/images/plg.png" alt="Palmo" width="100%"/>
+      </span>
+      <span class="brand__text">
+        <span class="brand__name">Palmo</span>
+        <span class="brand__sub">Event Decorations</span>
+      </span>
+    </a>
+
+    <button
+      type="button"
+      class="header__toggle"
+      (click)="toggleMenu()"
+      [attr.aria-expanded]="menuOpen()"
+      aria-label="Toggle menu"
+    >
+      <span class="material-icons">{{ menuOpen() ? 'close' : 'menu' }}</span>
+    </button>
+
+    <nav class="nav" [class.is-open]="menuOpen()">
+      <a
+        routerLink="/"
+        routerLinkActive="is-active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        (click)="closeMenu()"
+        >Home</a
+      >
+      @for (cat of categories; track cat.slug) {
+        <a
+          [routerLink]="['/', cat.slug]"
+          routerLinkActive="is-active"
+          (click)="closeMenu()"
+          >{{ cat.label }}</a
+        >
+      }
+      <a routerLink="/gallery" routerLinkActive="is-active" (click)="closeMenu()">Gallery</a>
+      <a routerLink="/contact" routerLinkActive="is-active" (click)="closeMenu()">Contact</a>
+      <!-- <a class="nav__admin" routerLink="/admin" (click)="closeMenu()">
+        <span class="material-icons">admin_panel_settings</span> Admin
+      </a> -->
+    </nav>
+  </div>
+</header>

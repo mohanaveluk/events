@@ -1,0 +1,429 @@
+{
+  "events": [
+    {
+      "id": "arangetram-1",
+      "title": "Arangetram1 @ UTSA",
+      "category": "Arangetram",
+      "location": "UTSA, San Antonio",
+      "eventDate": "2026-07-04",
+      "isFeatured": true,
+      "description": "An elegant Arangetram celebration at UTSA, San Antonio, styled with premium florals, custom backdrops and warm ambient lighting by Palmo Event Decorations.",
+      "images": [
+        "/images/samples/deco-01.svg",
+        "/images/samples/deco-02.svg",
+        "/images/samples/deco-03.svg",
+        "/images/samples/deco-04.svg",
+        "/images/samples/deco-05.svg",
+        "/images/samples/deco-06.svg",
+        "/images/samples/deco-07.svg",
+        "/images/samples/deco-08.svg",
+        "/images/samples/deco-09.svg",
+        "/images/samples/deco-10.svg"
+      ]
+    },
+    {
+      "id": "arangetram-2",
+      "title": "Arangetram2 @ Carver",
+      "category": "Arangetram",
+      "location": "Carver Center, Austin",
+      "eventDate": "2026-07-21",
+      "isFeatured": false,
+      "description": "An elegant Arangetram celebration at Carver Center, Austin, styled with premium florals, custom backdrops and warm ambient lighting by Palmo Event Decorations.",
+      "images": [
+        "/images/samples/deco-02.svg",
+        "/images/samples/deco-03.svg",
+        "/images/samples/deco-04.svg",
+        "/images/samples/deco-05.svg",
+        "/images/samples/deco-06.svg",
+        "/images/samples/deco-07.svg",
+        "/images/samples/deco-08.svg",
+        "/images/samples/deco-09.svg"
+      ]
+    },
+    {
+      "id": "arangetram-3",
+      "title": "Arangetram3 @ Austin",
+      "category": "Arangetram",
+      "location": "Austin Convention Hall",
+      "eventDate": "2026-06-18",
+      "isFeatured": true,
+      "description": "An elegant Arangetram celebration at Austin Convention Hall, styled with premium florals, custom backdrops and warm ambient lighting by Palmo Event Decorations.",
+      "images": [
+        "/images/samples/deco-03.svg",
+        "/images/samples/deco-04.svg",
+        "/images/samples/deco-05.svg",
+        "/images/samples/deco-06.svg",
+        "/images/samples/deco-07.svg",
+        "/images/samples/deco-08.svg"
+      ]
+    },
+    {
+      "id": "arangetram-4",
+      "title": "Arangetram4 @ UTSA",
+      "category": "Arangetram",
+      "location": "UTSA, San Antonio",
+      "eventDate": "2026-08-10",
+      "isFeatured": false,
+      "description": "An elegant Arangetram celebration at UTSA, San Antonio, styled with premium florals, custom backdrops and warm ambient lighting by Palmo Event Decorations.",
+      "images": [
+        "/images/samples/deco-04.svg",
+        "/images/samples/deco-05.svg",
+        "/images/samples/deco-06.svg",
+        "/images/samples/deco-07.svg",
+        "/images/samples/deco-08.svg",
+        "/images/samples/deco-09.svg",
+        "/images/samples/deco-10.svg",
+        "/images/samples/deco-11.svg",
+        "/images/samples/deco-12.svg"
+      ]
+    },
+    {
+      "id": "arangetram-5",
+      "title": "Arangetram5 @ Carver",
+      "category": "Arangetram",
+      "location": "Carver Center, Austin",
+      "eventDate": "2026-09-14",
+      "isFeatured": false,
+      "description": "An elegant Arangetram celebration at Carver Center, Austin, styled with premium florals, custom backdrops and warm ambient lighting by Palmo Event Decorations.",
+      "images": [
+        "/images/samples/deco-05.svg",
+        "/images/samples/deco-06.svg",
+        "/images/samples/deco-07.svg",
+        "/images/samples/deco-08.svg",
+        "/images/samples/deco-09.svg"
+      ]
+    },
+    {
+      "id": "arangetram-6",
+      "title": "Arangetram6 @ Austin",
+      "category": "Arangetram",
+      "location": "Austin Convention Hall",
+      "eventDate": "2026-10-01",
+      "isFeatured": false,
+      "description": "An elegant Arangetram celebration at Austin Convention Hall, styled with premium florals, custom backdrops and warm ambient lighting by Palmo Event Decorations.",
+      "images": [
+        "/images/samples/deco-06.svg",
+        "/images/samples/deco-07.svg",
+        "/images/samples/deco-08.svg",
+        "/images/samples/deco-09.svg",
+        "/images/samples/deco-10.svg",
+        "/images/samples/deco-11.svg",
+        "/images/samples/deco-12.svg"
+      ]
+    },
+    {
+      "id": "birthday-1",
+      "title": "Aarav’s 1st Birthday",
+      "category": "Birthday",
+      "location": "Private Residence, Dallas",
+      "eventDate": "2026-05-12",
+      "isFeatured": true,
+      "description": "An elegant Birthday celebration at Private Residence, Dallas, styled with premium florals, custom backdrops and warm ambient lighting by Palmo Event Decorations.",
+      "images": [
+        "/images/samples/deco-07.svg",
+        "/images/samples/deco-08.svg",
+        "/images/samples/deco-09.svg",
+        "/images/samples/deco-10.svg",
+        "/images/samples/deco-11.svg",
+        "/images/samples/deco-12.svg",
+        "/images/samples/deco-01.svg",
+        "/images/samples/deco-02.svg"
+      ]
+    },
+    {
+      "id": "birthday-2",
+      "title": "Meera Turns Five",
+      "category": "Birthday",
+      "location": "The Grand Hall, Austin",
+      "eventDate": "2026-06-02",
+      "isFeatured": false,
+      "description": "An elegant Birthday celebration at The Grand Hall, Austin, styled with premium florals, custom backdrops and warm ambient lighting by Palmo Event Decorations.",
+      "images": [
+        "/images/samples/deco-08.svg",
+        "/images/samples/deco-09.svg",
+        "/images/samples/deco-10.svg",
+        "/images/samples/deco-11.svg",
+        "/images/samples/deco-12.svg",
+        "/images/samples/deco-01.svg"
+      ]
+    },
+    {
+      "id": "birthday-3",
+      "title": "Rohan’s Superhero Bash",
+      "category": "Birthday",
+      "location": "Community Center, San Antonio",
+      "eventDate": "2026-07-09",
+      "isFeatured": false,
+      "description": "An elegant Birthday celebration at Community Center, San Antonio, styled with premium florals, custom backdrops and warm ambient lighting by Palmo Event Decorations.",
+      "images": [
+        "/images/samples/deco-09.svg",
+        "/images/samples/deco-10.svg",
+        "/images/samples/deco-11.svg",
+        "/images/samples/deco-12.svg",
+        "/images/samples/deco-01.svg",
+        "/images/samples/deco-02.svg",
+        "/images/samples/deco-03.svg"
+      ]
+    },
+    {
+      "id": "birthday-4",
+      "title": "Diya’s Garden Party",
+      "category": "Birthday",
+      "location": "Backyard, Plano",
+      "eventDate": "2026-08-22",
+      "isFeatured": false,
+      "description": "An elegant Birthday celebration at Backyard, Plano, styled with premium florals, custom backdrops and warm ambient lighting by Palmo Event Decorations.",
+      "images": [
+        "/images/samples/deco-10.svg",
+        "/images/samples/deco-11.svg",
+        "/images/samples/deco-12.svg",
+        "/images/samples/deco-01.svg",
+        "/images/samples/deco-02.svg"
+      ]
+    },
+    {
+      "id": "half-saree-1",
+      "title": "Sahana Half Saree",
+      "category": "Half Saree",
+      "location": "Marriott, San Antonio",
+      "eventDate": "2026-04-19",
+      "isFeatured": true,
+      "description": "An elegant Half Saree celebration at Marriott, San Antonio, styled with premium florals, custom backdrops and warm ambient lighting by Palmo Event Decorations.",
+      "images": [
+        "/images/samples/deco-11.svg",
+        "/images/samples/deco-12.svg",
+        "/images/samples/deco-01.svg",
+        "/images/samples/deco-02.svg",
+        "/images/samples/deco-03.svg",
+        "/images/samples/deco-04.svg",
+        "/images/samples/deco-05.svg",
+        "/images/samples/deco-06.svg",
+        "/images/samples/deco-07.svg"
+      ]
+    },
+    {
+      "id": "half-saree-2",
+      "title": "Keerthana Ceremony",
+      "category": "Half Saree",
+      "location": "Hilton, Austin",
+      "eventDate": "2026-05-30",
+      "isFeatured": false,
+      "description": "An elegant Half Saree celebration at Hilton, Austin, styled with premium florals, custom backdrops and warm ambient lighting by Palmo Event Decorations.",
+      "images": [
+        "/images/samples/deco-12.svg",
+        "/images/samples/deco-01.svg",
+        "/images/samples/deco-02.svg",
+        "/images/samples/deco-03.svg",
+        "/images/samples/deco-04.svg",
+        "/images/samples/deco-05.svg"
+      ]
+    },
+    {
+      "id": "half-saree-3",
+      "title": "Anushka Half Saree",
+      "category": "Half Saree",
+      "location": "Banquet Hall, Dallas",
+      "eventDate": "2026-06-27",
+      "isFeatured": false,
+      "description": "An elegant Half Saree celebration at Banquet Hall, Dallas, styled with premium florals, custom backdrops and warm ambient lighting by Palmo Event Decorations.",
+      "images": [
+        "/images/samples/deco-01.svg",
+        "/images/samples/deco-02.svg",
+        "/images/samples/deco-03.svg",
+        "/images/samples/deco-04.svg",
+        "/images/samples/deco-05.svg",
+        "/images/samples/deco-06.svg",
+        "/images/samples/deco-07.svg"
+      ]
+    },
+    {
+      "id": "temple-pooja-1",
+      "title": "Sri Meenakshi Pooja",
+      "category": "Temple Pooja",
+      "location": "Sri Meenakshi Temple, Pearland",
+      "eventDate": "2026-03-15",
+      "isFeatured": true,
+      "description": "An elegant Temple Pooja celebration at Sri Meenakshi Temple, Pearland, styled with premium florals, custom backdrops and warm ambient lighting by Palmo Event Decorations.",
+      "images": [
+        "/images/samples/deco-02.svg",
+        "/images/samples/deco-03.svg",
+        "/images/samples/deco-04.svg",
+        "/images/samples/deco-05.svg",
+        "/images/samples/deco-06.svg",
+        "/images/samples/deco-07.svg"
+      ]
+    },
+    {
+      "id": "temple-pooja-2",
+      "title": "Satyanarayana Vratam",
+      "category": "Temple Pooja",
+      "location": "Hindu Temple, Austin",
+      "eventDate": "2026-04-08",
+      "isFeatured": false,
+      "description": "An elegant Temple Pooja celebration at Hindu Temple, Austin, styled with premium florals, custom backdrops and warm ambient lighting by Palmo Event Decorations.",
+      "images": [
+        "/images/samples/deco-03.svg",
+        "/images/samples/deco-04.svg",
+        "/images/samples/deco-05.svg",
+        "/images/samples/deco-06.svg",
+        "/images/samples/deco-07.svg"
+      ]
+    },
+    {
+      "id": "temple-pooja-3",
+      "title": "Navaratri Golu Setup",
+      "category": "Temple Pooja",
+      "location": "Community Temple, San Antonio",
+      "eventDate": "2026-10-05",
+      "isFeatured": false,
+      "description": "An elegant Temple Pooja celebration at Community Temple, San Antonio, styled with premium florals, custom backdrops and warm ambient lighting by Palmo Event Decorations.",
+      "images": [
+        "/images/samples/deco-04.svg",
+        "/images/samples/deco-05.svg",
+        "/images/samples/deco-06.svg",
+        "/images/samples/deco-07.svg",
+        "/images/samples/deco-08.svg",
+        "/images/samples/deco-09.svg",
+        "/images/samples/deco-10.svg",
+        "/images/samples/deco-11.svg"
+      ]
+    },
+    {
+      "id": "wedding-1",
+      "title": "Priya & Karthik",
+      "category": "Wedding",
+      "location": "JW Marriott, San Antonio",
+      "eventDate": "2026-02-14",
+      "isFeatured": true,
+      "description": "An elegant Wedding celebration at JW Marriott, San Antonio, styled with premium florals, custom backdrops and warm ambient lighting by Palmo Event Decorations.",
+      "images": [
+        "/images/samples/deco-05.svg",
+        "/images/samples/deco-06.svg",
+        "/images/samples/deco-07.svg",
+        "/images/samples/deco-08.svg",
+        "/images/samples/deco-09.svg",
+        "/images/samples/deco-10.svg",
+        "/images/samples/deco-11.svg",
+        "/images/samples/deco-12.svg",
+        "/images/samples/deco-01.svg",
+        "/images/samples/deco-02.svg",
+        "/images/samples/deco-03.svg",
+        "/images/samples/deco-04.svg"
+      ]
+    },
+    {
+      "id": "wedding-2",
+      "title": "Divya & Arjun",
+      "category": "Wedding",
+      "location": "Omni Hotel, Austin",
+      "eventDate": "2026-03-28",
+      "isFeatured": true,
+      "description": "An elegant Wedding celebration at Omni Hotel, Austin, styled with premium florals, custom backdrops and warm ambient lighting by Palmo Event Decorations.",
+      "images": [
+        "/images/samples/deco-06.svg",
+        "/images/samples/deco-07.svg",
+        "/images/samples/deco-08.svg",
+        "/images/samples/deco-09.svg",
+        "/images/samples/deco-10.svg",
+        "/images/samples/deco-11.svg",
+        "/images/samples/deco-12.svg",
+        "/images/samples/deco-01.svg",
+        "/images/samples/deco-02.svg",
+        "/images/samples/deco-03.svg"
+      ]
+    },
+    {
+      "id": "wedding-3",
+      "title": "Nithya & Vikram",
+      "category": "Wedding",
+      "location": "Hilton Anatole, Dallas",
+      "eventDate": "2026-05-16",
+      "isFeatured": false,
+      "description": "An elegant Wedding celebration at Hilton Anatole, Dallas, styled with premium florals, custom backdrops and warm ambient lighting by Palmo Event Decorations.",
+      "images": [
+        "/images/samples/deco-07.svg",
+        "/images/samples/deco-08.svg",
+        "/images/samples/deco-09.svg",
+        "/images/samples/deco-10.svg",
+        "/images/samples/deco-11.svg",
+        "/images/samples/deco-12.svg",
+        "/images/samples/deco-01.svg",
+        "/images/samples/deco-02.svg",
+        "/images/samples/deco-03.svg"
+      ]
+    },
+    {
+      "id": "wedding-4",
+      "title": "Shruti & Rahul",
+      "category": "Wedding",
+      "location": "The Westin, Houston",
+      "eventDate": "2026-06-20",
+      "isFeatured": false,
+      "description": "An elegant Wedding celebration at The Westin, Houston, styled with premium florals, custom backdrops and warm ambient lighting by Palmo Event Decorations.",
+      "images": [
+        "/images/samples/deco-08.svg",
+        "/images/samples/deco-09.svg",
+        "/images/samples/deco-10.svg",
+        "/images/samples/deco-11.svg",
+        "/images/samples/deco-12.svg",
+        "/images/samples/deco-01.svg",
+        "/images/samples/deco-02.svg",
+        "/images/samples/deco-03.svg"
+      ]
+    },
+    {
+      "id": "engagement-1",
+      "title": "Lakshmi & Sanjay",
+      "category": "Engagement",
+      "location": "Sheraton, Austin",
+      "eventDate": "2026-04-11",
+      "isFeatured": true,
+      "description": "An elegant Engagement celebration at Sheraton, Austin, styled with premium florals, custom backdrops and warm ambient lighting by Palmo Event Decorations.",
+      "images": [
+        "/images/samples/deco-09.svg",
+        "/images/samples/deco-10.svg",
+        "/images/samples/deco-11.svg",
+        "/images/samples/deco-12.svg",
+        "/images/samples/deco-01.svg",
+        "/images/samples/deco-02.svg",
+        "/images/samples/deco-03.svg"
+      ]
+    },
+    {
+      "id": "engagement-2",
+      "title": "Pooja & Aditya",
+      "category": "Engagement",
+      "location": "Marriott, Dallas",
+      "eventDate": "2026-05-24",
+      "isFeatured": false,
+      "description": "An elegant Engagement celebration at Marriott, Dallas, styled with premium florals, custom backdrops and warm ambient lighting by Palmo Event Decorations.",
+      "images": [
+        "/images/samples/deco-10.svg",
+        "/images/samples/deco-11.svg",
+        "/images/samples/deco-12.svg",
+        "/images/samples/deco-01.svg",
+        "/images/samples/deco-02.svg",
+        "/images/samples/deco-03.svg"
+      ]
+    },
+    {
+      "id": "engagement-3",
+      "title": "Reshma & Naveen",
+      "category": "Engagement",
+      "location": "Grand Hyatt, San Antonio",
+      "eventDate": "2026-07-18",
+      "isFeatured": false,
+      "description": "An elegant Engagement celebration at Grand Hyatt, San Antonio, styled with premium florals, custom backdrops and warm ambient lighting by Palmo Event Decorations.",
+      "images": [
+        "/images/samples/deco-11.svg",
+        "/images/samples/deco-12.svg",
+        "/images/samples/deco-01.svg",
+        "/images/samples/deco-02.svg",
+        "/images/samples/deco-03.svg",
+        "/images/samples/deco-04.svg",
+        "/images/samples/deco-05.svg",
+        "/images/samples/deco-06.svg"
+      ]
+    }
+  ]
+}

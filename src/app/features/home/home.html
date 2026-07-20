@@ -1,0 +1,57 @@
+<!-- Hero -->
+<section class="hero">
+  <div class="hero__overlay"></div>
+  <div class="container hero__content fade-in">
+    <span class="hero__eyebrow">Palmo Event Decorations</span>
+    <h1 class="hero__title">Creating Memorable Celebrations with Elegant Decorations</h1>
+    <p class="hero__sub">
+      From graceful Arangetram stages to grand wedding mandaps — we design settings your guests will
+      never forget.
+    </p>
+    <div class="hero__actions">
+      <a class="btn-gold" routerLink="/gallery">
+        Explore Our Events <span class="material-icons">arrow_forward</span>
+      </a>
+      <a class="btn-ghost" routerLink="/contact">Book a Consultation</a>
+    </div>
+  </div>
+</section>
+
+<!-- Stats -->
+<section class="container stats">
+  @for (stat of stats(); track stat.label) {
+    <div class="stats__item">
+      <span class="stats__value">{{ stat.value }}</span>
+      <span class="stats__label">{{ stat.label }}</span>
+    </div>
+  }
+</section>
+
+<!-- Category sections -->
+@for (section of sections(); track section.info.slug) {
+  <section class="section container">
+    <app-section-header
+      [eyebrow]="section.info.tagline"
+      [title]="'Recent ' + section.info.label + ' Decorations'"
+      [viewAllLink]="['/', section.info.slug]"
+    />
+    <div class="cards-grid">
+      @for (event of section.events; track event.id) {
+        <app-event-card [event]="event" />
+      }
+    </div>
+  </section>
+}
+
+<!-- CTA band -->
+<section class="cta">
+  <div class="container cta__inner">
+    <div>
+      <h2>Planning your next celebration?</h2>
+      <p>Tell us your vision — we’ll bring it to life with elegance and detail.</p>
+    </div>
+    <a class="btn-gold" routerLink="/contact">
+      Get in Touch <span class="material-icons">arrow_forward</span>
+    </a>
+  </div>
+</section>

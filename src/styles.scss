@@ -1,0 +1,196 @@
+@use '@angular/material' as mat;
+
+// ngx-toastr styles
+@use 'ngx-toastr/toastr';
+
+// ---------------------------------------------------------------------------
+// Brand design tokens
+// ---------------------------------------------------------------------------
+$brand-gold: #c8a74e;
+$brand-gold-dark: #a8863a;
+$brand-gold-light: #e4cd8a;
+$brand-secondary: #f5f5f5;
+$brand-bg: #ffffff;
+$brand-ink: #2c2416;
+$brand-muted: #8a8272;
+
+// ---------------------------------------------------------------------------
+// Angular Material 21 theme — gold / warm tertiary on a light surface.
+// ---------------------------------------------------------------------------
+html {
+  color-scheme: light;
+
+  @include mat.theme((color: (theme-type: light,
+        primary: mat.$yellow-palette,
+        tertiary: mat.$orange-palette,
+      ),
+      typography: (plain-family: (Poppins, sans-serif),
+        brand-family: (Cormorant Garamond, serif),
+      ),
+      density: 0,
+    ));
+
+  // Brand colour overrides so Material components pick up the luxury gold.
+  --mat-sys-primary: #{$brand-gold};
+  --mat-sys-on-primary: #ffffff;
+}
+
+:root {
+  --brand-gold: #{$brand-gold};
+  --brand-gold-dark: #{$brand-gold-dark};
+  --brand-gold-light: #{$brand-gold-light};
+  --brand-secondary: #{$brand-secondary};
+  --brand-bg: #{$brand-bg};
+  --brand-ink: #{$brand-ink};
+  --brand-muted: #{$brand-muted};
+  --brand-shadow: 0 8px 30px rgba(44, 36, 22, 0.12);
+  --brand-shadow-hover: 0 16px 44px rgba(44, 36, 22, 0.2);
+  --brand-radius: 18px;
+  --header-height: 72px;
+  --page-max: 1280px;
+  --font-heading:  'Roboto', sans-serif;
+  --font-body: 'Roboto', sans-serif, 'Poppins', sans-serif;
+}
+
+// ---------------------------------------------------------------------------
+// Global resets & base typography
+// ---------------------------------------------------------------------------
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--brand-ink);
+  background: var(--brand-bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  color: var(--brand-ink);
+  margin: 0 0 0.4em;
+  letter-spacing: 0.3px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+// ---------------------------------------------------------------------------
+// Layout helpers
+// ---------------------------------------------------------------------------
+.container {
+  width: 100%;
+  max-width: var(--page-max);
+  margin-inline: auto;
+  padding-inline: clamp(16px, 4vw, 40px);
+}
+
+.section {
+  padding-block: clamp(40px, 6vw, 80px);
+}
+
+.text-gold {
+  color: var(--brand-gold);
+}
+
+// ---------------------------------------------------------------------------
+// Buttons — luxury gold pill
+// ---------------------------------------------------------------------------
+.btn-gold {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--brand-gold), var(--brand-gold-dark));
+  color: #fff;
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 0.95rem;
+  letter-spacing: 0.4px;
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease;
+  box-shadow: 0 8px 22px rgba(200, 167, 78, 0.35);
+
+  &:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.05);
+    box-shadow: 0 12px 28px rgba(200, 167, 78, 0.45);
+  }
+
+  &:disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
+    transform: none;
+  }
+}
+
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 22px;
+  border: 1.5px solid var(--brand-gold);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--brand-gold-dark);
+  font-family: var(--font-body);
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.25s ease, color 0.25s ease;
+
+  &:hover {
+    background: var(--brand-gold);
+    color: #fff;
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Reusable entrance animations
+// ---------------------------------------------------------------------------
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(28px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  animation: fadeIn 0.6s ease both;
+}
+
+.slide-up {
+  animation: slideUp 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+// Scrollbar polish
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-thumb {
+  background: var(--brand-gold-light);
+  border-radius: 999px;
+}
+::-webkit-scrollbar-track { background: var(--brand-secondary); }

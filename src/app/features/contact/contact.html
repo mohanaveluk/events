@@ -1,0 +1,72 @@
+<section class="page-hero">
+  <div class="container">
+    <span class="page-hero__icon material-icons">mail</span>
+    <h1>Let’s Plan Something Beautiful</h1>
+    <p>Share a few details and we’ll craft a proposal for your celebration.</p>
+  </div>
+</section>
+
+<div class="container section contact">
+  <form class="contact__form" [formGroup]="form" (ngSubmit)="submit()">
+    <div class="field">
+      <label>Full Name *</label>
+      <input type="text" formControlName="name" placeholder="Your name" />
+      @if (form.controls.name.touched && form.controls.name.invalid) {
+        <small class="err">Please enter your name.</small>
+      }
+    </div>
+
+    <div class="grid-2">
+      <div class="field">
+        <label>Email *</label>
+        <input type="email" formControlName="email" placeholder="you@email.com" />
+        @if (form.controls.email.touched && form.controls.email.invalid) {
+          <small class="err">Enter a valid email.</small>
+        }
+      </div>
+      <div class="field">
+        <label>Phone</label>
+        <input type="tel" formControlName="phone" placeholder="Optional" />
+      </div>
+    </div>
+
+    <div class="field">
+      <label>Event Type *</label>
+      <select formControlName="eventType">
+        <option value="" disabled>Select an event type</option>
+        @for (cat of categories; track cat.slug) {
+          <option [value]="cat.label">{{ cat.label }}</option>
+        }
+        <option value="Other">Other</option>
+      </select>
+      @if (form.controls.eventType.touched && form.controls.eventType.invalid) {
+        <small class="err">Please choose an event type.</small>
+      }
+    </div>
+
+    <div class="field">
+      <label>Message *</label>
+      <textarea rows="5" formControlName="message" placeholder="Tell us about your event…"></textarea>
+      @if (form.controls.message.touched && form.controls.message.invalid) {
+        <small class="err">Please add a few details (min 10 characters).</small>
+      }
+    </div>
+
+    <button type="submit" class="btn-gold" [disabled]="submitting()">
+      {{ submitting() ? 'Sending…' : 'Send Message' }}
+      <span class="material-icons">send</span>
+    </button>
+  </form>
+
+  <aside class="contact__info">
+    <h3>Contact Details</h3>
+    <p><span class="material-icons">call</span> {{ app.phone }}</p>
+    <p><span class="material-icons">mail</span> {{ app.email }}</p>
+    <p><span class="material-icons">place</span> {{ app.serviceArea }}</p>
+    <div class="contact__hours">
+      <h4>Studio Hours</h4>
+      <p>Mon – Sat · 10:00 AM – 7:00 PM</p>
+      <p>Sunday · By appointment</p>
+    </div>
+  </aside>
+</div>

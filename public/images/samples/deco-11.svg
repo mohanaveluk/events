@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="750" viewBox="0 0 1000 750">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e4ddcd"/>
+      <stop offset="1" stop-color="#8a8272"/>
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="750" fill="url(#g)"/>
+  <circle cx="500" cy="330" r="150" fill="#ffffff" opacity="0.18"/>
+  <circle cx="500" cy="330" r="96" fill="#ffffff" opacity="0.25"/>
+  <g fill="#ffffff" opacity="0.9" font-family="Georgia, serif" text-anchor="middle">
+    <text x="500" y="350" font-size="120" font-weight="700">11</text>
+    <text x="500" y="470" font-size="42" opacity="0.85">Suhana Decorations</text>
+  </g>
+  <rect x="30" y="30" width="940" height="690" fill="none" stroke="#ffffff" stroke-opacity="0.5" stroke-width="4" rx="18"/>
+</svg>

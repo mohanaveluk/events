@@ -1,0 +1,62 @@
+<div class="page-head">
+  <div>
+    <h1>Dashboard</h1>
+    <p>Overview of your event portfolio.</p>
+  </div>
+  <a class="btn-gold" routerLink="/admin/events/new">
+    <span class="material-icons">add</span> New Event
+  </a>
+</div>
+
+<div class="cards">
+  @for (card of cards(); track card.label) {
+    <div class="stat-card" [attr.data-tone]="card.tone">
+      <span class="stat-card__icon material-icons">{{ card.icon }}</span>
+      <div>
+        <span class="stat-card__value">{{ card.value }}</span>
+        <span class="stat-card__label">{{ card.label }}</span>
+      </div>
+    </div>
+  }
+</div>
+
+<div class="panels">
+  <section class="panel">
+    <header class="panel__head">
+      <h2>Recent Events</h2>
+      <a routerLink="/admin/events">View all →</a>
+    </header>
+    <div class="recent">
+      @for (event of recent(); track event.id) {
+        <div class="recent__row">
+          <img [src]="event.coverImage" alt="" />
+          <div class="recent__info">
+            <strong>{{ event.title }}</strong>
+            <span>{{ event.category }} · {{ event.eventDate | dayjsDate }}</span>
+          </div>
+          <span class="recent__count">{{ event.totalPhotos }} photos</span>
+          <a class="recent__action" [routerLink]="['/admin/upload-gallery', event.id]" title="Upload photos">
+            <span class="material-icons">cloud_upload</span>
+          </a>
+        </div>
+      }
+    </div>
+  </section>
+
+  <section class="panel">
+    <header class="panel__head">
+      <h2>Events by Category</h2>
+    </header>
+    <div class="bars">
+      @for (row of byCategory(); track row.label) {
+        <div class="bar">
+          <span class="bar__label">{{ row.label }}</span>
+          <div class="bar__track">
+            <div class="bar__fill" [style.width.%]="row.count ? (row.count / events().length) * 100 : 0"></div>
+          </div>
+          <span class="bar__count">{{ row.count }}</span>
+        </div>
+      }
+    </div>
+  </section>
+</div>

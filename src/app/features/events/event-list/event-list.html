@@ -1,0 +1,55 @@
+@if (category(); as cat) {
+  <section class="page-hero">
+    <div class="container">
+      <nav class="crumbs">
+        <a routerLink="/">Home</a><span>›</span><span>{{ cat.label }}</span>
+      </nav>
+      <span class="page-hero__icon material-icons">{{ cat.icon }}</span>
+      <h1>All {{ cat.label }} Decorations</h1>
+      <p>{{ cat.tagline }}</p>
+      <div class="page-hero__meta">
+        <span>{{ events().length }} events</span>
+        <span class="dot">•</span>
+        <span>{{ totalPhotos() }} photos</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="container section">
+    @if (events().length) {
+      @for (event of events(); track event.id) {
+        <section class="event-block slide-up">
+          <header class="event-block__head">
+            <div>
+              <h2>{{ event.title }}</h2>
+              <p class="event-block__meta">
+                <span class="material-icons">event</span>{{ event.eventDate | dayjsDate }}
+                <span class="material-icons">place</span>{{ event.location }}
+              </p>
+            </div>
+            <a class="btn-ghost" [routerLink]="['/event', event.id]">Open Event</a>
+          </header>
+          <app-masonry-grid [photos]="event.photos" />
+        </section>
+      }
+    } @else {
+      <app-empty-state
+        icon="photo_library"
+        title="No decorations here yet"
+        message="We’re adding photos from recent events. Please check back soon."
+      >
+        <a class="btn-gold" routerLink="/">Back to Home</a>
+      </app-empty-state>
+    }
+  </div>
+} @else {
+  <div class="container section">
+    <app-empty-state
+      icon="search_off"
+      title="Category not found"
+      message="The category you’re looking for doesn’t exist."
+    >
+      <a class="btn-gold" routerLink="/">Back to Home</a>
+    </app-empty-state>
+  </div>
+}

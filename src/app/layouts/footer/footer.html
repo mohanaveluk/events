@@ -1,0 +1,52 @@
+<footer class="footer">
+  <div class="container footer__grid">
+    <div class="footer__brand">
+      <div class="brand">
+        <span class="brand__mark">
+          <img src="/images/plg.png" alt="Palmo" width="100%"/>
+        </span>
+        <span class="brand__name">{{ app.brandName }}</span>
+      </div>
+      <p class="footer__tagline">{{ app.tagline }}</p>
+      <div class="footer__social">
+        <a [href]="app.social.instagram" target="_blank" rel="noopener" aria-label="Instagram">
+          <span class="material-icons">photo_camera</span>
+        </a>
+        <a [href]="app.social.facebook" target="_blank" rel="noopener" aria-label="Facebook">
+          <span class="material-icons">thumb_up</span>
+        </a>
+        <a [href]="app.social.youtube" target="_blank" rel="noopener" aria-label="YouTube">
+          <span class="material-icons">smart_display</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer__col">
+      <h4>Explore</h4>
+      <a routerLink="/">Home</a>
+      <a routerLink="/gallery">Gallery</a>
+      <a routerLink="/contact">Contact</a>
+      <a routerLink="/admin">Admin</a>
+    </div>
+
+    <div class="footer__col">
+      <h4>Decorations</h4>
+      @for (cat of categories; track cat.slug) {
+        <a [routerLink]="['/', cat.slug]">{{ cat.label }}</a>
+      }
+    </div>
+
+    <div class="footer__col">
+      <h4>Get in touch</h4>
+      <p><span class="material-icons">call</span> {{ app.phone }}</p>
+      <p><span class="material-icons">mail</span> {{ app.email }}</p>
+      <p><span class="material-icons">place</span> {{ app.serviceArea }}</p>
+    </div>
+  </div>
+
+  <div class="footer__bar">
+    <div class="container">
+      © {{ year }} {{ app.brandName }}. Crafted with care.
+    </div>
+  </div>
+</footer>

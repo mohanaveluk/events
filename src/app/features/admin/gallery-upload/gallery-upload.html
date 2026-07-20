@@ -1,0 +1,99 @@
+@if (event(); as ev) {
+  <div class="page-head">
+    <div>
+      <nav class="crumbs">
+        <a routerLink="/admin/events">Events</a><span>›</span>
+        <span>Upload Gallery</span>
+      </nav>
+      <h1>Upload Photos</h1>
+      <p>Adding to <strong>{{ ev.title }}</strong> · {{ ev.totalPhotos }} existing photos</p>
+    </div>
+    <a class="btn-ghost" [routerLink]="['/event', ev.id]">
+      <span class="material-icons">visibility</span> View Event
+    </a>
+  </div>
+
+  <!-- Dropzone -->
+  <div
+    class="dropzone"
+    [class.is-drag]="dragOver()"
+    (dragover)="onDragOver($event)"
+    (dragleave)="onDragLeave($event)"
+    (drop)="onDrop($event)"
+  >
+    <span class="material-icons dropzone__icon">cloud_upload</span>
+    <h3>Drop Images Here</h3>
+    <p>or</p>
+    <label class="btn-gold">
+      Browse Files
+      <input type="file" [accept]="accept" multiple hidden (change)="onBrowse($event)" />
+    </label>
+    <small>Supported: JPG, JPEG, PNG, WEBP · up to 8MB each</small>
+  </div>
+
+  <!-- Staging area -->
+  @if (staged().length) {
+    <div class="stage-head">
+      <h2>{{ staged().length }} image(s) ready</h2>
+      <div class="stage-head__actions">
+        <button class="btn-ghost" (click)="clearAll()" [disabled]="uploading()">Clear All</button>
+        <button class="btn-gold" (click)="uploadAll()" [disabled]="!canUpload()">
+          <span class="material-icons">backup</span>
+          {{ uploading() ? 'Uploading…' : 'Upload ' + staged().length + ' Photos' }}
+        </button>
+      </div>
+    </div>
+    <p class="hint"><span class="material-icons">drag_indicator</span> Drag to reorder · click a photo to set the cover</p>
+
+    <div
+      class="preview-grid"
+      cdkDropList
+      cdkDropListOrientation="mixed"
+      (cdkDropListDropped)="reorder($event)"
+    >
+      @for (item of staged(); track item.id) {
+        <div class="preview" cdkDrag [class.is-cover]="item.isCover">
+          <div class="preview__img" (click)="setCover(item.id)">
+            <img [src]="item.previewUrl" alt="" />
+            @if (item.isCover) {
+              <span class="preview__cover"><span class="material-icons">star</span> Cover</span>
+            }
+            @if (item.status === 'uploading' || item.status === 'done') {
+              <div class="preview__progress">
+                <div class="preview__bar" [style.width.%]="item.progress"></div>
+              </div>
+            }
+            @if (item.status === 'done') {
+              <span class="preview__done"><span class="material-icons">check_circle</span></span>
+            }
+          </div>
+          <div class="preview__foot">
+            <span class="preview__name">{{ item.file.name }}</span>
+            <button
+              type="button"
+              class="preview__del"
+              (click)="remove(item.id)"
+              [disabled]="uploading()"
+              aria-label="Remove"
+            >
+              <span class="material-icons">delete</span>
+            </button>
+          </div>
+        </div>
+      }
+    </div>
+  }
+
+  <!-- Existing gallery -->
+  @if (ev.photos.length) {
+    <section class="existing">
+      <h2>Current Gallery — {{ ev.title }}</h2>
+      <app-masonry-grid [photos]="ev.photos" />
+    </section>
+  }
+} @else {
+  <div class="page-head">
+    <h1>Event not found</h1>
+  </div>
+  <a class="btn-gold" routerLink="/admin/events">Back to Events</a>
+}

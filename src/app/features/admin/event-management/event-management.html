@@ -1,0 +1,124 @@
+<div class="page-head">
+  <div>
+    <h1>Manage Events</h1>
+    <p>Edit details, upload galleries or remove events.</p>
+  </div>
+  <a class="btn-gold" routerLink="/admin/events/new">
+    <span class="material-icons">add</span> New Event
+  </a>
+</div>
+
+<div class="toolbar">
+  <div class="search">
+    <span class="material-icons">search</span>
+    <input
+      type="text"
+      placeholder="Search by title, category or location…"
+      [value]="search()"
+      (input)="onSearch($any($event.target).value)"
+    />
+  </div>
+  <span class="toolbar__count">{{ events().length }} events</span>
+</div>
+
+<div class="table-wrap">
+  <table mat-table [dataSource]="events()" class="events-table">
+    <ng-container matColumnDef="title">
+      <th mat-header-cell *matHeaderCellDef>Title</th>
+      <td mat-cell *matCellDef="let e">
+        <div class="cell-title">
+          <img [src]="e.coverImage" alt="" />
+          <div>
+            <strong>{{ e.title }}</strong>
+            @if (e.isFeatured) {
+              <span class="tag-featured"><span class="material-icons">star</span>Featured</span>
+            }
+          </div>
+        </div>
+      </td>
+    </ng-container>
+
+    <ng-container matColumnDef="category">
+      <th mat-header-cell *matHeaderCellDef>Category</th>
+      <td mat-cell *matCellDef="let e"><span class="chip">{{ e.category }}</span></td>
+    </ng-container>
+
+    <ng-container matColumnDef="location">
+      <th mat-header-cell *matHeaderCellDef>Location</th>
+      <td mat-cell *matCellDef="let e">{{ e.location }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="date">
+      <th mat-header-cell *matHeaderCellDef>Date</th>
+      <td mat-cell *matCellDef="let e">{{ e.eventDate | dayjsDate }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="photos">
+      <th mat-header-cell *matHeaderCellDef>Photos</th>
+      <td mat-cell *matCellDef="let e">{{ e.totalPhotos }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="actions">
+      <th mat-header-cell *matHeaderCellDef class="col-actions">Actions</th>
+      <td mat-cell *matCellDef="let e" class="col-actions">
+        <a
+          mat-icon-button
+          [routerLink]="['/event', e.id]"
+          matTooltip="View"
+          aria-label="View"
+        >
+          <mat-icon>visibility</mat-icon>
+        </a>
+        <a
+          mat-icon-button
+          [routerLink]="['/admin/upload-gallery', e.id]"
+          matTooltip="Upload photos"
+          aria-label="Upload"
+        >
+          <mat-icon>cloud_upload</mat-icon>
+        </a>
+        <a
+          mat-icon-button
+          [routerLink]="['/admin/events/edit', e.id]"
+          matTooltip="Edit"
+          aria-label="Edit"
+        >
+          <mat-icon>edit</mat-icon>
+        </a>
+        <button
+          mat-icon-button
+          color="warn"
+          (click)="askDelete(e)"
+          matTooltip="Delete"
+          aria-label="Delete"
+        >
+          <mat-icon>delete</mat-icon>
+        </button>
+      </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="columns"></tr>
+    <tr mat-row *matRowDef="let row; columns: columns"></tr>
+  </table>
+
+  @if (!events().length) {
+    <div class="table-empty">
+      <span class="material-icons">event_busy</span>
+      <p>No events found.</p>
+    </div>
+  }
+</div>
+
+@if (pendingDelete(); as target) {
+  <div class="confirm" (click)="cancelDelete()">
+    <div class="confirm__box" (click)="$event.stopPropagation()">
+      <span class="material-icons confirm__icon">warning</span>
+      <h3>Delete event?</h3>
+      <p>“{{ target.title }}” and its {{ target.totalPhotos }} photos will be removed.</p>
+      <div class="confirm__actions">
+        <button class="btn-ghost" (click)="cancelDelete()">Cancel</button>
+        <button class="btn-danger" (click)="confirmDelete()">Delete</button>
+      </div>
+    </div>
+  </div>
+}

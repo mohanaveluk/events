@@ -1,0 +1,60 @@
+.page-hero {
+  background: radial-gradient(circle at 80% 20%, rgba(200, 167, 78, 0.16), transparent 55%),
+    var(--brand-secondary);
+  padding-block: clamp(40px, 6vw, 72px);
+  text-align: center;
+}
+
+.page-hero__icon {
+  font-size: 46px;
+  color: var(--brand-gold);
+}
+
+.page-hero h1 {
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  margin: 8px 0 6px;
+}
+
+.page-hero p {
+  color: var(--brand-muted);
+  margin: 0;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 34px;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 9px 18px;
+  border: 1.5px solid #e4ddcd;
+  border-radius: 999px;
+  background: #fff;
+  color: var(--brand-ink);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.chip .material-icons {
+  font-size: 17px;
+}
+
+.chip:hover {
+  border-color: var(--brand-gold);
+  color: var(--brand-gold-dark);
+}
+
+.chip.is-active {
+  background: linear-gradient(135deg, var(--brand-gold), var(--brand-gold-dark));
+  border-color: transparent;
+  color: #fff;
+  box-shadow: 0 6px 16px rgba(200, 167, 78, 0.35);
+}

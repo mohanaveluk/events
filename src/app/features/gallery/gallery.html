@@ -1,0 +1,36 @@
+<section class="page-hero">
+  <div class="container">
+    <span class="page-hero__icon material-icons">collections</span>
+    <h1>Our Portfolio Gallery</h1>
+    <p>A curated collection from every celebration we’ve had the honour to style.</p>
+  </div>
+</section>
+
+<div class="container section">
+  <div class="filters">
+    <button
+      type="button"
+      class="chip"
+      [class.is-active]="activeKey() === 'all'"
+      (click)="setFilter('all')"
+    >
+      All
+    </button>
+    @for (cat of categories; track cat.slug) {
+      <button
+        type="button"
+        class="chip"
+        [class.is-active]="activeKey() === cat.key"
+        (click)="setFilter(cat.key)"
+      >
+        <span class="material-icons">{{ cat.icon }}</span>{{ cat.label }}
+      </button>
+    }
+  </div>
+
+  @if (photos().length) {
+    <app-masonry-grid [photos]="photos()" />
+  } @else {
+    <app-empty-state title="No photos in this category yet" icon="image_not_supported" />
+  }
+</div>
