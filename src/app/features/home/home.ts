@@ -45,7 +45,7 @@ export class HomeComponent {
       { value: `${events.length}+`, label: 'Events Styled' },
       { value: `${photos}+`, label: 'Photos Captured' },
       { value: `${this.categoryService.categories.length}`, label: 'Specialities' },
-      { value: '10+', label: 'Years of Joy' },
+      { value: '2+', label: 'Years of Joy' },
     ];
   });
 }
