@@ -2,7 +2,7 @@
   "events": [
     {
       "id": "arangetram-1",
-      "title": "Arangetram @ UTSA",
+      "title": "KNY Arangetram@UTSA",
       "category": "Arangetram",
       "location": "UTSA Downtown, San Antonio",
       "eventDate": "2026-06-27T00:00:00",
@@ -51,7 +51,7 @@
     },
     {
       "id": "arangetram-2",
-      "title": "Arangetram @ Carver",
+      "title": "KNY Arangetram@Carver",
       "category": "Arangetram",
       "location": "Carver Center, San Antonio",
       "eventDate": "2025-10-12T00:00:00",
@@ -109,7 +109,7 @@
       "location": "Mahalaskhmi Hall, San Antonio",
       "eventDate": "2026-05-03T00:00:00",
       "isFeatured": false,
-      "description": "An elegant Arangetram celebration at Carver Center, San Antonio, styled with premium florals, custom backdrops and warm ambient lighting by Palmo Event Decorations.",
+      "description": "A large-scale Natyanjali cultural event featuring a stunning performance stage, thematic temple décor, floral garlands, traditional South Indian design elements, artist-friendly stage arrangements, and immersive lighting that celebrated the beauty of classical dance.",
       "source": "",
       "images": [
         "https://storage.googleapis.com/inv-images/matrimony/gallery/p1/da39e178-5e78-47e1-9797-103fd6de9062-bms-atyanjali-m-thumbnail.jpeg",
@@ -122,12 +122,12 @@
     },
     {
       "id": "arangetram-4",
-      "title": "Arthi School @ Carver",
+      "title": "Arthi School@Carver",
       "category": "Arangetram",
       "location": "Carver Center, San Antonio",
-      "eventDate": "2025-10-12T00:00:00",
+      "eventDate": "2026-07-11T00:00:00",
       "isFeatured": false,
-      "description": "An elegant Arangetram celebration at Carver Center, San Antonio, styled with premium florals, custom backdrops and warm ambient lighting by Palmo Event Decorations.",
+      "description": "A sophisticated Bharatanatyam Arangetram stage transformation at the Carver Center featuring traditional temple-inspired décor, handcrafted floral arrangements, elegant drapery, custom entrance displays, and warm theatrical lighting that created a memorable cultural experience for performers and guests.",
       "source": "",
       "images": [
         "https://storage.googleapis.com/inv-images/matrimony/gallery/p22/9365bb91-3633-491c-8c94-ec272891c1cd-arthi-school-1-thumbnail.jpeg",
@@ -153,12 +153,12 @@
     },
     {
       "id": "arangetram-5",
-      "title": "KNY Arangetram 0321 @ Carver",
+      "title": "KNY Arangetram@Carver",
       "category": "Arangetram",
       "location": "Carver Center, San Antonio",
-      "eventDate": "2025-10-12T00:00:00",
+      "eventDate": "2026-02-21T00:00:00",
       "isFeatured": false,
-      "description": "An elegant Arangetram celebration at Carver Center, San Antonio, styled with premium florals, custom backdrops and warm ambient lighting by Palmo Event Decorations.",
+      "description": "A sophisticated Bharatanatyam Arangetram stage transformation at the Carver Center featuring traditional temple-inspired décor, handcrafted floral arrangements, elegant drapery, custom entrance displays, and warm theatrical lighting that created a memorable cultural experience for performers and guests.",
       "source": "",
       "images": [
         "https://storage.googleapis.com/inv-images/matrimony/gallery/p19/3d9cc817-5777-45e7-ab08-240484faa461-kny0321-1-thumbnail.jpeg",
@@ -186,9 +186,9 @@
       "title": "KNY Annual day",
       "category": "Dance Event",
       "location": "Mahalakshmi Hall, San Antonio",
-      "eventDate": "2025-10-12T00:00:00",
+      "eventDate": "2026-03-29T00:00:00",
       "isFeatured": true,
-      "description": "An elegant Arangetram celebration at Carver Center, San Antonio, styled with premium florals, custom backdrops and warm ambient lighting by Palmo Event Decorations.",
+      "description": "A vibrant annual dance showcase for Kaveri Natya Yoga featuring colorful stage décor, dynamic backdrop designs, coordinated floral styling, themed event branding, performer recognition displays, and audience-focused lighting that elevated the celebration of student achievements.",
       "source": "",
       "images": [
         "https://storage.googleapis.com/inv-images/matrimony/gallery/p11/14680cc2-2d98-497e-9552-354602a34eec-kny-annual-function-26-1--thumbnail.jpeg",
