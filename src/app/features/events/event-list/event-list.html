@@ -5,7 +5,7 @@
         <a routerLink="/">Home</a><span>›</span><span>{{ cat.label }}</span>
       </nav>
       <span class="page-hero__icon material-icons">{{ cat.icon }}</span>
-      <h1>All {{ cat.label }} Decorations</h1>
+      <h1>All {{ cat.label === 'Arangetram' ? 'Arangetram/Rangapravesha': cat.label }} Decorations</h1>
       <p>{{ cat.tagline }}</p>
       <div class="page-hero__meta">
         <span>{{ events().length }} events</span>
