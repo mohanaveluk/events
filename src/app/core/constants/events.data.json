@@ -2,7 +2,7 @@
   "events": [
     {
       "id": "arangetram-1",
-      "title": "KNY Arangetram@UTSA",
+      "title": "KNY Arangetram",
       "category": "Arangetram",
       "location": "UTSA Downtown, San Antonio",
       "eventDate": "2026-06-27T00:00:00",
@@ -51,7 +51,7 @@
     },
     {
       "id": "arangetram-2",
-      "title": "KNY Arangetram@Carver",
+      "title": "KNY Arangetram",
       "category": "Arangetram",
       "location": "Carver Center, San Antonio",
       "eventDate": "2025-10-12T00:00:00",
@@ -104,7 +104,7 @@
     },
     {
       "id": "arangetram-3",
-      "title": "BMS Natyanjali 2026",
+      "title": "BMS Natyanjali",
       "category": "Dance Event",
       "location": "Mahalaskhmi Hall, San Antonio",
       "eventDate": "2026-05-03T00:00:00",
@@ -122,7 +122,7 @@
     },
     {
       "id": "arangetram-4",
-      "title": "Arthi School@Carver",
+      "title": "Arthi School",
       "category": "Arangetram",
       "location": "Carver Center, San Antonio",
       "eventDate": "2026-07-11T00:00:00",
@@ -153,10 +153,10 @@
     },
     {
       "id": "arangetram-5",
-      "title": "KNY Arangetram@Carver",
+      "title": "KNY Arangetram",
       "category": "Arangetram",
       "location": "Carver Center, San Antonio",
-      "eventDate": "2026-02-21T00:00:00",
+      "eventDate": "2026-03-21T00:00:00",
       "isFeatured": false,
       "description": "A sophisticated Bharatanatyam Arangetram stage transformation at the Carver Center featuring traditional temple-inspired décor, handcrafted floral arrangements, elegant drapery, custom entrance displays, and warm theatrical lighting that created a memorable cultural experience for performers and guests.",
       "source": "",
