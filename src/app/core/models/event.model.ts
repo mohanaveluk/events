@@ -4,6 +4,7 @@
 
 export enum EventCategory {
   ARANGETRAM = 'Arangetram',
+  DANCE_EVENT = 'Dance Event',
   BIRTHDAY = 'Birthday',
   HALFSAREE = 'Half Saree',
   TEMPLE_POOJA = 'Temple Pooja',

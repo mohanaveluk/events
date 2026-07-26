@@ -13,6 +13,13 @@ export const CATEGORIES: CategoryInfo[] = [
     icon: 'self_improvement',
   },
   {
+    key: EventCategory.DANCE_EVENT,
+    label: 'Dance Event',
+    slug: 'dance',
+    tagline: 'Dazzling stages that move with the music',
+    icon: 'music_note',
+  },
+  {
     key: EventCategory.BIRTHDAY,
     label: 'Birthday',
     slug: 'birthday',

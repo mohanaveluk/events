@@ -80,7 +80,7 @@ src/app
 | Path                              | Page                                  |
 | --------------------------------- | ------------------------------------- |
 | `/`                               | Home                                   |
-| `/arangetram`, `/birthday`, `/half-saree`, `/temple-pooja`, `/wedding`, `/engagement` | Category landing (all events + photo grids) |
+| `/arangetram`, `/birthday`, `/dance`, `/half-saree`, `/temple-pooja`, `/wedding`, `/engagement` | Category landing (all events + photo grids) |
 | `/event/:id`                      | Single event gallery                   |
 | `/gallery`                        | Full portfolio (masonry + filters)     |
 | `/contact`                        | Contact form                           |
