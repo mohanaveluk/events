@@ -2,7 +2,7 @@
   "events": [
     {
       "id": "arangetram-1",
-      "title": "KNY Arangetram",
+      "title": "Kaveri Natya Yoga",
       "category": "Arangetram",
       "location": "UTSA Downtown, San Antonio",
       "eventDate": "2026-06-27T00:00:00",
@@ -51,7 +51,7 @@
     },
     {
       "id": "arangetram-2",
-      "title": "KNY Arangetram",
+      "title": "Kaveri Natya Yoga",
       "category": "Arangetram",
       "location": "Carver Center, San Antonio",
       "eventDate": "2025-10-12T00:00:00",
@@ -153,7 +153,7 @@
     },
     {
       "id": "arangetram-5",
-      "title": "KNY Arangetram",
+      "title": "Kaveri Natya Yoga",
       "category": "Arangetram",
       "location": "Carver Center, San Antonio",
       "eventDate": "2026-03-21T00:00:00",
