@@ -198,6 +198,42 @@
         "https://storage.googleapis.com/inv-images/matrimony/gallery/p11/b6c1cbd1-de3f-4fd4-a51a-429242b4ec31-kny-annual-function-26-1--original.jpeg",
         "https://storage.googleapis.com/inv-images/matrimony/gallery/p11/ae148424-9f1a-4a22-8b03-f76788d210c2-kny-annual-function-26-2-original.jpeg"
       ]
+    },
+    {
+      "id": "arangetram-6",
+      "title": "Kaveri Natya Yoga",
+      "category": "Arangetram",
+      "location": "Carver Center, San Antonio",
+      "eventDate": "2026-07-24T00:00:00",
+      "isFeatured": true,
+      "description": "A vibrant annual dance showcase for Kaveri Natya Yoga featuring colorful stage décor, dynamic backdrop designs, coordinated floral styling, themed event branding, performer recognition displays, and audience-focused lighting that elevated the celebration of student achievements.",
+      "source": "",
+      "images": [
+          "https://storage.googleapis.com/inv-images/matrimony/gallery/p11/a8cc03d1-16a8-4a6e-b58e-3f411e2118d4-kny_0724261-thumbnail.jpeg",
+          "https://storage.googleapis.com/inv-images/matrimony/gallery/p11/e5599652-3426-497f-a493-290759648ab8-kny_0724262-thumbnail.jpeg",
+          "https://storage.googleapis.com/inv-images/matrimony/gallery/p11/a37264c2-bef3-4048-b1a2-92fe60cf24ba-kny_0724263-thumbnail.jpeg",
+          "https://storage.googleapis.com/inv-images/matrimony/gallery/p11/98549f71-ad32-4eb4-b311-517d74595bbc-kny_0724264-thumbnail.jpeg",
+          "https://storage.googleapis.com/inv-images/matrimony/gallery/p11/bf98a716-680f-42cd-ae67-faaf95bae544-kny_0724265-thumbnail.jpeg",
+          "https://storage.googleapis.com/inv-images/matrimony/gallery/p11/2707dc4c-8c3b-49c9-a609-64d6662b6e29-kny_0724266-thumbnail.jpeg",
+          "https://storage.googleapis.com/inv-images/matrimony/gallery/p11/c777be80-dc75-4b1d-ad20-d36a28ac455d-kny_0724267-thumbnail.jpeg",
+          "https://storage.googleapis.com/inv-images/matrimony/gallery/p11/9be288a6-505d-428b-82d7-687517d8a273-kny_0724269-thumbnail.jpeg",
+          "https://storage.googleapis.com/inv-images/matrimony/gallery/p11/a9913a9d-e63c-44f1-b3e7-cd4f1af6d6be-kny_0724268-thumbnail.jpeg",
+          "https://storage.googleapis.com/inv-images/matrimony/gallery/p11/94b7d7b8-f8aa-43af-a595-bacf92609155-kny_07242610-thumbnail.jpeg",
+          "https://storage.googleapis.com/inv-images/matrimony/gallery/p11/01860319-abce-41cb-99d2-cee5b46e30b4-kny_07242611-thumbnail.jpeg"
+      ],
+      "original":[
+          "https://storage.googleapis.com/inv-images/matrimony/gallery/p11/776bc8d7-2232-4304-9391-bc21e87664f4-kny_0724261-original.jpeg",
+          "https://storage.googleapis.com/inv-images/matrimony/gallery/p11/2fba0adb-caef-4586-be59-05afc112de0a-kny_0724262-original.jpeg",
+          "https://storage.googleapis.com/inv-images/matrimony/gallery/p11/21193004-7197-491a-a322-d676c02b3c8d-kny_0724263-original.jpeg",
+          "https://storage.googleapis.com/inv-images/matrimony/gallery/p11/71d5b6a2-1ed3-4754-9b22-6e1815b56a09-kny_0724264-original.jpeg",
+          "https://storage.googleapis.com/inv-images/matrimony/gallery/p11/11d10b57-770b-4b92-b3c8-83bf48b9ab4f-kny_0724265-original.jpeg",
+          "https://storage.googleapis.com/inv-images/matrimony/gallery/p11/f905e33c-1e64-4c7f-a738-904c945bbeb1-kny_0724266-original.jpeg",
+          "https://storage.googleapis.com/inv-images/matrimony/gallery/p11/ea7d6440-5f22-4356-af27-a34b798b75d3-kny_0724267-original.jpeg",
+          "https://storage.googleapis.com/inv-images/matrimony/gallery/p11/0af86298-850b-48db-bc9a-6e231bddb817-kny_0724268-original.jpeg",
+          "https://storage.googleapis.com/inv-images/matrimony/gallery/p11/35051628-a567-4629-a1fd-c6cac316c6da-kny_07242611-original.jpeg",
+          "https://storage.googleapis.com/inv-images/matrimony/gallery/p11/e3e0c898-08f8-464b-b11a-4e4b1cf24969-kny_0724269-original.jpeg",
+          "https://storage.googleapis.com/inv-images/matrimony/gallery/p11/94208d33-dbf4-4c2c-a2d4-95d081e0df77-kny_07242610-original.jpeg"
+      ]
     }
   ]
 }
