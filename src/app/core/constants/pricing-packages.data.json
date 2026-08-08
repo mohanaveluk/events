@@ -7,10 +7,11 @@
       "price": 350,
       "shortDescription": "A tasteful starter setup for intimate celebrations.",
       "thumbnailImages": [
-        "/images/samples/deco-01.svg",
-        "/images/samples/deco-02.svg",
-        "/images/samples/deco-03.svg",
-        "/images/samples/deco-04.svg"
+        "https://storage.googleapis.com/inv-images/matrimony/gallery/p11/a8cc03d1-16a8-4a6e-b58e-3f411e2118d4-kny_0724261-thumbnail.jpeg",
+        "https://storage.googleapis.com/inv-images/matrimony/gallery/p11/e5599652-3426-497f-a493-290759648ab8-kny_0724262-thumbnail.jpeg",
+        "https://storage.googleapis.com/inv-images/matrimony/gallery/p11/c777be80-dc75-4b1d-ad20-d36a28ac455d-kny_0724267-thumbnail.jpeg",
+        "https://storage.googleapis.com/inv-images/matrimony/gallery/p11/94b7d7b8-f8aa-43af-a595-bacf92609155-kny_07242610-thumbnail.jpeg",
+        "https://storage.googleapis.com/inv-images/matrimony/gallery/p11/2707dc4c-8c3b-49c9-a609-64d6662b6e29-kny_0724266-thumbnail.jpeg"
       ],
       "displayImages": [
         "/images/samples/deco-01.svg",
@@ -19,10 +20,11 @@
         "/images/samples/deco-04.svg"
       ],
       "originalImages": [
-        "/images/samples/deco-01.svg",
-        "/images/samples/deco-02.svg",
-        "/images/samples/deco-03.svg",
-        "/images/samples/deco-04.svg"
+        "https://storage.googleapis.com/inv-images/matrimony/gallery/p11/776bc8d7-2232-4304-9391-bc21e87664f4-kny_0724261-original.jpeg",
+        "https://storage.googleapis.com/inv-images/matrimony/gallery/p11/2fba0adb-caef-4586-be59-05afc112de0a-kny_0724262-original.jpeg",
+        "https://storage.googleapis.com/inv-images/matrimony/gallery/p11/ea7d6440-5f22-4356-af27-a34b798b75d3-kny_0724267-original.jpeg",
+        "https://storage.googleapis.com/inv-images/matrimony/gallery/p11/94208d33-dbf4-4c2c-a2d4-95d081e0df77-kny_07242610-original.jpeg",
+        "https://storage.googleapis.com/inv-images/matrimony/gallery/p11/f905e33c-1e64-4c7f-a738-904c945bbeb1-kny_0724266-original.jpeg"
       ],
       "features": [
         {
