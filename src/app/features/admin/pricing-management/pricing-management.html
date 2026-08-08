@@ -1,0 +1,224 @@
+<div class="page-head">
+  <div>
+    <h1>Pricing Packages</h1>
+    <p>Manage decoration packages, features, add-ons and images.</p>
+  </div>
+  @if (!isEditorOpen()) {
+    <button type="button" class="btn-gold" (click)="newPackage()">
+      <span class="material-icons">add</span> Add Package
+    </button>
+  }
+</div>
+
+<!-- ===================== LIST VIEW ===================== -->
+@if (!isEditorOpen()) {
+  @if (packages().length) {
+    <div class="plist">
+      @for (pkg of packages(); track pkg.id) {
+        <div class="prow">
+          <img class="prow__img" [src]="pkg.thumbnailImages[0]" alt="" />
+          <div class="prow__info">
+            <strong>
+              {{ pkg.packageName }}
+              @if (pkg.isPopular) { <span class="pill">Popular</span> }
+            </strong>
+            <span>{{ pkg.category }} · {{ pkg.features.length }} features · {{ pkg.thumbnailImages.length }} images</span>
+          </div>
+          <span class="prow__price">${{ pkg.price }}</span>
+          <div class="prow__actions">
+            <button mat-icon-button (click)="preview(pkg)" title="Preview images">
+              <mat-icon>visibility</mat-icon>
+            </button>
+            <button mat-icon-button (click)="editPackage(pkg)" title="Edit">
+              <mat-icon>edit</mat-icon>
+            </button>
+            <button mat-icon-button color="warn" (click)="askDelete(pkg)" title="Delete">
+              <mat-icon>delete</mat-icon>
+            </button>
+          </div>
+        </div>
+      }
+    </div>
+  } @else {
+    <div class="empty">
+      <span class="material-icons">sell</span>
+      <p>No packages yet. Add your first pricing package.</p>
+    </div>
+  }
+}
+
+<!-- ===================== EDITOR ===================== -->
+@if (isEditorOpen()) {
+  <form class="editor" [formGroup]="form" (ngSubmit)="save()">
+    <div class="editor__head">
+      <h2>{{ editingId() ? 'Edit Package' : 'New Package' }}</h2>
+      <button type="button" class="btn-ghost" (click)="cancelEdit()">Back to list</button>
+    </div>
+
+    <!-- Basics -->
+    <section class="card">
+      <h3>Package Details</h3>
+      <div class="grid-2">
+        <mat-form-field appearance="outline">
+          <mat-label>Package Name</mat-label>
+          <input matInput formControlName="packageName" />
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Price (USD)</mat-label>
+          <input matInput type="number" formControlName="price" />
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Category</mat-label>
+          <mat-select formControlName="category">
+            @for (c of categories; track c) {
+              <mat-option [value]="c">{{ c }}</mat-option>
+            }
+          </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Badge (optional)</mat-label>
+          <input matInput formControlName="badge" placeholder="e.g. Most Popular" />
+        </mat-form-field>
+      </div>
+      <mat-form-field appearance="outline" class="full">
+        <mat-label>Short Description</mat-label>
+        <textarea matInput rows="2" formControlName="shortDescription"></textarea>
+      </mat-form-field>
+      <mat-slide-toggle formControlName="isPopular" color="primary">
+        Mark as popular (highlighted card)
+      </mat-slide-toggle>
+    </section>
+
+    <!-- Images -->
+    <section class="card">
+      <div class="card__head">
+        <h3>Images</h3>
+        <span class="muted">Drag to reorder · first image is the cover</span>
+      </div>
+
+      <div class="img-tools">
+        <label class="btn-ghost">
+          <span class="material-icons">upload</span> Upload
+          <input type="file" hidden multiple accept="image/*" (change)="onFilesSelected($event)" />
+        </label>
+        <div class="path-add">
+          <input #pathInput type="text" placeholder="or paste an image URL/path" />
+          <button type="button" class="btn-ghost" (click)="addImageByPath(pathInput)">Add</button>
+        </div>
+      </div>
+
+      <div class="samples">
+        <span class="muted">Quick add sample:</span>
+        @for (s of sampleImages; track s) {
+          <button type="button" class="sample" (click)="addSampleImage(s)">
+            <img [src]="s" alt="" />
+          </button>
+        }
+      </div>
+
+      @if (images().length) {
+        <div class="img-grid" cdkDropList cdkDropListOrientation="mixed" (cdkDropListDropped)="reorderImages($event)">
+          @for (img of images(); track img + $index; let i = $index) {
+            <div class="img-item" cdkDrag>
+              <img [src]="img" alt="" />
+              @if (i === 0) { <span class="img-cover">Cover</span> }
+              <button type="button" class="img-del" (click)="removeImage(i)" aria-label="Remove">
+                <span class="material-icons">close</span>
+              </button>
+            </div>
+          }
+        </div>
+      } @else {
+        <p class="muted">No images added yet.</p>
+      }
+    </section>
+
+    <!-- Features -->
+    <section class="card">
+      <div class="card__head">
+        <h3>Features</h3>
+        <button type="button" class="btn-ghost" (click)="addFeature()">
+          <span class="material-icons">add</span> Add Feature
+        </button>
+      </div>
+      <div formArrayName="features" class="rows">
+        @for (ctrl of features.controls; track ctrl; let i = $index) {
+          <div class="row" [formGroupName]="i">
+            <mat-checkbox formControlName="included" color="primary" title="Included"></mat-checkbox>
+            <mat-form-field appearance="outline" class="grow">
+              <mat-label>Feature title</mat-label>
+              <input matInput formControlName="title" />
+            </mat-form-field>
+            <button type="button" class="row-del" (click)="removeFeature(i)" aria-label="Remove">
+              <span class="material-icons">delete</span>
+            </button>
+          </div>
+        }
+        @if (!features.length) {
+          <p class="muted">No features. Add the items included in this package.</p>
+        }
+      </div>
+    </section>
+
+    <!-- Addons -->
+    <section class="card">
+      <div class="card__head">
+        <h3>Add-ons</h3>
+        <button type="button" class="btn-ghost" (click)="addAddon()">
+          <span class="material-icons">add</span> Add Add-on
+        </button>
+      </div>
+      <div formArrayName="addons" class="rows">
+        @for (ctrl of addons.controls; track ctrl; let i = $index) {
+          <div class="row" [formGroupName]="i">
+            <mat-form-field appearance="outline" class="grow">
+              <mat-label>Add-on name</mat-label>
+              <input matInput formControlName="name" />
+            </mat-form-field>
+            <mat-form-field appearance="outline" class="price">
+              <mat-label>Price</mat-label>
+              <input matInput type="number" formControlName="price" />
+            </mat-form-field>
+            <button type="button" class="row-del" (click)="removeAddon(i)" aria-label="Remove">
+              <span class="material-icons">delete</span>
+            </button>
+          </div>
+        }
+        @if (!addons.length) {
+          <p class="muted">No add-ons configured.</p>
+        }
+      </div>
+    </section>
+
+    <div class="editor__actions">
+      <button type="button" class="btn-ghost" (click)="cancelEdit()">Cancel</button>
+      <button type="submit" class="btn-gold">
+        <span class="material-icons">save</span>
+        {{ editingId() ? 'Save Changes' : 'Create Package' }}
+      </button>
+    </div>
+  </form>
+}
+
+<!-- Delete confirm -->
+@if (pendingDelete(); as target) {
+  <div class="confirm" (click)="cancelDelete()">
+    <div class="confirm__box" (click)="$event.stopPropagation()">
+      <span class="material-icons confirm__icon">warning</span>
+      <h3>Delete package?</h3>
+      <p>“{{ target.packageName }}” will be permanently removed.</p>
+      <div class="confirm__actions">
+        <button class="btn-ghost" (click)="cancelDelete()">Cancel</button>
+        <button class="btn-danger" (click)="confirmDelete()">Delete</button>
+      </div>
+    </div>
+  </div>
+}
+
+<!-- Preview viewer -->
+<app-pricing-image-viewer
+  [images]="previewImages()"
+  [open]="previewOpen()"
+  [startIndex]="0"
+  (closed)="closePreview()"
+/>

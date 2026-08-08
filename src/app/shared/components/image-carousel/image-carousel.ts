@@ -32,13 +32,16 @@ import { APP_CONFIG } from '../../../core/configs/app.config.constants';
       (pointerleave)="resume()"
       (focusin)="pause()"
       (focusout)="resume()"
+      (pointerdown)="onPointerDown($event)"
+      (pointerup)="onPointerUp($event)"
+      (pointercancel)="swiped = false"
     >
       <div class="carousel__track" [style.transform]="trackTransform()">
         @for (src of images(); track src; let i = $index) {
           <button
             type="button"
             class="carousel__slide"
-            (click)="imageClick.emit(i)"
+            (click)="onSlideClick(i)"
             [attr.aria-label]="'View photo ' + (i + 1)"
           >
             <img appLazyImg [lazySrc]="src" alt="" />
@@ -180,6 +183,11 @@ export class ImageCarouselComponent implements OnDestroy {
   private paused = false;
   private timer?: ReturnType<typeof setInterval>;
 
+  // Touch / pointer swipe tracking
+  private pointerStartX = 0;
+  protected swiped = false;
+  private static readonly SWIPE_THRESHOLD = 40;
+
   protected readonly trackTransform = computed(() => `translateX(-${this.index() * 100}%)`);
 
   constructor() {
@@ -215,6 +223,29 @@ export class ImageCarouselComponent implements OnDestroy {
 
   goTo(i: number): void {
     this.index.set(i);
+  }
+
+  // ---- Touch / pointer swipe ----
+  onPointerDown(e: PointerEvent): void {
+    this.pointerStartX = e.clientX;
+    this.swiped = false;
+  }
+
+  onPointerUp(e: PointerEvent): void {
+    const delta = e.clientX - this.pointerStartX;
+    if (Math.abs(delta) >= ImageCarouselComponent.SWIPE_THRESHOLD && this.images().length > 1) {
+      this.swiped = true;
+      delta < 0 ? this.next() : this.prev();
+    }
+  }
+
+  onSlideClick(i: number): void {
+    // Ignore the click synthesised at the end of a swipe gesture.
+    if (this.swiped) {
+      this.swiped = false;
+      return;
+    }
+    this.imageClick.emit(i);
   }
 
   pause(): void {

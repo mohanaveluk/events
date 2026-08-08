@@ -1,0 +1,31 @@
+<div class="compare-wrap">
+  <table class="compare">
+    <thead>
+      <tr>
+        <th class="compare__row-head">Package</th>
+        @for (pkg of packages(); track pkg.id) {
+          <th class="compare__col-head" [class.is-popular]="pkg.isPopular">
+            <span class="compare__pkg-name">{{ pkg.packageName }}</span>
+            <span class="compare__pkg-price">${{ pkg.price }}</span>
+          </th>
+        }
+      </tr>
+    </thead>
+    <tbody>
+      @for (row of matrix(); track row.label) {
+        <tr>
+          <td class="compare__row-head">{{ row.label }}</td>
+          @for (included of row.cells; track $index) {
+            <td class="compare__cell">
+              @if (included) {
+                <span class="material-icons yes" title="Included">check_circle</span>
+              } @else {
+                <span class="material-icons no" title="Not included">cancel</span>
+              }
+            </td>
+          }
+        </tr>
+      }
+    </tbody>
+  </table>
+</div>

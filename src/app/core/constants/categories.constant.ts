@@ -26,13 +26,13 @@ export const CATEGORIES: CategoryInfo[] = [
     tagline: 'Playful themes for every age',
     icon: 'cake',
   },
-  {
-    key: EventCategory.HALFSAREE,
-    label: 'Half Saree',
-    slug: 'half-saree',
-    tagline: 'Celebrating a coming of age in colour',
-    icon: 'auto_awesome',
-  },
+  // {
+  //   key: EventCategory.HALFSAREE,
+  //   label: 'Half Saree',
+  //   slug: 'half-saree',
+  //   tagline: 'Celebrating a coming of age in colour',
+  //   icon: 'auto_awesome',
+  // },
   {
     key: EventCategory.TEMPLE_POOJA,
     label: 'Temple Pooja',

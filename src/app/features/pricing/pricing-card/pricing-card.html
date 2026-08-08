@@ -1,0 +1,44 @@
+<mat-card class="pcard slide-up" [class.pcard--popular]="pkg().isPopular">
+  <div class="pcard__media">
+    <app-image-carousel
+      [images]="pkg().thumbnailImages"
+      (imageClick)="onImageClick($event)"
+    />
+    @if (pkg().badge) {
+      <span class="pcard__badge">{{ pkg().badge }}</span>
+    }
+  </div>
+
+  <mat-card-content class="pcard__body">
+    <span class="pcard__category">{{ pkg().category }}</span>
+    <h3 class="pcard__name">{{ pkg().packageName }}</h3>
+    <p class="pcard__price">
+      <span class="pcard__currency">$</span>{{ pkg().price }}
+    </p>
+    <p class="pcard__desc">{{ pkg().shortDescription }}</p>
+
+    <ul class="pcard__features">
+      @for (f of pkg().features; track f.title) {
+        <li [class.is-excluded]="!f.included">
+          <span class="material-icons">{{ f.included ? 'check_circle' : 'cancel' }}</span>
+          {{ f.title }}
+        </li>
+      }
+    </ul>
+
+    @if (pkg().addons?.length) {
+      <p class="pcard__addons-label">Popular add-ons</p>
+      <div class="pcard__addons">
+        @for (a of pkg().addons; track a.name) {
+          <span class="pcard__addon">{{ a.name }} <b>+${{ a.price }}</b></span>
+        }
+      </div>
+    }
+  </mat-card-content>
+
+  <mat-card-actions class="pcard__actions">
+    <button type="button" class="btn-gold" (click)="viewDetails.emit(pkg())">
+      View Details
+    </button>
+  </mat-card-actions>
+</mat-card>
