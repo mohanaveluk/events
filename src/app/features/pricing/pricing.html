@@ -1,0 +1,109 @@
+<section class="page-hero">
+  <div class="container">
+    <span class="page-hero__icon material-icons">sell</span>
+    <h1>Event Decoration Pricing Packages</h1>
+    <p>Explore decoration packages designed to suit every celebration and budget.</p>
+  </div>
+</section>
+
+<!-- Pricing cards -->
+<div class="container section">
+  <div class="pricing-grid">
+    @for (pkg of packages(); track pkg.id) {
+      <app-pricing-card
+        [pkg]="pkg"
+        (openImage)="openImage($event)"
+        (viewDetails)="openDetails($event)"
+      />
+    }
+  </div>
+</div>
+
+<!-- Comparison -->
+<div class="container section compare-section">
+  <div class="compare-head">
+    <h2>Compare Packages</h2>
+    <p>See exactly what’s included at each level.</p>
+  </div>
+  <app-pricing-comparison />
+</div>
+
+<!-- CTA -->
+<section class="cta">
+  <div class="container cta__inner">
+    <div>
+      <h2>Not sure which package fits?</h2>
+      <p>Tell us about your event and we’ll tailor a package for you.</p>
+    </div>
+    <a class="btn-gold" routerLink="/contact">
+      Request a Quote <span class="material-icons">arrow_forward</span>
+    </a>
+  </div>
+</section>
+
+<!-- Full-screen image viewer -->
+<app-pricing-image-viewer
+  [images]="viewerImages()"
+  [open]="viewerOpen()"
+  [startIndex]="viewerStart()"
+  (closed)="closeViewer()"
+/>
+
+<!-- Details modal -->
+@if (detailsPkg(); as pkg) {
+  <div class="details fade-in" (click)="closeDetails()">
+    <div class="details__box" (click)="$event.stopPropagation()">
+      <button type="button" class="details__close" (click)="closeDetails()" aria-label="Close">
+        <span class="material-icons">close</span>
+      </button>
+
+      <div class="details__head">
+        @if (pkg.badge) {
+          <span class="details__badge">{{ pkg.badge }}</span>
+        }
+        <h2>{{ pkg.packageName }}</h2>
+        <p class="details__price"><span>$</span>{{ pkg.price }}</p>
+        <p class="details__desc">{{ pkg.shortDescription }}</p>
+      </div>
+
+      <div class="details__cols">
+        <div>
+          <h4>What’s Included</h4>
+          <ul class="details__features">
+            @for (f of pkg.features; track f.title) {
+              <li [class.is-excluded]="!f.included">
+                <span class="material-icons">{{ f.included ? 'check_circle' : 'cancel' }}</span>
+                <span>
+                  {{ f.title }}
+                  @if (f.description) {
+                    <small>{{ f.description }}</small>
+                  }
+                </span>
+              </li>
+            }
+          </ul>
+        </div>
+
+        @if (pkg.addons?.length) {
+          <div>
+            <h4>Available Add-ons</h4>
+            <ul class="details__addons">
+              @for (a of pkg.addons; track a.name) {
+                <li><span>{{ a.name }}</span><b>+${{ a.price }}</b></li>
+              }
+            </ul>
+          </div>
+        }
+      </div>
+
+      <div class="details__actions">
+        <button type="button" class="btn-ghost" (click)="viewDetailsPhotos(pkg)">
+          <span class="material-icons">photo_library</span> View Photos
+        </button>
+        <a class="btn-gold" routerLink="/contact" (click)="closeDetails()">
+          Book This Package
+        </a>
+      </div>
+    </div>
+  </div>
+}

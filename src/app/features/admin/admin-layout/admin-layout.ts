@@ -15,6 +15,7 @@ export class AdminLayoutComponent {
     { label: 'Dashboard', icon: 'dashboard', link: '/admin', exact: true },
     { label: 'Manage Events', icon: 'event_note', link: '/admin/events', exact: false },
     { label: 'Add Event', icon: 'add_circle', link: '/admin/events/new', exact: false },
+    { label: 'Pricing Packages', icon: 'sell', link: '/admin/pricing', exact: false },
   ];
 
   toggleSidebar(): void {

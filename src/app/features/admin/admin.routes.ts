@@ -38,6 +38,12 @@ const ADMIN_ROUTES: Routes = [
         loadComponent: () =>
           import('./gallery-upload/gallery-upload').then((m) => m.GalleryUploadComponent),
       },
+      {
+        path: 'pricing',
+        title: 'Admin · Pricing Packages',
+        loadComponent: () =>
+          import('./pricing-management/pricing-management').then((m) => m.PricingManagementComponent),
+      },
     ],
   },
 ];
