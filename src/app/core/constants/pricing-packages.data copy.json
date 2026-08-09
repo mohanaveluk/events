@@ -300,6 +300,183 @@
         }
       ],
       "sortOrder": 3
+    },
+    {
+      "id": "package-850",
+      "packageName": "Luxury Package",
+      "category": "All Events",
+      "price": 850,
+      "shortDescription": "Grand florals, arches and VIP touches throughout.",
+      "thumbnailImages": [
+        "/images/samples/deco-09.svg",
+        "/images/samples/deco-10.svg",
+        "/images/samples/deco-11.svg",
+        "/images/samples/deco-12.svg"
+      ],
+      "displayImages": [
+        "/images/samples/deco-09.svg",
+        "/images/samples/deco-10.svg",
+        "/images/samples/deco-11.svg",
+        "/images/samples/deco-12.svg"
+      ],
+      "originalImages": [
+        "/images/samples/deco-09.svg",
+        "/images/samples/deco-10.svg",
+        "/images/samples/deco-11.svg",
+        "/images/samples/deco-12.svg"
+      ],
+      "features": [
+        {
+          "title": "Large Floral Wall",
+          "included": true
+        },
+        {
+          "title": "Grand Entrance Arch",
+          "included": true
+        },
+        {
+          "title": "Fresh Flowers",
+          "included": true
+        },
+        {
+          "title": "Custom Branding",
+          "included": true
+        },
+        {
+          "title": "Premium Lighting",
+          "included": true
+        },
+        {
+          "title": "Traditional Brass Lamps",
+          "included": true
+        },
+        {
+          "title": "Themed Props",
+          "included": true
+        },
+        {
+          "title": "Premium Photo Zone",
+          "included": true
+        },
+        {
+          "title": "VIP Stage Setup",
+          "included": true
+        },
+        {
+          "title": "Setup & Cleanup",
+          "included": true
+        }
+      ],
+      "addons": [
+        {
+          "name": "LED Dance Floor",
+          "price": 250
+        },
+        {
+          "name": "Fresh Flower Upgrade",
+          "price": 120
+        },
+        {
+          "name": "Traditional Brass Lamps",
+          "price": 70
+        },
+        {
+          "name": "Return Gift Counter Decoration",
+          "price": 65
+        }
+      ],
+      "sortOrder": 4
+    },
+    {
+      "id": "package-1000",
+      "packageName": "Royal Package",
+      "category": "All Events",
+      "price": 1000,
+      "badge": "Signature",
+      "shortDescription": "A palatial, fully-themed production for a landmark event.",
+      "thumbnailImages": [
+        "/images/samples/deco-02.svg",
+        "/images/samples/deco-03.svg",
+        "/images/samples/deco-04.svg",
+        "/images/samples/deco-05.svg"
+      ],
+      "displayImages": [
+        "/images/samples/deco-02.svg",
+        "/images/samples/deco-03.svg",
+        "/images/samples/deco-04.svg",
+        "/images/samples/deco-05.svg"
+      ],
+      "originalImages": [
+        "/images/samples/deco-02.svg",
+        "/images/samples/deco-03.svg",
+        "/images/samples/deco-04.svg",
+        "/images/samples/deco-05.svg"
+      ],
+      "features": [
+        {
+          "title": "Grand Palace Style Backdrop",
+          "included": true
+        },
+        {
+          "title": "Premium Fresh Flowers",
+          "included": true
+        },
+        {
+          "title": "Custom Theme Design",
+          "included": true
+        },
+        {
+          "title": "Luxury Stage Design",
+          "included": true
+        },
+        {
+          "title": "LED Wall Elements",
+          "included": true
+        },
+        {
+          "title": "Entrance Tunnel",
+          "included": true
+        },
+        {
+          "title": "Photo Booth",
+          "included": true
+        },
+        {
+          "title": "VIP Seating Decor",
+          "included": true
+        },
+        {
+          "title": "Premium Lighting Effects",
+          "included": true
+        },
+        {
+          "title": "Traditional Decor Elements",
+          "included": true
+        },
+        {
+          "title": "Setup & Cleanup",
+          "included": true
+        }
+      ],
+      "addons": [
+        {
+          "name": "LED Dance Floor",
+          "price": 250
+        },
+        {
+          "name": "Moving Head Lights",
+          "price": 180
+        },
+        {
+          "name": "Flower Entrance Arch",
+          "price": 150
+        },
+        {
+          "name": "Premium Seating Decor",
+          "price": 140
+        }
+      ],
+      "sortOrder": 5
     }
   ]
 }
