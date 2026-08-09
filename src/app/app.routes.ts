@@ -39,6 +39,14 @@ export const routes: Routes = [
         loadComponent: () => import('./features/pricing/pricing').then((m) => m.PricingComponent),
       },
       {
+        path: 'pricing/:packageId',
+        title: 'Package · Palmo Event Decorations',
+        loadComponent: () =>
+          import('./features/pricing/pricing-package-detail/pricing-package-detail').then(
+            (m) => m.PricingPackageDetailComponent,
+          ),
+      },
+      {
         path: 'event/:id',
         title: 'Event · Palmo Event Decorations',
         loadComponent: () =>

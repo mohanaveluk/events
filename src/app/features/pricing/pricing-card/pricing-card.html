@@ -1,44 +1,49 @@
 <mat-card class="pcard slide-up" [class.pcard--popular]="pkg().isPopular">
-  <div class="pcard__media">
-    <app-image-carousel
-      [images]="pkg().thumbnailImages"
-      (imageClick)="onImageClick($event)"
-    />
+  <div class="pcard__head">
     @if (pkg().badge) {
       <span class="pcard__badge">{{ pkg().badge }}</span>
     }
-  </div>
-
-  <mat-card-content class="pcard__body">
     <span class="pcard__category">{{ pkg().category }}</span>
     <h3 class="pcard__name">{{ pkg().packageName }}</h3>
-    <p class="pcard__price">
-      <span class="pcard__currency">$</span>{{ pkg().price }}
-    </p>
+    <p class="pcard__price"><span class="pcard__currency">$</span>{{ pkg().price }}</p>
     <p class="pcard__desc">{{ pkg().shortDescription }}</p>
+  </div>
+
+  <!-- Representative cover per design -->
+  <a class="pcard__designs" [routerLink]="['/pricing', pkg().id]" aria-label="View designs">
+    @for (design of coverDesigns(); track design.id) {
+      <span class="pcard__design">
+        <img [src]="design.coverImage" [alt]="design.name" loading="lazy" />
+        <span class="pcard__design-name">{{ design.name }}</span>
+      </span>
+    }
+    @if (extraCount() > 0) {
+      <span class="pcard__design pcard__design--more">+{{ extraCount() }}</span>
+    }
+  </a>
+
+  <mat-card-content class="pcard__body">
+    <p class="pcard__count">
+      <span class="material-icons">auto_awesome</span>
+      {{ designCount() }} Decoration {{ designCount() === 1 ? 'Design' : 'Designs' }} Available
+    </p>
 
     <ul class="pcard__features">
-      @for (f of pkg().features; track f.title) {
+      @for (f of pkg().features.slice(0, 5); track f.title) {
         <li [class.is-excluded]="!f.included">
           <span class="material-icons">{{ f.included ? 'check_circle' : 'cancel' }}</span>
           {{ f.title }}
         </li>
       }
+      @if (pkg().features.length > 5) {
+        <li class="pcard__more-features">+{{ pkg().features.length - 5 }} more features</li>
+      }
     </ul>
-
-    @if (pkg().addons?.length) {
-      <p class="pcard__addons-label">Popular add-ons</p>
-      <div class="pcard__addons">
-        @for (a of pkg().addons; track a.name) {
-          <span class="pcard__addon">{{ a.name }} <b>+${{ a.price }}</b></span>
-        }
-      </div>
-    }
   </mat-card-content>
 
   <mat-card-actions class="pcard__actions">
-    <button type="button" class="btn-gold" (click)="viewDetails.emit(pkg())">
-      View Details
-    </button>
+    <a class="btn-gold" [routerLink]="['/pricing', pkg().id]">
+      View Designs <span class="material-icons">arrow_forward</span>
+    </a>
   </mat-card-actions>
 </mat-card>

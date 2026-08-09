@@ -1,0 +1,63 @@
+<div class="viewer">
+  <div class="viewer__toolbar">
+    <span class="viewer__title">
+      @if (data.designName) {
+        <span class="viewer__design">{{ data.designName }}</span>
+      }
+      <span class="viewer__counter">{{ index() + 1 }} / {{ data.images.length }}</span>
+    </span>
+    <div class="viewer__actions">
+      <button type="button" (click)="zoomOut()" aria-label="Zoom out" [disabled]="scale() <= 1">
+        <span class="material-icons">zoom_out</span>
+      </button>
+      <button type="button" (click)="zoomIn()" aria-label="Zoom in" [disabled]="scale() >= 4">
+        <span class="material-icons">zoom_in</span>
+      </button>
+      <button type="button" (click)="toggleFullscreen()" aria-label="Fullscreen">
+        <span class="material-icons">fullscreen</span>
+      </button>
+      <button type="button" (click)="close()" aria-label="Close">
+        <span class="material-icons">close</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="viewer__stage">
+    @if (data.images.length > 1) {
+      <button type="button" class="viewer__nav viewer__nav--prev" (click)="prev($event)" aria-label="Previous">
+        <span class="material-icons">chevron_left</span>
+      </button>
+    }
+
+    <figure class="viewer__figure">
+      <img
+        [src]="current().original"
+        [alt]="current().alt || ''"
+        [style.transform]="'scale(' + scale() + ')'"
+      />
+      @if (current().caption) {
+        <figcaption>{{ current().caption }}</figcaption>
+      }
+    </figure>
+
+    @if (data.images.length > 1) {
+      <button type="button" class="viewer__nav viewer__nav--next" (click)="next($event)" aria-label="Next">
+        <span class="material-icons">chevron_right</span>
+      </button>
+    }
+  </div>
+
+  <div class="viewer__thumbs">
+    @for (img of data.images; track img.id; let i = $index) {
+      <button
+        type="button"
+        class="viewer__thumb"
+        [class.is-active]="i === index()"
+        (click)="goTo(i)"
+        [attr.aria-label]="'View image ' + (i + 1)"
+      >
+        <img [src]="img.thumbnail" [alt]="img.alt || ''" loading="lazy" />
+      </button>
+    }
+  </div>
+</div>

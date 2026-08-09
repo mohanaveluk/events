@@ -391,7 +391,7 @@
       "id": "package-650",
       "packageName": "Premium Package",
       "category": "Wedding",
-      "price": 600,
+      "price": 650,
       "badge": "Best Value",
       "shortDescription": "Rich florals and lighting for a standout celebration.",
       "features": [
@@ -455,94 +455,509 @@
           "id": "package-650-design-1",
           "name": "Grand Palace Setup",
           "description": "Palatial themed setup with ornate props and drapery.",
-          "coverImage": "https://storage.googleapis.com/inv-images/matrimony/gallery/58680adb-4931-44eb-86c5-8466c395f9cd/ec8f2abc-2838-4aed-896c-a68f84d800a7-PXL_20260627_215153507_50-thumbnail.jpg",
+          "coverImage": "/images/samples/deco-03.svg",
           "images": [
             {
               "id": "package-650-d1-img1",
-              "thumbnail": "https://storage.googleapis.com/inv-images/matrimony/gallery/58680adb-4931-44eb-86c5-8466c395f9cd/ec8f2abc-2838-4aed-896c-a68f84d800a7-PXL_20260627_215153507_50-thumbnail.jpg",
+              "thumbnail": "/images/samples/deco-03.svg",
               "display": "/images/samples/deco-03.svg",
-              "original": "https://storage.googleapis.com/inv-images/matrimony/gallery/58680adb-4931-44eb-86c5-8466c395f9cd/4a4785dc-d94e-45b3-b7b2-6f5a4480611b-PXL_20260627_215153507_50-original.jpg",
+              "original": "/images/samples/deco-03.svg",
               "alt": "Grand Palace Setup front view",
               "caption": "Front view",
               "sortOrder": 1
             },
             {
               "id": "package-650-d1-img2",
-              "thumbnail": "https://storage.googleapis.com/inv-images/matrimony/gallery/58680adb-4931-44eb-86c5-8466c395f9cd/13de8735-1ea7-4283-9f7d-bfd0e3bf6f82-PXL_20260627_215407067_50-thumbnail.jpg",
+              "thumbnail": "/images/samples/deco-04.svg",
               "display": "/images/samples/deco-04.svg",
-              "original": "https://storage.googleapis.com/inv-images/matrimony/gallery/58680adb-4931-44eb-86c5-8466c395f9cd/0fd0265d-d846-4736-9315-cf2eea88f734-PXL_20260627_215407067_50-original.jpg",
+              "original": "/images/samples/deco-04.svg",
               "alt": "Grand Palace Setup side view",
-              "caption": "Front view",
+              "caption": "Side view",
               "sortOrder": 2
             },
             {
               "id": "package-650-d1-img3",
-              "thumbnail": "https://storage.googleapis.com/inv-images/matrimony/gallery/7a9580d2-cfd6-413f-8a12-d793c94dd8ca/d0af96b9-4245-42bc-897a-ab19368037a5-IMG_6111_1_48-thumbnail.jpg",
+              "thumbnail": "/images/samples/deco-05.svg",
               "display": "/images/samples/deco-05.svg",
-              "original": "https://storage.googleapis.com/inv-images/matrimony/gallery/7a9580d2-cfd6-413f-8a12-d793c94dd8ca/7327d1bd-766f-4a8c-932d-f633dbe05429-IMG_6111_1_48-original.jpg",
+              "original": "/images/samples/deco-05.svg",
               "alt": "Grand Palace Setup close view",
+              "caption": "Close view",
+              "sortOrder": 3
+            }
+          ],
+          "sortOrder": 1
+        },
+        {
+          "id": "package-650-design-2",
+          "name": "Pastel Elegance",
+          "description": "Soft pastel palette with delicate floral accents.",
+          "coverImage": "/images/samples/deco-06.svg",
+          "images": [
+            {
+              "id": "package-650-d2-img1",
+              "thumbnail": "/images/samples/deco-06.svg",
+              "display": "/images/samples/deco-06.svg",
+              "original": "/images/samples/deco-06.svg",
+              "alt": "Pastel Elegance front view",
+              "caption": "Front view",
+              "sortOrder": 1
+            },
+            {
+              "id": "package-650-d2-img2",
+              "thumbnail": "/images/samples/deco-07.svg",
+              "display": "/images/samples/deco-07.svg",
+              "original": "/images/samples/deco-07.svg",
+              "alt": "Pastel Elegance side view",
+              "caption": "Side view",
+              "sortOrder": 2
+            },
+            {
+              "id": "package-650-d2-img3",
+              "thumbnail": "/images/samples/deco-08.svg",
+              "display": "/images/samples/deco-08.svg",
+              "original": "/images/samples/deco-08.svg",
+              "alt": "Pastel Elegance close view",
               "caption": "Close view",
               "sortOrder": 3
             },
             {
-              "id": "package-650-d1-img4",
-              "thumbnail": "https://storage.googleapis.com/inv-images/matrimony/gallery/7a9580d2-cfd6-413f-8a12-d793c94dd8ca/d0af96b9-4245-42bc-897a-ab19368037a5-IMG_6111_1_48-thumbnail.jpg",
-              "display": "/images/samples/deco-05.svg",
-              "original": "https://storage.googleapis.com/inv-images/matrimony/gallery/7a9580d2-cfd6-413f-8a12-d793c94dd8ca/0a23a9c1-1e5a-422b-a5b6-80d739f7f2b3-IMG_6113_1_48-original.jpg",
-              "alt": "Grand Palace Setup close view",
-              "caption": "Close view",
+              "id": "package-650-d2-img4",
+              "thumbnail": "/images/samples/deco-09.svg",
+              "display": "/images/samples/deco-09.svg",
+              "original": "/images/samples/deco-09.svg",
+              "alt": "Pastel Elegance wide angle",
+              "caption": "Wide angle",
               "sortOrder": 4
-            },
-            {
-              "id": "package-650-d1-img5",
-              "thumbnail": "https://storage.googleapis.com/inv-images/matrimony/gallery/7a9580d2-cfd6-413f-8a12-d793c94dd8ca/6cb80a30-edb9-443f-8795-d960962ad177-IMG_6113_1_48-thumbnail.jpg",
-              "display": "/images/samples/deco-05.svg",
-              "original": "https://storage.googleapis.com/inv-images/matrimony/gallery/7a9580d2-cfd6-413f-8a12-d793c94dd8ca/0a23a9c1-1e5a-422b-a5b6-80d739f7f2b3-IMG_6113_1_48-original.jpg",
-              "alt": "Grand Palace Setup close view",
-              "caption": "Close view",
-              "sortOrder": 5
-            },
-            {
-              "id": "package-650-d1-img6",
-              "thumbnail": "https://storage.googleapis.com/inv-images/matrimony/gallery/7a9580d2-cfd6-413f-8a12-d793c94dd8ca/57089658-83ef-470d-9414-6b8da4250900-IMG_6430-thumbnail.JPG",
-              "display": "/images/samples/deco-05.svg",
-              "original": "https://storage.googleapis.com/inv-images/matrimony/gallery/7a9580d2-cfd6-413f-8a12-d793c94dd8ca/ce87e8f4-e199-4872-8b19-b09bb8b1aea8-IMG_6430-original1_50.jpg",
-              "alt": "Grand Palace Setup close view",
-              "caption": "Close view",
-              "sortOrder": 5
-            },
-            {
-              "id": "package-650-d1-img7",
-              "thumbnail": "https://storage.googleapis.com/inv-images/matrimony/gallery/7a9580d2-cfd6-413f-8a12-d793c94dd8ca/e5d06771-9d98-46de-8eb1-fa64a9e34779-IMG_6429-thumbnail.JPG",
-              "display": "/images/samples/deco-05.svg",
-              "original": "https://storage.googleapis.com/inv-images/matrimony/gallery/7a9580d2-cfd6-413f-8a12-d793c94dd8ca/2ecc2957-0b31-4ade-812b-b1eaaf6bf5d8-IMG_6429-original1_50.jpg",
-              "alt": "Grand Palace Setup close view",
-              "caption": "Close view",
-              "sortOrder": 5
-            },
-            {
-              "id": "package-650-d1-img8",
-              "thumbnail": "https://storage.googleapis.com/inv-images/matrimony/gallery/7a9580d2-cfd6-413f-8a12-d793c94dd8ca/4f10af3c-be49-4826-97d1-6ad87abf9858-6461-thumbnail.jpeg",
-              "display": "/images/samples/deco-05.svg",
-              "original": "https://storage.googleapis.com/inv-images/matrimony/gallery/7a9580d2-cfd6-413f-8a12-d793c94dd8ca/39c9cc81-7eb3-41b4-94b9-4f3ea6601aea-6461-original.jpeg",
-              "alt": "Grand Palace Setup close view",
-              "caption": "Close view",
-              "sortOrder": 5
-            },
-            {
-              "id": "package-650-d1-img9",
-              "thumbnail": "https://storage.googleapis.com/inv-images/matrimony/gallery/7a9580d2-cfd6-413f-8a12-d793c94dd8ca/bf4b5f48-490c-444b-b48b-d3e0304159ea-6464-thumbnail.jpeg",
-              "display": "/images/samples/deco-05.svg",
-              "original": "https://storage.googleapis.com/inv-images/matrimony/gallery/7a9580d2-cfd6-413f-8a12-d793c94dd8ca/9a0b10a5-329b-47f9-91bd-5b84820f4fa2-6464-original.jpeg",
-              "alt": "Grand Palace Setup close view",
-              "caption": "Close view",
-              "sortOrder": 5
             }
           ],
-          "sortOrder": 1
+          "sortOrder": 2
+        },
+        {
+          "id": "package-650-design-3",
+          "name": "Golden Mandap",
+          "description": "Gold-draped mandap with warm ambient lighting.",
+          "coverImage": "/images/samples/deco-10.svg",
+          "images": [
+            {
+              "id": "package-650-d3-img1",
+              "thumbnail": "/images/samples/deco-10.svg",
+              "display": "/images/samples/deco-10.svg",
+              "original": "/images/samples/deco-10.svg",
+              "alt": "Golden Mandap front view",
+              "caption": "Front view",
+              "sortOrder": 1
+            },
+            {
+              "id": "package-650-d3-img2",
+              "thumbnail": "/images/samples/deco-11.svg",
+              "display": "/images/samples/deco-11.svg",
+              "original": "/images/samples/deco-11.svg",
+              "alt": "Golden Mandap side view",
+              "caption": "Side view",
+              "sortOrder": 2
+            },
+            {
+              "id": "package-650-d3-img3",
+              "thumbnail": "/images/samples/deco-12.svg",
+              "display": "/images/samples/deco-12.svg",
+              "original": "/images/samples/deco-12.svg",
+              "alt": "Golden Mandap close view",
+              "caption": "Close view",
+              "sortOrder": 3
+            }
+          ],
+          "sortOrder": 3
+        },
+        {
+          "id": "package-650-design-4",
+          "name": "Fairy Light Fantasy",
+          "description": "Dreamy fairy-light canopy with floral clusters.",
+          "coverImage": "/images/samples/deco-01.svg",
+          "images": [
+            {
+              "id": "package-650-d4-img1",
+              "thumbnail": "/images/samples/deco-01.svg",
+              "display": "/images/samples/deco-01.svg",
+              "original": "/images/samples/deco-01.svg",
+              "alt": "Fairy Light Fantasy front view",
+              "caption": "Front view",
+              "sortOrder": 1
+            },
+            {
+              "id": "package-650-d4-img2",
+              "thumbnail": "/images/samples/deco-02.svg",
+              "display": "/images/samples/deco-02.svg",
+              "original": "/images/samples/deco-02.svg",
+              "alt": "Fairy Light Fantasy side view",
+              "caption": "Side view",
+              "sortOrder": 2
+            },
+            {
+              "id": "package-650-d4-img3",
+              "thumbnail": "/images/samples/deco-03.svg",
+              "display": "/images/samples/deco-03.svg",
+              "original": "/images/samples/deco-03.svg",
+              "alt": "Fairy Light Fantasy close view",
+              "caption": "Close view",
+              "sortOrder": 3
+            }
+          ],
+          "sortOrder": 4
         }
       ],
       "sortOrder": 3
+    },
+    {
+      "id": "package-850",
+      "packageName": "Luxury Package",
+      "category": "Wedding",
+      "price": 850,
+      "shortDescription": "Grand florals, arches and VIP touches throughout.",
+      "features": [
+        {
+          "title": "Large Floral Wall",
+          "included": true
+        },
+        {
+          "title": "Grand Entrance Arch",
+          "included": true
+        },
+        {
+          "title": "Fresh Flowers",
+          "included": true
+        },
+        {
+          "title": "Custom Branding",
+          "included": true
+        },
+        {
+          "title": "Premium Lighting",
+          "included": true
+        },
+        {
+          "title": "Traditional Brass Lamps",
+          "included": true
+        },
+        {
+          "title": "Themed Props",
+          "included": true
+        },
+        {
+          "title": "Premium Photo Zone",
+          "included": true
+        },
+        {
+          "title": "VIP Stage Setup",
+          "included": true
+        },
+        {
+          "title": "Setup & Cleanup",
+          "included": true
+        }
+      ],
+      "addons": [
+        {
+          "name": "LED Dance Floor",
+          "price": 250
+        },
+        {
+          "name": "Fresh Flower Upgrade",
+          "price": 120
+        },
+        {
+          "name": "Traditional Brass Lamps",
+          "price": 70
+        },
+        {
+          "name": "Return Gift Counter Decoration",
+          "price": 65
+        }
+      ],
+      "designs": [
+        {
+          "id": "package-850-design-1",
+          "name": "Pastel Elegance",
+          "description": "Soft pastel palette with delicate floral accents.",
+          "coverImage": "/images/samples/deco-04.svg",
+          "images": [
+            {
+              "id": "package-850-d1-img1",
+              "thumbnail": "/images/samples/deco-04.svg",
+              "display": "/images/samples/deco-04.svg",
+              "original": "/images/samples/deco-04.svg",
+              "alt": "Pastel Elegance front view",
+              "caption": "Front view",
+              "sortOrder": 1
+            },
+            {
+              "id": "package-850-d1-img2",
+              "thumbnail": "/images/samples/deco-05.svg",
+              "display": "/images/samples/deco-05.svg",
+              "original": "/images/samples/deco-05.svg",
+              "alt": "Pastel Elegance side view",
+              "caption": "Side view",
+              "sortOrder": 2
+            },
+            {
+              "id": "package-850-d1-img3",
+              "thumbnail": "/images/samples/deco-06.svg",
+              "display": "/images/samples/deco-06.svg",
+              "original": "/images/samples/deco-06.svg",
+              "alt": "Pastel Elegance close view",
+              "caption": "Close view",
+              "sortOrder": 3
+            },
+            {
+              "id": "package-850-d1-img4",
+              "thumbnail": "/images/samples/deco-07.svg",
+              "display": "/images/samples/deco-07.svg",
+              "original": "/images/samples/deco-07.svg",
+              "alt": "Pastel Elegance wide angle",
+              "caption": "Wide angle",
+              "sortOrder": 4
+            }
+          ],
+          "sortOrder": 1
+        },
+        {
+          "id": "package-850-design-2",
+          "name": "Golden Mandap",
+          "description": "Gold-draped mandap with warm ambient lighting.",
+          "coverImage": "/images/samples/deco-08.svg",
+          "images": [
+            {
+              "id": "package-850-d2-img1",
+              "thumbnail": "/images/samples/deco-08.svg",
+              "display": "/images/samples/deco-08.svg",
+              "original": "/images/samples/deco-08.svg",
+              "alt": "Golden Mandap front view",
+              "caption": "Front view",
+              "sortOrder": 1
+            },
+            {
+              "id": "package-850-d2-img2",
+              "thumbnail": "/images/samples/deco-09.svg",
+              "display": "/images/samples/deco-09.svg",
+              "original": "/images/samples/deco-09.svg",
+              "alt": "Golden Mandap side view",
+              "caption": "Side view",
+              "sortOrder": 2
+            },
+            {
+              "id": "package-850-d2-img3",
+              "thumbnail": "/images/samples/deco-10.svg",
+              "display": "/images/samples/deco-10.svg",
+              "original": "/images/samples/deco-10.svg",
+              "alt": "Golden Mandap close view",
+              "caption": "Close view",
+              "sortOrder": 3
+            }
+          ],
+          "sortOrder": 2
+        }
+      ],
+      "sortOrder": 4
+    },
+    {
+      "id": "package-1000",
+      "packageName": "Royal Package",
+      "category": "Wedding",
+      "price": 1000,
+      "badge": "Signature",
+      "shortDescription": "A palatial, fully-themed production for a landmark event.",
+      "features": [
+        {
+          "title": "Grand Palace Style Backdrop",
+          "included": true
+        },
+        {
+          "title": "Premium Fresh Flowers",
+          "included": true
+        },
+        {
+          "title": "Custom Theme Design",
+          "included": true
+        },
+        {
+          "title": "Luxury Stage Design",
+          "included": true
+        },
+        {
+          "title": "LED Wall Elements",
+          "included": true
+        },
+        {
+          "title": "Entrance Tunnel",
+          "included": true
+        },
+        {
+          "title": "Photo Booth",
+          "included": true
+        },
+        {
+          "title": "VIP Seating Decor",
+          "included": true
+        },
+        {
+          "title": "Premium Lighting Effects",
+          "included": true
+        },
+        {
+          "title": "Traditional Decor Elements",
+          "included": true
+        },
+        {
+          "title": "Setup & Cleanup",
+          "included": true
+        }
+      ],
+      "addons": [
+        {
+          "name": "LED Dance Floor",
+          "price": 250
+        },
+        {
+          "name": "Moving Head Lights",
+          "price": 180
+        },
+        {
+          "name": "Flower Entrance Arch",
+          "price": 150
+        },
+        {
+          "name": "Premium Seating Decor",
+          "price": 140
+        }
+      ],
+      "designs": [
+        {
+          "id": "package-1000-design-1",
+          "name": "Golden Mandap",
+          "description": "Gold-draped mandap with warm ambient lighting.",
+          "coverImage": "/images/samples/deco-11.svg",
+          "images": [
+            {
+              "id": "package-1000-d1-img1",
+              "thumbnail": "/images/samples/deco-11.svg",
+              "display": "/images/samples/deco-11.svg",
+              "original": "/images/samples/deco-11.svg",
+              "alt": "Golden Mandap front view",
+              "caption": "Front view",
+              "sortOrder": 1
+            },
+            {
+              "id": "package-1000-d1-img2",
+              "thumbnail": "/images/samples/deco-12.svg",
+              "display": "/images/samples/deco-12.svg",
+              "original": "/images/samples/deco-12.svg",
+              "alt": "Golden Mandap side view",
+              "caption": "Side view",
+              "sortOrder": 2
+            },
+            {
+              "id": "package-1000-d1-img3",
+              "thumbnail": "/images/samples/deco-01.svg",
+              "display": "/images/samples/deco-01.svg",
+              "original": "/images/samples/deco-01.svg",
+              "alt": "Golden Mandap close view",
+              "caption": "Close view",
+              "sortOrder": 3
+            },
+            {
+              "id": "package-1000-d1-img4",
+              "thumbnail": "/images/samples/deco-02.svg",
+              "display": "/images/samples/deco-02.svg",
+              "original": "/images/samples/deco-02.svg",
+              "alt": "Golden Mandap wide angle",
+              "caption": "Wide angle",
+              "sortOrder": 4
+            }
+          ],
+          "sortOrder": 1
+        },
+        {
+          "id": "package-1000-design-2",
+          "name": "Fairy Light Fantasy",
+          "description": "Dreamy fairy-light canopy with floral clusters.",
+          "coverImage": "/images/samples/deco-03.svg",
+          "images": [
+            {
+              "id": "package-1000-d2-img1",
+              "thumbnail": "/images/samples/deco-03.svg",
+              "display": "/images/samples/deco-03.svg",
+              "original": "/images/samples/deco-03.svg",
+              "alt": "Fairy Light Fantasy front view",
+              "caption": "Front view",
+              "sortOrder": 1
+            },
+            {
+              "id": "package-1000-d2-img2",
+              "thumbnail": "/images/samples/deco-04.svg",
+              "display": "/images/samples/deco-04.svg",
+              "original": "/images/samples/deco-04.svg",
+              "alt": "Fairy Light Fantasy side view",
+              "caption": "Side view",
+              "sortOrder": 2
+            },
+            {
+              "id": "package-1000-d2-img3",
+              "thumbnail": "/images/samples/deco-05.svg",
+              "display": "/images/samples/deco-05.svg",
+              "original": "/images/samples/deco-05.svg",
+              "alt": "Fairy Light Fantasy close view",
+              "caption": "Close view",
+              "sortOrder": 3
+            }
+          ],
+          "sortOrder": 2
+        },
+        {
+          "id": "package-1000-design-3",
+          "name": "Peacock Theme",
+          "description": "Vibrant peacock-inspired colours and feather motifs.",
+          "coverImage": "/images/samples/deco-06.svg",
+          "images": [
+            {
+              "id": "package-1000-d3-img1",
+              "thumbnail": "/images/samples/deco-06.svg",
+              "display": "/images/samples/deco-06.svg",
+              "original": "/images/samples/deco-06.svg",
+              "alt": "Peacock Theme front view",
+              "caption": "Front view",
+              "sortOrder": 1
+            },
+            {
+              "id": "package-1000-d3-img2",
+              "thumbnail": "/images/samples/deco-07.svg",
+              "display": "/images/samples/deco-07.svg",
+              "original": "/images/samples/deco-07.svg",
+              "alt": "Peacock Theme side view",
+              "caption": "Side view",
+              "sortOrder": 2
+            },
+            {
+              "id": "package-1000-d3-img3",
+              "thumbnail": "/images/samples/deco-08.svg",
+              "display": "/images/samples/deco-08.svg",
+              "original": "/images/samples/deco-08.svg",
+              "alt": "Peacock Theme close view",
+              "caption": "Close view",
+              "sortOrder": 3
+            },
+            {
+              "id": "package-1000-d3-img4",
+              "thumbnail": "/images/samples/deco-09.svg",
+              "display": "/images/samples/deco-09.svg",
+              "original": "/images/samples/deco-09.svg",
+              "alt": "Peacock Theme wide angle",
+              "caption": "Wide angle",
+              "sortOrder": 4
+            }
+          ],
+          "sortOrder": 3
+        }
+      ],
+      "sortOrder": 5
     }
   ]
 }

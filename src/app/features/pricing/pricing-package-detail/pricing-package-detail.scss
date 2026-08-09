@@ -1,0 +1,238 @@
+.page-hero {
+  background: radial-gradient(circle at 20% 20%, rgba(200, 167, 78, 0.16), transparent 55%),
+    var(--brand-secondary);
+  padding-block: clamp(40px, 6vw, 68px);
+  text-align: center;
+}
+
+.crumbs {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  color: var(--brand-muted);
+  font-size: 0.85rem;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.crumbs a:hover {
+  color: var(--brand-gold-dark);
+}
+
+.detail-badge {
+  display: inline-block;
+  padding: 4px 14px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--brand-gold), var(--brand-gold-dark));
+  color: #fff;
+  font-size: 0.74rem;
+  letter-spacing: 0.6px;
+  margin-bottom: 10px;
+}
+
+.page-hero h1 {
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  margin: 0 0 4px;
+}
+
+.detail-price {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 5vw, 2.8rem);
+  font-weight: 700;
+  color: var(--brand-gold-dark);
+  margin: 0 0 10px;
+}
+
+.detail-price span {
+  font-size: 1.3rem;
+  vertical-align: super;
+}
+
+.detail-desc {
+  color: var(--brand-muted);
+  max-width: 620px;
+  margin: 0 auto 20px;
+}
+
+.detail-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  max-width: 820px;
+  margin-inline: auto;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 5px 12px;
+  border-radius: 999px;
+  background: #fff;
+  border: 1px solid rgba(200, 167, 78, 0.3);
+  color: var(--brand-ink);
+  font-size: 0.82rem;
+}
+
+.chip .material-icons {
+  font-size: 15px;
+  color: #4f9d69;
+}
+
+.designs-intro {
+  text-align: center;
+  color: var(--brand-muted);
+  margin: 0 0 36px;
+  font-size: 1.05rem;
+}
+
+// ---- Design block ----
+.design-block {
+  margin-bottom: 48px;
+  background: #fff;
+  border-radius: var(--brand-radius);
+  padding: 24px;
+  box-shadow: var(--brand-shadow);
+  border: 1px solid rgba(200, 167, 78, 0.14);
+}
+
+.design-block__head {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+  padding-bottom: 14px;
+  border-bottom: 2px solid rgba(200, 167, 78, 0.25);
+  flex-wrap: wrap;
+}
+
+.design-block__index {
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--brand-gold), var(--brand-gold-dark));
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.design-block__head > div {
+  flex: 1;
+  min-width: 200px;
+}
+
+.design-block__head h2 {
+  margin: 0;
+  font-size: clamp(1.3rem, 2.5vw, 1.8rem);
+}
+
+.design-block__head p {
+  margin: 4px 0 0;
+  color: var(--brand-muted);
+  font-size: 0.92rem;
+}
+
+.design-block__count {
+  color: var(--brand-muted);
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+// ---- Thumbnails: 4 / 3 / 2 / 1 ----
+.thumb-grid {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 1100px) {
+  .thumb-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 720px) {
+  .thumb-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 420px) {
+  .thumb-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.thumb {
+  position: relative;
+  padding: 0;
+  border: none;
+  border-radius: 14px;
+  overflow: hidden;
+  cursor: zoom-in;
+  aspect-ratio: 4 / 3;
+  background: var(--brand-secondary);
+  box-shadow: var(--brand-shadow);
+}
+
+.thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.thumb:hover img {
+  transform: scale(1.08);
+}
+
+.thumb__zoom {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  background: rgba(44, 36, 22, 0.28);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.thumb__zoom .material-icons {
+  font-size: 30px;
+}
+
+.thumb:hover .thumb__zoom {
+  opacity: 1;
+}
+
+.thumb__caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 16px 10px 8px;
+  font-size: 0.78rem;
+  color: #fff;
+  text-align: left;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.65));
+}
+
+.detail-cta {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 480px) {
+  .detail-cta {
+    flex-direction: column;
+  }
+  .detail-cta a {
+    justify-content: center;
+  }
+}

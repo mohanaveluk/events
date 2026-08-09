@@ -1,7 +1,7 @@
 <div class="page-head">
   <div>
     <h1>Pricing Packages</h1>
-    <p>Manage decoration packages, features, add-ons and images.</p>
+    <p>Manage packages, features, add-ons and design modules.</p>
   </div>
   @if (!isEditorOpen()) {
     <button type="button" class="btn-gold" (click)="newPackage()">
@@ -16,17 +16,17 @@
     <div class="plist">
       @for (pkg of packages(); track pkg.id) {
         <div class="prow">
-          <img class="prow__img" [src]="pkg.thumbnailImages[0]" alt="" />
+          <img class="prow__img" [src]="pkg.designs[0]?.coverImage || '/images/samples/deco-01.svg'" alt="" />
           <div class="prow__info">
             <strong>
               {{ pkg.packageName }}
               @if (pkg.isPopular) { <span class="pill">Popular</span> }
             </strong>
-            <span>{{ pkg.category }} · {{ pkg.features.length }} features · {{ pkg.thumbnailImages.length }} images</span>
+            <span>{{ pkg.category }} · {{ pkg.designs.length }} designs · {{ pkg.features.length }} features</span>
           </div>
           <span class="prow__price">${{ pkg.price }}</span>
           <div class="prow__actions">
-            <button mat-icon-button (click)="preview(pkg)" title="Preview images">
+            <button mat-icon-button (click)="previewPackage(pkg)" title="Preview first design">
               <mat-icon>visibility</mat-icon>
             </button>
             <button mat-icon-button (click)="editPackage(pkg)" title="Edit">
@@ -89,48 +89,99 @@
       </mat-slide-toggle>
     </section>
 
-    <!-- Images -->
+    <!-- Designs -->
     <section class="card">
       <div class="card__head">
-        <h3>Images</h3>
-        <span class="muted">Drag to reorder · first image is the cover</span>
+        <h3>Design Modules</h3>
+        <button type="button" class="btn-ghost" (click)="addDesign()">
+          <span class="material-icons">add</span> Add Design
+        </button>
       </div>
 
-      <div class="img-tools">
-        <label class="btn-ghost">
-          <span class="material-icons">upload</span> Upload
-          <input type="file" hidden multiple accept="image/*" (change)="onFilesSelected($event)" />
-        </label>
-        <div class="path-add">
-          <input #pathInput type="text" placeholder="or paste an image URL/path" />
-          <button type="button" class="btn-ghost" (click)="addImageByPath(pathInput)">Add</button>
-        </div>
-      </div>
+      <div formArrayName="designs" class="designs">
+        @for (design of designs.controls; track design; let di = $index) {
+          <div class="design" [formGroupName]="di">
+            <div class="design__head">
+              <span class="design__tag">Design {{ di + 1 }}</span>
+              <div class="design__actions">
+                <button type="button" class="mini" (click)="previewDesign(di)" title="Preview">
+                  <span class="material-icons">visibility</span>
+                </button>
+                <button type="button" class="mini danger" (click)="removeDesign(di)" title="Remove design">
+                  <span class="material-icons">delete</span>
+                </button>
+              </div>
+            </div>
 
-      <div class="samples">
-        <span class="muted">Quick add sample:</span>
-        @for (s of sampleImages; track s) {
-          <button type="button" class="sample" (click)="addSampleImage(s)">
-            <img [src]="s" alt="" />
-          </button>
-        }
-      </div>
+            <div class="grid-2">
+              <mat-form-field appearance="outline">
+                <mat-label>Design Name</mat-label>
+                <input matInput formControlName="name" />
+              </mat-form-field>
+              <mat-form-field appearance="outline">
+                <mat-label>Description (optional)</mat-label>
+                <input matInput formControlName="description" />
+              </mat-form-field>
+            </div>
 
-      @if (images().length) {
-        <div class="img-grid" cdkDropList cdkDropListOrientation="mixed" (cdkDropListDropped)="reorderImages($event)">
-          @for (img of images(); track img + $index; let i = $index) {
-            <div class="img-item" cdkDrag>
-              <img [src]="img" alt="" />
-              @if (i === 0) { <span class="img-cover">Cover</span> }
-              <button type="button" class="img-del" (click)="removeImage(i)" aria-label="Remove">
-                <span class="material-icons">close</span>
+            <!-- Images within this design -->
+            <div class="design__img-tools">
+              <span class="muted">Images</span>
+              <label class="btn-ghost sm">
+                <span class="material-icons">upload</span> Upload
+                <input type="file" hidden multiple accept="image/*" (change)="onFilesSelected(di, $event)" />
+              </label>
+              <button type="button" class="btn-ghost sm" (click)="addImage(di)">
+                <span class="material-icons">add</span> Add URL row
               </button>
             </div>
-          }
-        </div>
-      } @else {
-        <p class="muted">No images added yet.</p>
-      }
+
+            <div class="samples">
+              <span class="muted">Quick add sample:</span>
+              @for (s of sampleImages.slice(0, 8); track s) {
+                <button type="button" class="sample" (click)="addSampleImage(di, s)">
+                  <img [src]="s" alt="" />
+                </button>
+              }
+            </div>
+
+            <div formArrayName="images" class="img-rows">
+              @for (img of designImages(di).controls; track img; let ii = $index) {
+                <div class="img-row" [formGroupName]="ii">
+                  <img class="img-row__preview" [src]="img.get('thumbnail')?.value || '/images/samples/deco-01.svg'" alt="" />
+                  <div class="img-row__fields">
+                    <mat-form-field appearance="outline">
+                      <mat-label>Thumbnail URL</mat-label>
+                      <input matInput formControlName="thumbnail" />
+                    </mat-form-field>
+                    <mat-form-field appearance="outline">
+                      <mat-label>Display URL</mat-label>
+                      <input matInput formControlName="display" />
+                    </mat-form-field>
+                    <mat-form-field appearance="outline">
+                      <mat-label>Original URL</mat-label>
+                      <input matInput formControlName="original" />
+                    </mat-form-field>
+                    <mat-form-field appearance="outline">
+                      <mat-label>Caption</mat-label>
+                      <input matInput formControlName="caption" />
+                    </mat-form-field>
+                  </div>
+                  <button type="button" class="mini danger" (click)="removeImage(di, ii)" title="Remove image">
+                    <span class="material-icons">close</span>
+                  </button>
+                </div>
+              }
+              @if (!designImages(di).length) {
+                <p class="muted">No images yet — upload, quick-add a sample, or add a URL row.</p>
+              }
+            </div>
+          </div>
+        }
+        @if (!designs.length) {
+          <p class="muted">No designs yet. Add your first design module.</p>
+        }
+      </div>
     </section>
 
     <!-- Features -->
@@ -149,7 +200,7 @@
               <mat-label>Feature title</mat-label>
               <input matInput formControlName="title" />
             </mat-form-field>
-            <button type="button" class="row-del" (click)="removeFeature(i)" aria-label="Remove">
+            <button type="button" class="mini danger" (click)="removeFeature(i)" aria-label="Remove">
               <span class="material-icons">delete</span>
             </button>
           </div>
@@ -179,7 +230,7 @@
               <mat-label>Price</mat-label>
               <input matInput type="number" formControlName="price" />
             </mat-form-field>
-            <button type="button" class="row-del" (click)="removeAddon(i)" aria-label="Remove">
+            <button type="button" class="mini danger" (click)="removeAddon(i)" aria-label="Remove">
               <span class="material-icons">delete</span>
             </button>
           </div>
@@ -214,11 +265,3 @@
     </div>
   </div>
 }
-
-<!-- Preview viewer -->
-<app-pricing-image-viewer
-  [images]="previewImages()"
-  [open]="previewOpen()"
-  [startIndex]="0"
-  (closed)="closePreview()"
-/>

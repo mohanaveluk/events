@@ -1,0 +1,83 @@
+@if (pkg(); as p) {
+  <section class="page-hero">
+    <div class="container">
+      <nav class="crumbs">
+        <a routerLink="/">Home</a><span>›</span>
+        <a routerLink="/pricing">Pricing</a><span>›</span>
+        <span>{{ p.packageName }}</span>
+      </nav>
+      @if (p.badge) {
+        <span class="detail-badge">{{ p.badge }}</span>
+      }
+      <h1>{{ p.packageName }}</h1>
+      <p class="detail-price"><span>$</span>{{ p.price }}</p>
+      <p class="detail-desc">{{ p.shortDescription }}</p>
+
+      <div class="detail-features">
+        @for (f of p.features; track f.title) {
+          @if (f.included) {
+            <span class="chip"><span class="material-icons">check</span>{{ f.title }}</span>
+          }
+        }
+      </div>
+    </div>
+  </section>
+
+  <div class="container section">
+    <p class="designs-intro">
+      Elegant decoration options available in this package —
+      <strong>{{ designs().length }} {{ designs().length === 1 ? 'design' : 'designs' }}</strong> to choose from.
+    </p>
+
+    @for (design of designs(); track design.id; let di = $index) {
+      <section class="design-block slide-up">
+        <header class="design-block__head">
+          <span class="design-block__index">Design {{ di + 1 }}</span>
+          <div>
+            <h2>{{ design.name }}</h2>
+            @if (design.description) {
+              <p>{{ design.description }}</p>
+            }
+          </div>
+          <span class="design-block__count">{{ design.images.length }} photos</span>
+        </header>
+
+        <div class="thumb-grid">
+          @for (img of design.images; track img.id; let i = $index) {
+            <button
+              type="button"
+              class="thumb"
+              (click)="openImageViewer(design, i)"
+              [attr.aria-label]="img.alt || ('View image ' + (i + 1))"
+            >
+              <img [src]="img.thumbnail" [alt]="img.alt || ''" loading="lazy" />
+              <span class="thumb__zoom"><span class="material-icons">zoom_in</span></span>
+              @if (img.caption) {
+                <span class="thumb__caption">{{ img.caption }}</span>
+              }
+            </button>
+          }
+        </div>
+      </section>
+    }
+
+    <div class="detail-cta">
+      <a class="btn-ghost" routerLink="/pricing">
+        <span class="material-icons">arrow_back</span> All Packages
+      </a>
+      <a class="btn-gold" routerLink="/contact">
+        Book {{ p.packageName }} <span class="material-icons">arrow_forward</span>
+      </a>
+    </div>
+  </div>
+} @else {
+  <div class="container section">
+    <app-empty-state
+      icon="sell"
+      title="Package not found"
+      message="This pricing package doesn’t exist or may have been removed."
+    >
+      <a class="btn-gold" routerLink="/pricing">Back to Pricing</a>
+    </app-empty-state>
+  </div>
+}
