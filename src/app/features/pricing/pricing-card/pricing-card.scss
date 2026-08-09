@@ -26,32 +26,22 @@
   box-shadow: 0 12px 40px rgba(200, 167, 78, 0.28);
 }
 
-.pcard__media {
+.pcard__head {
   position: relative;
-  aspect-ratio: 4 / 3;
-  background: var(--brand-secondary);
+  padding: 22px 20px 10px;
 }
 
 .pcard__badge {
   position: absolute;
-  top: 12px;
-  left: 12px;
-  z-index: 2;
+  top: 16px;
+  right: 16px;
   padding: 5px 14px;
   border-radius: 999px;
   background: linear-gradient(135deg, var(--brand-gold), var(--brand-gold-dark));
   color: #fff;
-  font-size: 0.74rem;
+  font-size: 0.72rem;
   letter-spacing: 0.6px;
   box-shadow: 0 4px 12px rgba(200, 167, 78, 0.4);
-}
-
-.pcard__body {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  padding: 18px 20px 8px;
-  flex: 1;
 }
 
 .pcard__category {
@@ -63,16 +53,15 @@
 }
 
 .pcard__name {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   margin: 2px 0 0;
 }
 
 .pcard__price {
   margin: 4px 0 6px;
   font-family: var(--font-heading);
-  font-size: 2.2rem;
+  font-size: 2.3rem;
   font-weight: 700;
-  color: var(--brand-ink);
   line-height: 1;
 }
 
@@ -86,24 +75,99 @@
 .pcard__desc {
   color: var(--brand-muted);
   font-size: 0.9rem;
-  margin: 0 0 8px;
+  margin: 0;
+}
+
+// ---- Design covers grid ----
+.pcard__designs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  padding: 14px 20px;
+}
+
+.pcard__design {
+  position: relative;
+  display: block;
+  aspect-ratio: 16 / 10;
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--brand-secondary);
+  box-shadow: 0 4px 12px rgba(44, 36, 22, 0.1);
+}
+
+.pcard__design img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.pcard__design:hover img {
+  transform: scale(1.08);
+}
+
+.pcard__design-name {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 14px 8px 6px;
+  font-size: 0.72rem;
+  color: #fff;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.pcard__design--more {
+  display: grid;
+  place-items: center;
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--brand-gold-dark);
+  background: rgba(200, 167, 78, 0.14);
+}
+
+// ---- Body ----
+.pcard__body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 6px 20px 8px;
+  flex: 1;
+}
+
+.pcard__count {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  font-weight: 600;
+  color: var(--brand-gold-dark);
+  font-size: 0.92rem;
+}
+
+.pcard__count .material-icons {
+  font-size: 19px;
 }
 
 .pcard__features {
   list-style: none;
-  margin: 4px 0 0;
+  margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 7px;
 }
 
 .pcard__features li {
   display: flex;
   align-items: center;
   gap: 8px;
-  font-size: 0.9rem;
-  color: var(--brand-ink);
+  font-size: 0.88rem;
 }
 
 .pcard__features .material-icons {
@@ -116,34 +180,10 @@
   text-decoration: line-through;
 }
 
-.pcard__features li.is-excluded .material-icons {
-  color: #c9c2b2;
-}
-
-.pcard__addons-label {
-  margin: 16px 0 6px;
-  font-size: 0.74rem;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+.pcard__more-features {
   color: var(--brand-muted);
-}
-
-.pcard__addons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-}
-
-.pcard__addon {
-  font-size: 0.78rem;
-  padding: 4px 10px;
-  border-radius: 999px;
-  background: rgba(200, 167, 78, 0.12);
-  color: var(--brand-gold-dark);
-}
-
-.pcard__addon b {
-  color: var(--brand-ink);
+  font-size: 0.82rem !important;
+  padding-left: 26px;
 }
 
 .pcard__actions {
@@ -152,5 +192,10 @@
 
 .pcard__actions .btn-gold {
   width: 100%;
-  justify-content: center;
+}
+
+@media (max-width: 480px) {
+  .pcard__designs {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

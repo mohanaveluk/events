@@ -6,7 +6,6 @@ import {
   ReactiveFormsModule,
   Validators,
 } from '@angular/forms';
-import { CdkDragDrop, DragDropModule, moveItemInArray } from '@angular/cdk/drag-drop';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
@@ -14,12 +13,14 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
+import { MatDialog, MatDialogModule } from '@angular/material/dialog';
+import { v4 as uuid } from 'uuid';
 import { ToastrService } from 'ngx-toastr';
 
 import { PricingService } from '../../../core/services/pricing.service';
 import { CategoryService } from '../../../core/services/category.service';
 import { ImageUploadService } from '../../../core/services/image-upload.service';
-import { PricingPackage } from '../../../core/models/pricing.model';
+import { PricingDesign, PricingImage, PricingPackage } from '../../../core/models/pricing.model';
 import { PricingImageViewerComponent } from '../../pricing/pricing-image-viewer/pricing-image-viewer';
 
 const SAMPLE_IMAGES = Array.from(
@@ -32,7 +33,6 @@ const SAMPLE_IMAGES = Array.from(
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [
     ReactiveFormsModule,
-    DragDropModule,
     MatFormFieldModule,
     MatInputModule,
     MatSelectModule,
@@ -40,7 +40,7 @@ const SAMPLE_IMAGES = Array.from(
     MatSlideToggleModule,
     MatIconModule,
     MatButtonModule,
-    PricingImageViewerComponent,
+    MatDialogModule,
   ],
   templateUrl: './pricing-management.html',
   styleUrl: './pricing-management.scss',
@@ -50,21 +50,16 @@ export class PricingManagementComponent {
   private readonly pricing = inject(PricingService);
   private readonly categoryService = inject(CategoryService);
   private readonly uploadService = inject(ImageUploadService);
+  private readonly dialog = inject(MatDialog);
   private readonly toastr = inject(ToastrService);
 
-  protected readonly packages = this.pricing.packages;
+  protected readonly packages = this.pricing.getPackages();
   protected readonly categories = ['All Events', ...this.categoryService.allCategoryValues()];
   protected readonly sampleImages = SAMPLE_IMAGES;
 
-  /** null = list view; '' (empty id) or an id = editor open. */
   protected readonly editingId = signal<string | null>(null);
   protected readonly isEditorOpen = computed(() => this.editingId() !== null);
-  protected readonly images = signal<string[]>([]);
   protected readonly pendingDelete = signal<PricingPackage | null>(null);
-
-  // Preview (full-screen viewer) state
-  protected readonly previewImages = signal<string[]>([]);
-  protected readonly previewOpen = signal(false);
 
   protected readonly form: FormGroup = this.fb.group({
     packageName: ['', [Validators.required, Validators.minLength(2)]],
@@ -75,20 +70,26 @@ export class PricingManagementComponent {
     isPopular: [false],
     features: this.fb.array([]),
     addons: this.fb.array([]),
+    designs: this.fb.array([]),
   });
 
   get features(): FormArray {
     return this.form.get('features') as FormArray;
   }
-
   get addons(): FormArray {
     return this.form.get('addons') as FormArray;
   }
+  get designs(): FormArray {
+    return this.form.get('designs') as FormArray;
+  }
+  designImages(designIndex: number): FormArray {
+    return this.designs.at(designIndex).get('images') as FormArray;
+  }
 
-  // ---- Editor open / close ----
+  // ---- Open / close editor ----
   newPackage(): void {
     this.resetForm();
-    this.images.set([]);
+    this.addDesign();
     this.editingId.set('');
   }
 
@@ -104,7 +105,9 @@ export class PricingManagementComponent {
     });
     pkg.features.forEach((f) => this.features.push(this.featureGroup(f.title, f.included, f.description)));
     (pkg.addons ?? []).forEach((a) => this.addons.push(this.addonGroup(a.name, a.price)));
-    this.images.set([...(pkg.originalImages.length ? pkg.originalImages : pkg.displayImages)]);
+    [...pkg.designs]
+      .sort((a, b) => a.sortOrder - b.sortOrder)
+      .forEach((d) => this.designs.push(this.designGroup(d)));
     this.editingId.set(pkg.id);
   }
 
@@ -116,6 +119,7 @@ export class PricingManagementComponent {
     this.form.reset({ category: 'All Events', price: 0, isPopular: false });
     this.features.clear();
     this.addons.clear();
+    this.designs.clear();
   }
 
   // ---- Features ----
@@ -147,20 +151,51 @@ export class PricingManagementComponent {
     this.addons.removeAt(i);
   }
 
-  // ---- Images ----
-  addSampleImage(path: string): void {
-    this.images.update((list) => [...list, path]);
+  // ---- Designs ----
+  private designGroup(d?: PricingDesign) {
+    const group = this.fb.group({
+      id: [d?.id ?? ''],
+      name: [d?.name ?? '', Validators.required],
+      description: [d?.description ?? ''],
+      images: this.fb.array([]),
+    });
+    const images = group.get('images') as FormArray;
+    (d?.images ?? [])
+      .slice()
+      .sort((a, b) => a.sortOrder - b.sortOrder)
+      .forEach((img) => images.push(this.imageGroup(img)));
+    return group;
+  }
+  addDesign(): void {
+    this.designs.push(this.designGroup());
+  }
+  removeDesign(i: number): void {
+    this.designs.removeAt(i);
   }
 
-  addImageByPath(input: HTMLInputElement): void {
-    const value = input.value.trim();
-    if (value) {
-      this.images.update((list) => [...list, value]);
-      input.value = '';
-    }
+  // ---- Design images ----
+  private imageGroup(img?: PricingImage) {
+    return this.fb.group({
+      id: [img?.id ?? ''],
+      thumbnail: [img?.thumbnail ?? '', Validators.required],
+      display: [img?.display ?? ''],
+      original: [img?.original ?? '', Validators.required],
+      caption: [img?.caption ?? ''],
+      alt: [img?.alt ?? ''],
+    });
   }
-
-  onFilesSelected(e: Event): void {
+  addImage(di: number): void {
+    this.designImages(di).push(this.imageGroup());
+  }
+  removeImage(di: number, ii: number): void {
+    this.designImages(di).removeAt(ii);
+  }
+  addSampleImage(di: number, path: string): void {
+    this.designImages(di).push(
+      this.imageGroup({ id: '', thumbnail: path, display: path, original: path, sortOrder: 0 }),
+    );
+  }
+  onFilesSelected(di: number, e: Event): void {
     const input = e.target as HTMLInputElement;
     if (!input.files) return;
     for (const file of Array.from(input.files)) {
@@ -170,20 +205,44 @@ export class PricingManagementComponent {
         continue;
       }
       const url = this.uploadService.createPreview(file);
-      this.images.update((list) => [...list, url]);
+      this.designImages(di).push(
+        this.imageGroup({ id: '', thumbnail: url, display: url, original: url, sortOrder: 0 }),
+      );
     }
     input.value = '';
   }
 
-  removeImage(i: number): void {
-    this.images.update((list) => list.filter((_, idx) => idx !== i));
+  previewDesign(di: number): void {
+    const images = this.buildImages(this.designImages(di));
+    if (!images.length) {
+      this.toastr.info('Add at least one image to preview.');
+      return;
+    }
+    this.dialog.open(PricingImageViewerComponent, {
+      data: {
+        images,
+        selectedIndex: 0,
+        designName: this.designs.at(di).get('name')?.value || 'Design preview',
+      },
+      panelClass: 'pricing-viewer-panel',
+      maxWidth: '100vw',
+      autoFocus: false,
+    });
   }
 
-  reorderImages(e: CdkDragDrop<string[]>): void {
-    this.images.update((list) => {
-      const copy = [...list];
-      moveItemInArray(copy, e.previousIndex, e.currentIndex);
-      return copy;
+  private buildImages(imagesArray: FormArray): PricingImage[] {
+    return imagesArray.controls.map((c, i) => {
+      const v = c.value as PricingImage & { display?: string };
+      const thumb = v.thumbnail;
+      return {
+        id: v.id || uuid(),
+        thumbnail: thumb,
+        display: v.display || thumb,
+        original: v.original || thumb,
+        alt: v.alt,
+        caption: v.caption,
+        sortOrder: i + 1,
+      };
     });
   }
 
@@ -191,11 +250,11 @@ export class PricingManagementComponent {
   save(): void {
     if (this.form.invalid) {
       this.form.markAllAsTouched();
-      this.toastr.warning('Please complete the required fields.');
+      this.toastr.warning('Please complete the required fields (including each image URL).');
       return;
     }
-    if (!this.images().length) {
-      this.toastr.warning('Add at least one image.');
+    if (!this.designs.length) {
+      this.toastr.warning('Add at least one design.');
       return;
     }
 
@@ -209,7 +268,25 @@ export class PricingManagementComponent {
       features: { title: string; included: boolean; description: string }[];
       addons: { name: string; price: number }[];
     };
-    const imgs = this.images();
+
+    const designs: PricingDesign[] = this.designs.controls.map((dc, di) => {
+      const dv = dc.value as { id: string; name: string; description: string };
+      const images = this.buildImages(dc.get('images') as FormArray);
+      return {
+        id: dv.id || uuid(),
+        name: dv.name,
+        description: dv.description || undefined,
+        coverImage: images[0]?.thumbnail ?? SAMPLE_IMAGES[0],
+        images,
+        sortOrder: di + 1,
+      };
+    });
+
+    if (designs.some((d) => !d.images.length)) {
+      this.toastr.warning('Each design needs at least one image.');
+      return;
+    }
+
     const payload = {
       packageName: raw.packageName,
       category: raw.category,
@@ -219,9 +296,7 @@ export class PricingManagementComponent {
       isPopular: raw.isPopular,
       features: raw.features,
       addons: raw.addons,
-      thumbnailImages: imgs,
-      displayImages: imgs,
-      originalImages: imgs,
+      designs,
     };
 
     const id = this.editingId();
@@ -250,12 +325,18 @@ export class PricingManagementComponent {
     this.toastr.success(`“${pkg.packageName}” deleted.`);
   }
 
-  // ---- Preview ----
-  preview(pkg: PricingPackage): void {
-    this.previewImages.set(pkg.originalImages.length ? pkg.originalImages : pkg.displayImages);
-    this.previewOpen.set(true);
-  }
-  closePreview(): void {
-    this.previewOpen.set(false);
+  // ---- Preview from list ----
+  previewPackage(pkg: PricingPackage): void {
+    const first = [...pkg.designs].sort((a, b) => a.sortOrder - b.sortOrder)[0];
+    if (!first) {
+      this.toastr.info('This package has no designs yet.');
+      return;
+    }
+    this.dialog.open(PricingImageViewerComponent, {
+      data: { images: first.images, selectedIndex: 0, designName: first.name },
+      panelClass: 'pricing-viewer-panel',
+      maxWidth: '100vw',
+      autoFocus: false,
+    });
   }
 }

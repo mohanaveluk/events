@@ -195,3 +195,16 @@ img {
   border-radius: 999px;
 }
 ::-webkit-scrollbar-track { background: var(--brand-secondary); }
+
+// ---------------------------------------------------------------------------
+// Pricing image-viewer dialog — remove default surface padding so the viewer
+// fills the panel edge-to-edge.
+// ---------------------------------------------------------------------------
+.pricing-viewer-panel .mat-mdc-dialog-surface {
+  padding: 0;
+  overflow: hidden;
+  border-radius: 16px;
+}
+.pricing-viewer-panel .mat-mdc-dialog-container {
+  --mdc-dialog-container-color: transparent;
+}
