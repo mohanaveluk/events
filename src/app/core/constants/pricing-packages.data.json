@@ -464,7 +464,7 @@
               "display": "/images/samples/deco-04.svg",
               "original": "https://storage.googleapis.com/inv-images/matrimony/gallery/58680adb-4931-44eb-86c5-8466c395f9cd/0fd0265d-d846-4736-9315-cf2eea88f734-PXL_20260627_215407067_50-original.jpg",
               "alt": "Grand Palace Setup side view",
-              "caption": "Front view",
+              "caption": "Majestic stage view",
               "sortOrder": 2
             },
             {
@@ -473,62 +473,53 @@
               "display": "/images/samples/deco-05.svg",
               "original": "https://storage.googleapis.com/inv-images/matrimony/gallery/7a9580d2-cfd6-413f-8a12-d793c94dd8ca/7327d1bd-766f-4a8c-932d-f633dbe05429-IMG_6111_1_48-original.jpg",
               "alt": "Grand Palace Setup close view",
-              "caption": "Close view",
+              "caption": "Brochure view",
               "sortOrder": 3
             },
             {
               "id": "package-650-d1-img4",
-              "thumbnail": "https://storage.googleapis.com/inv-images/matrimony/gallery/7a9580d2-cfd6-413f-8a12-d793c94dd8ca/d0af96b9-4245-42bc-897a-ab19368037a5-IMG_6111_1_48-thumbnail.jpg",
-              "display": "/images/samples/deco-05.svg",
-              "original": "https://storage.googleapis.com/inv-images/matrimony/gallery/7a9580d2-cfd6-413f-8a12-d793c94dd8ca/0a23a9c1-1e5a-422b-a5b6-80d739f7f2b3-IMG_6113_1_48-original.jpg",
-              "alt": "Grand Palace Setup close view",
-              "caption": "Close view",
-              "sortOrder": 4
-            },
-            {
-              "id": "package-650-d1-img5",
               "thumbnail": "https://storage.googleapis.com/inv-images/matrimony/gallery/7a9580d2-cfd6-413f-8a12-d793c94dd8ca/6cb80a30-edb9-443f-8795-d960962ad177-IMG_6113_1_48-thumbnail.jpg",
               "display": "/images/samples/deco-05.svg",
               "original": "https://storage.googleapis.com/inv-images/matrimony/gallery/7a9580d2-cfd6-413f-8a12-d793c94dd8ca/0a23a9c1-1e5a-422b-a5b6-80d739f7f2b3-IMG_6113_1_48-original.jpg",
               "alt": "Grand Palace Setup close view",
-              "caption": "Close view",
-              "sortOrder": 5
+              "caption": "Brochure view",
+              "sortOrder": 4
             },
             {
-              "id": "package-650-d1-img6",
+              "id": "package-650-d1-img5",
               "thumbnail": "https://storage.googleapis.com/inv-images/matrimony/gallery/7a9580d2-cfd6-413f-8a12-d793c94dd8ca/57089658-83ef-470d-9414-6b8da4250900-IMG_6430-thumbnail.JPG",
               "display": "/images/samples/deco-05.svg",
               "original": "https://storage.googleapis.com/inv-images/matrimony/gallery/7a9580d2-cfd6-413f-8a12-d793c94dd8ca/ce87e8f4-e199-4872-8b19-b09bb8b1aea8-IMG_6430-original1_50.jpg",
               "alt": "Grand Palace Setup close view",
-              "caption": "Close view",
-              "sortOrder": 6
+              "caption": "Majestic Side view",
+              "sortOrder": 5
             },
             {
-              "id": "package-650-d1-img7",
+              "id": "package-650-d1-img6",
               "thumbnail": "https://storage.googleapis.com/inv-images/matrimony/gallery/7a9580d2-cfd6-413f-8a12-d793c94dd8ca/e5d06771-9d98-46de-8eb1-fa64a9e34779-IMG_6429-thumbnail.JPG",
               "display": "/images/samples/deco-05.svg",
               "original": "https://storage.googleapis.com/inv-images/matrimony/gallery/7a9580d2-cfd6-413f-8a12-d793c94dd8ca/2ecc2957-0b31-4ade-812b-b1eaaf6bf5d8-IMG_6429-original1_50.jpg",
               "alt": "Grand Palace Setup close view",
-              "caption": "Close view",
-              "sortOrder": 7
+              "caption": "Right view",
+              "sortOrder": 6
             },
             {
-              "id": "package-650-d1-img8",
+              "id": "package-650-d1-img7",
               "thumbnail": "https://storage.googleapis.com/inv-images/matrimony/gallery/7a9580d2-cfd6-413f-8a12-d793c94dd8ca/4f10af3c-be49-4826-97d1-6ad87abf9858-6461-thumbnail.jpeg",
               "display": "/images/samples/deco-05.svg",
               "original": "https://storage.googleapis.com/inv-images/matrimony/gallery/7a9580d2-cfd6-413f-8a12-d793c94dd8ca/39c9cc81-7eb3-41b4-94b9-4f3ea6601aea-6461-original.jpeg",
               "alt": "Grand Palace Setup close view",
-              "caption": "Close view",
-              "sortOrder": 8
+              "caption": "Left view",
+              "sortOrder": 7
             },
             {
-              "id": "package-650-d1-img9",
+              "id": "package-650-d1-img8",
               "thumbnail": "https://storage.googleapis.com/inv-images/matrimony/gallery/7a9580d2-cfd6-413f-8a12-d793c94dd8ca/bf4b5f48-490c-444b-b48b-d3e0304159ea-6464-thumbnail.jpeg",
               "display": "/images/samples/deco-05.svg",
               "original": "https://storage.googleapis.com/inv-images/matrimony/gallery/7a9580d2-cfd6-413f-8a12-d793c94dd8ca/9a0b10a5-329b-47f9-91bd-5b84820f4fa2-6464-original.jpeg",
               "alt": "Grand Palace Setup close view",
-              "caption": "Close view",
-              "sortOrder": 9
+              "caption": "Podium view",
+              "sortOrder": 8
             },
             {
               "id": "package-650-d1-img9",
@@ -536,35 +527,35 @@
               "display": "/images/samples/deco-05.svg",
               "original": "https://storage.googleapis.com/inv-images/matrimony/gallery/7a9580d2-cfd6-413f-8a12-d793c94dd8ca/6e4f59ea-afc1-49c2-9946-42e66b40ffc3-6460-original.jpeg",
               "alt": "Grand Palace Setup close view",
-              "caption": "Close view",
-              "sortOrder": 10
+              "caption": "Podium view",
+              "sortOrder": 9
             },
             {
-              "id": "package-650-d1-img9",
+              "id": "package-650-d1-img10",
               "thumbnail": "https://storage.googleapis.com/inv-images/matrimony/gallery/58680adb-4931-44eb-86c5-8466c395f9cd/b20f47b2-395a-42e8-8b72-d921482775a0-PXL_20260627_215001008_50-thumbnail.jpg",
               "display": "/images/samples/deco-05.svg",
               "original": "https://storage.googleapis.com/inv-images/matrimony/gallery/58680adb-4931-44eb-86c5-8466c395f9cd/7067b360-aafd-4714-ac35-822ab554456d-PXL_20260627_215001008_50-original.jpg",
               "alt": "Grand Palace Setup close view",
               "caption": "Close view",
-              "sortOrder": 11
+              "sortOrder": 10
             },
             {
-              "id": "package-650-d1-img9",
+              "id": "package-650-d1-img11",
               "thumbnail": "https://storage.googleapis.com/inv-images/matrimony/gallery/58680adb-4931-44eb-86c5-8466c395f9cd/417fe5da-3277-4664-96f3-5ec12f9622c1-PXL_20260627_215012689.MP_50-thumbnail.jpg",
               "display": "/images/samples/deco-05.svg",
               "original": "https://storage.googleapis.com/inv-images/matrimony/gallery/58680adb-4931-44eb-86c5-8466c395f9cd/9206995e-7a4b-4fc5-b949-046f2108f55a-PXL_20260627_215012689.MP_50-original.jpg",
               "alt": "Grand Palace Setup close view",
               "caption": "Close view",
-              "sortOrder": 12
+              "sortOrder": 11
             },
             {
-              "id": "package-650-d1-img9",
+              "id": "package-650-d1-img12",
               "thumbnail": "https://storage.googleapis.com/inv-images/matrimony/gallery/58680adb-4931-44eb-86c5-8466c395f9cd/b20f47b2-395a-42e8-8b72-d921482775a0-PXL_20260627_215001008_50-thumbnail.jpg",
               "display": "/images/samples/deco-05.svg",
               "original": "https://storage.googleapis.com/inv-images/matrimony/gallery/58680adb-4931-44eb-86c5-8466c395f9cd/7067b360-aafd-4714-ac35-822ab554456d-PXL_20260627_215001008_50-original.jpg",
               "alt": "Grand Palace Setup close view",
               "caption": "Close view",
-              "sortOrder": 13
+              "sortOrder": 12
             }
           ],
           "sortOrder": 1
