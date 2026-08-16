@@ -94,7 +94,7 @@
               "display": "/images/samples/deco-02.svg",
               "original": "https://storage.googleapis.com/inv-images/matrimony/gallery/p11/e3e0c898-08f8-464b-b11a-4e4b1cf24969-kny_0724269-original.jpeg",
               "alt": "Elegant floor design view",
-              "caption": "Floor view",
+              "caption": "Another angle of the floor décor, emphasizing symmetry and the arrangement of flowers and props",
               "sortOrder": 4
             },
             {
@@ -103,7 +103,7 @@
               "display": "/images/samples/deco-02.svg",
               "original": "https://storage.googleapis.com/inv-images/matrimony/gallery/p11/35051628-a567-4629-a1fd-c6cac316c6da-kny_07242611-original.jpeg",
               "alt": "Elegant floor design view",
-              "caption": "Floor view",
+              "caption": "A detailed view of the lower stage decorations, showing color balance and floral texture.",
               "sortOrder": 5
             },
             {
@@ -112,7 +112,7 @@
               "display": "/images/samples/deco-02.svg",
               "original": "https://storage.googleapis.com/inv-images/matrimony/gallery/p11/94208d33-dbf4-4c2c-a2d4-95d081e0df77-kny_07242610-original.jpeg",
               "alt": "Elegant floor design view",
-              "caption": "Floor view",
+              "caption": "A refined close‑up of the floor décor, highlighting the coordinated floral patterns.",
               "sortOrder": 6
             },
             {
@@ -121,7 +121,7 @@
               "display": "/images/samples/deco-02.svg",
               "original": "https://storage.googleapis.com/inv-images/matrimony/gallery/p11/f905e33c-1e64-4c7f-a738-904c945bbeb1-kny_0724266-original.jpeg",
               "alt": "Elegant floor design view",
-              "caption": "Floor view",
+              "caption": "A final floor‑level perspective capturing the arrangement continuity across the stage.",
               "sortOrder": 7
             }
           ],
@@ -157,7 +157,7 @@
               "display": "/images/samples/deco-05.svg",
               "original": "https://storage.googleapis.com/inv-images/matrimony/gallery/p19/625f9d67-5390-4ae5-ab60-6bea8d8e1b86-kny0321-2-original.jpeg",
               "alt": "Modern Floral stage decoration view",
-              "caption": "Close view",
+              "caption": "Stage view",
               "sortOrder": 3
             },
             {
@@ -166,7 +166,7 @@
               "display": "/images/samples/deco-05.svg",
               "original": "https://storage.googleapis.com/inv-images/matrimony/gallery/p19/c7b119a0-08c0-454c-8020-1f606f1e020a-kny0321-6-original.jpeg",
               "alt": "Modern Floral stage decoration view",
-              "caption": "Close view",
+              "caption": "Another close view showing the arrangement’s depth and decorative layering.",
               "sortOrder": 4
             },
             {
@@ -175,7 +175,7 @@
               "display": "/images/samples/deco-05.svg",
               "original": "https://storage.googleapis.com/inv-images/matrimony/gallery/p19/56f15d46-f5be-4775-8efe-333a1e282d97-kny0321-7-original.jpeg",
               "alt": "Modern Floral stage decoration view",
-              "caption": "Close view",
+              "caption": "A detailed look at the floral clusters and backdrop lighting integration.",
               "sortOrder": 5
             },
             {
@@ -184,29 +184,145 @@
               "display": "/images/samples/deco-05.svg",
               "original": "https://storage.googleapis.com/inv-images/matrimony/gallery/p19/1508fd3b-d060-4198-b320-1d98f6c58d84-kny0321-8-original.jpeg",
               "alt": "Modern Floral stage decoration view",
-              "caption": "Close view",
+              "caption": "A refined close‑up capturing the modern floral theme’s clean lines and soft tones.",
               "sortOrder": 6
             },
             {
-              "id": "package-350-d2-img7",
-              "thumbnail": "https://storage.googleapis.com/inv-images/matrimony/gallery/p19/IMG_6480-custom-250x250.jpg",
-              "display": "/images/samples/deco-05.svg",
-              "original": "https://storage.googleapis.com/inv-images/matrimony/gallery/p19/IMG_6480.jpg",
+              "id": "package-350-d2-img8",
+              "thumbnail": "https://storage.googleapis.com/inv-images/matrimony/gallery/p19/a961e8fe-1a60-4884-991b-6ce51b58ed29-IMG_6480%20(1)-thumbnail.jpg",
+              "display": "https://storage.googleapis.com/inv-images/matrimony/gallery/p19/a961e8fe-1a60-4884-991b-6ce51b58ed29-IMG_6480%20(1)-thumbnail.jpg",
+              "original": "https://storage.googleapis.com/inv-images/matrimony/gallery/p19/5818057a-0147-47a7-bce0-47b62e927ab5-IMG_6480%20(1)-original.jpg",
               "alt": "Modern Floral stage decoration view",
-              "caption": "Close view",
+              "caption": "A side‑close view showing the floral density and backdrop texture.",
               "sortOrder": 7
             },
             {
               "id": "package-350-d2-img8",
-              "thumbnail": "",
-              "display": "/images/samples/deco-05.svg",
-              "original": "",
+              "thumbnail": "https://storage.googleapis.com/inv-images/matrimony/gallery/p19/3d3a0a11-0982-4181-8068-a9d5220d9175-IMG_6467-thumbnail.jpg",
+              "display": "https://storage.googleapis.com/inv-images/matrimony/gallery/p19/3d3a0a11-0982-4181-8068-a9d5220d9175-IMG_6467-thumbnail.jpg",
+              "original": "https://storage.googleapis.com/inv-images/matrimony/gallery/p19/d51c49f0-491a-45db-9a27-0c92c74c5c2f-IMG_6467-original.jpg",
               "alt": "Modern Floral stage decoration view",
-              "caption": "Close view",
+              "caption": "A detailed angle highlighting the floral arrangement’s balance and color palette.",
               "sortOrder": 8
-            }
+            },
+            {
+              "id": "package-350-d2-img8",
+              "thumbnail": "https://storage.googleapis.com/inv-images/matrimony/gallery/p19/806d814c-c0f8-4f3d-aa92-49278f578d8e-IMG_6483-thumbnail.jpg",
+              "display": "https://storage.googleapis.com/inv-images/matrimony/gallery/p19/806d814c-c0f8-4f3d-aa92-49278f578d8e-IMG_6483-thumbnail.jpg",
+              "original": "https://storage.googleapis.com/inv-images/matrimony/gallery/p19/f78de436-4ca5-4336-be76-38a3950d0e62-IMG_6483-original.jpg",
+              "alt": "Modern Floral stage decoration view",
+              "caption": "A final close‑up showing the modern floral theme’s finishing touches and symmetry.",
+              "sortOrder": 9
+            }                        
           ],
           "sortOrder": 2
+        },
+        {
+          "id": "package-350-design-3",
+          "name": "A blended modern‑traditional decor theme",
+          "description": "Contemporary floral theme with clean lines and soft tones.",
+          "coverImage": "https://storage.googleapis.com/inv-images/matrimony/gallery/p22/0aa65512-87da-4380-88f7-38d5fe40ef07-arthi-school-4-thumbnail.jpeg",
+          "images": [
+            {
+              "id": "package-22-img1",
+              "thumbnail": "https://storage.googleapis.com/inv-images/matrimony/gallery/p22/57a3a2b1-ee2b-4fc8-87aa-d8b5ddc9e7e4-IMG_6491-thumbnail.jpg",
+              "display": "https://storage.googleapis.com/inv-images/matrimony/gallery/p22/cbbcd356-3863-48cc-af19-ac57e0c22cb0-IMG_6491-display.jpg",
+              "original": "https://storage.googleapis.com/inv-images/matrimony/gallery/p22/68a62f29-ca4c-49ae-aad0-aec93cc6d932-IMG_6491-original.jpg",
+              "alt": "Decorated Lord Ganesha centerpiece with floral garlands",
+              "caption": "Beautiful Lord Ganesha centerpiece decorated with flowers and traditional lamps",
+              "sortOrder": 1
+            },
+            {
+              "id": "package-22-img2",
+              "thumbnail": "https://storage.googleapis.com/inv-images/matrimony/gallery/p22/5f1bb8a6-75b5-400e-98a4-8d91ba099f00-IMG_6493-thumbnail.jpg",
+              "display": "https://storage.googleapis.com/inv-images/matrimony/gallery/p22/a2564ca1-4236-4ad8-8d44-17b8b7d4f386-IMG_6493-display.jpg",
+              "original": "https://storage.googleapis.com/inv-images/matrimony/gallery/p22/4036865f-9339-43f6-a818-91a913110458-IMG_6493-original.jpg",
+              "alt": "Close-up view of the decorated Ganesha display",
+              "caption": "Close-up view of the beautifully decorated Ganesha display",
+              "sortOrder": 2
+            },
+            {
+              "id": "package-22-img3",
+              "thumbnail": "https://storage.googleapis.com/inv-images/matrimony/gallery/p22/9d6e40f6-2cac-4166-baf9-ee3eaddea09b-IMG_6494-thumbnail.jpg",
+              "display": "https://storage.googleapis.com/inv-images/matrimony/gallery/p22/3b97f42f-6d6b-479d-a8eb-cb4247ccc97f-IMG_6494-display.jpg",
+              "original": "https://storage.googleapis.com/inv-images/matrimony/gallery/p22/88d45d7c-4bcb-438e-a7fe-b961431219e3-IMG_6494-original.jpg",
+              "alt": "Traditional Ganesha altar decorated with white and red flowers",
+              "caption": "Traditional Ganesha altar adorned with elegant white and red floral decorations",
+              "sortOrder": 3
+            },
+            {
+              "id": "package-22-img4",
+              "thumbnail": "https://storage.googleapis.com/inv-images/matrimony/gallery/p22/cd4044a9-343a-4a2c-978a-f839ff322fed-IMG_6497-thumbnail.jpg",
+              "display": "https://storage.googleapis.com/inv-images/matrimony/gallery/p22/0414fd16-762f-48b6-8c55-90eb73f5fe6c-IMG_6497-display.jpg",
+              "original": "https://storage.googleapis.com/inv-images/matrimony/gallery/p22/b7b35d94-a2e8-406a-9a27-98167d1c4adc-IMG_6497-original.jpg",
+              "alt": "Detailed view of the traditional event decoration",
+              "caption": "Detailed view of the traditional ceremonial decoration",
+              "sortOrder": 4
+            },
+            {
+              "id": "package-22-img5",
+              "thumbnail": "https://storage.googleapis.com/inv-images/matrimony/gallery/p22/bbf2c860-e577-460e-b377-7216a1c767d5-arthi-school-7-thumbnail.jpeg",
+              "display": "https://storage.googleapis.com/inv-images/matrimony/gallery/p22/5c9a7476-06c5-4f24-a23a-21be7725b962-arthi-school-7-display.jpeg",
+              "original": "https://storage.googleapis.com/inv-images/matrimony/gallery/p22/dc9d7248-85c5-458f-967b-eab8c63d5cc2-arthi-school-7-original.jpeg",
+              "alt": "Wide view of the decorated event table with Ganesha centerpiece",
+              "caption": "Elegant event table featuring the Ganesha centerpiece and graduation displays",
+              "sortOrder": 5
+            },
+            {
+              "id": "package-22-img6",
+              "thumbnail": "https://storage.googleapis.com/inv-images/matrimony/gallery/p22/430a0685-0e5d-4413-98de-d000f0c6fc35-arthi-school-8-thumbnail.jpeg",
+              "display": "https://storage.googleapis.com/inv-images/matrimony/gallery/p22/ca65739b-ffc9-4908-b48b-451b25d0689c-arthi-school-8-display.jpeg",
+              "original": "https://storage.googleapis.com/inv-images/matrimony/gallery/p22/96447ebd-0051-4c9c-aae6-0c22c7835054-arthi-school-8-original.jpeg",
+              "alt": "Decorated graduation celebration table",
+              "caption": "Beautifully arranged graduation celebration table",
+              "sortOrder": 6
+            },
+            {
+              "id": "package-22-img7",
+              "thumbnail": "https://storage.googleapis.com/inv-images/matrimony/gallery/p22/a8fa6ff1-7724-4615-991d-40ccf9f323f3-arthi-school-6-thumbnail.jpeg",
+              "display": "https://storage.googleapis.com/inv-images/matrimony/gallery/p22/c3987fb8-fc65-4df9-892e-e485a28e9cca-arthi-school-6-display.jpeg",
+              "original": "https://storage.googleapis.com/inv-images/matrimony/gallery/p22/3375c627-09c9-45a7-a1f4-feb1abb20b56-arthi-school-6-original.jpeg",
+              "alt": "Graduation event decoration and display",
+              "caption": "Festive graduation event decoration and display",
+              "sortOrder": 7
+            },
+            {
+              "id": "package-22-img9",
+              "thumbnail": "https://storage.googleapis.com/inv-images/matrimony/gallery/p22/bb386e8a-5d31-4135-82db-d7f9fdf47a3f-arthi-school-3-thumbnail.jpeg",
+              "display": "https://storage.googleapis.com/inv-images/matrimony/gallery/p22/15e21ca5-7b37-410e-a3af-8a0da452513c-arthi-school-3-display.jpeg",
+              "original": "https://storage.googleapis.com/inv-images/matrimony/gallery/p22/b0f61739-9f7a-4977-b1bf-9a4930239830-arthi-school-3-original.jpeg",
+              "alt": "Graduation celebration decorations",
+              "caption": "Special moments from the graduation celebration",
+              "sortOrder": 9
+            },
+            {
+              "id": "package-22-img10",
+              "thumbnail": "https://storage.googleapis.com/inv-images/matrimony/gallery/p22/0aa65512-87da-4380-88f7-38d5fe40ef07-arthi-school-4-thumbnail.jpeg",
+              "display": "https://storage.googleapis.com/inv-images/matrimony/gallery/p22/a69f2eba-84d0-428b-b4c9-9ce9b3df8069-arthi-school-4-display.jpeg",
+              "original": "https://storage.googleapis.com/inv-images/matrimony/gallery/p22/3c2df643-b54c-4b19-8473-7625403642a3-arthi-school-4-original.jpeg",
+              "alt": "Graduation event setup with traditional decorations",
+              "caption": "Elegant graduation event setup with traditional decorations",
+              "sortOrder": 10
+            },
+            {
+              "id": "package-22-img11",
+              "thumbnail": "https://storage.googleapis.com/inv-images/matrimony/gallery/p22/e360d55b-357e-4fcb-b071-297fb6e7a31c-arthi-school-5-thumbnail.jpeg",
+              "display": "https://storage.googleapis.com/inv-images/matrimony/gallery/p22/bd2dced1-0fb7-443f-9d3e-e43a526c825b-arthi-school-5-display.jpeg",
+              "original": "https://storage.googleapis.com/inv-images/matrimony/gallery/p22/2b78fb77-8e31-4e3a-ad3c-0d7b89b39b53-arthi-school-5-original.jpeg",
+              "alt": "Decorated table at the graduation celebration",
+              "caption": "Beautifully decorated table prepared for the graduation celebration",
+              "sortOrder": 11
+            },
+            {
+              "id": "package-22-img12",
+              "thumbnail": "https://storage.googleapis.com/inv-images/matrimony/gallery/p22/9365bb91-3633-491c-8c94-ec272891c1cd-arthi-school-1-thumbnail.jpeg",
+              "display": "https://storage.googleapis.com/inv-images/matrimony/gallery/p22/5a314396-9853-45ca-9b15-e625cedfa20d-arthi-school-1-display.jpeg",
+              "original": "https://storage.googleapis.com/inv-images/matrimony/gallery/p22/b0b180cd-5536-48ef-8238-0f5746078a93-arthi-school-1-original.jpeg",
+              "alt": "Opening view of the graduation celebration setup",
+              "caption": "A beautiful opening view of the graduation celebration setup",
+              "sortOrder": 12
+            }
+          ]
         }
       ],
       "sortOrder": 1
