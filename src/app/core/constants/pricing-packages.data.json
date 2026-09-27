@@ -389,37 +389,182 @@
       "designs": [
         {
           "id": "package-500-design-1",
-          "name": "Modern Floral Theme",
-          "description": "Contemporary floral theme with clean lines and soft tones.",
-          "coverImage": "/images/samples/deco-06.svg",
+          "name": "Decorative wedding aisle with elegant arrangements",
+          "description": "Wedding seating arrangement with decorative lighting.",
+          "coverImage": "https://storage.googleapis.com/inv-images/matrimony/gallery/p25/e5e3c2fd-1faf-4a59-8491-f87e8e5273de-IMG_6379-thumbnail.jpg",
           "images": [
             {
               "id": "package-500-d1-img1",
-              "thumbnail": "/images/samples/deco-06.svg",
-              "display": "/images/samples/deco-06.svg",
-              "original": "/images/samples/deco-06.svg",
-              "alt": "Modern Floral Theme front view",
-              "caption": "Front view",
+              "thumbnail": "https://storage.googleapis.com/inv-images/matrimony/gallery/p25/713aadf3-ab01-4398-b819-0acc21744755-IMG_6346-thumbnail.JPG",
+              "display": "https://storage.googleapis.com/inv-images/matrimony/gallery/p25/316780cd-15bf-438c-a88d-7ee15ee05ac8-IMG_6346-display.JPG",
+              "original": "https://storage.googleapis.com/inv-images/matrimony/gallery/p25/000825ac-fc74-4836-a56a-12f8f0704eba-IMG_6346-original.JPG",
+              "alt": "Wedding stage decorated with floral backdrop and elegant lighting",
+              "caption": "Main stage",
               "sortOrder": 1
             },
             {
               "id": "package-500-d1-img2",
-              "thumbnail": "/images/samples/deco-07.svg",
-              "display": "/images/samples/deco-07.svg",
-              "original": "/images/samples/deco-07.svg",
-              "alt": "Modern Floral Theme side view",
-              "caption": "Side view",
+              "thumbnail": "https://storage.googleapis.com/inv-images/matrimony/gallery/p25/867a878a-7c4f-4cc0-adaa-6c9ce79a7f0f-IMG_6376-thumbnail.JPG",
+              "display": "https://storage.googleapis.com/inv-images/matrimony/gallery/p25/e79c78ea-be62-41c0-acf7-7ce5425210a6-IMG_6376-display.JPG",
+              "original": "https://storage.googleapis.com/inv-images/matrimony/gallery/p25/bd85068d-e380-4f9f-887d-d112b2409390-IMG_6376-original.JPG",
+              "alt": "Premium wedding venue with luxury decorations",
+              "caption": "Venue decor",
               "sortOrder": 2
             },
             {
               "id": "package-500-d1-img3",
-              "thumbnail": "/images/samples/deco-08.svg",
-              "display": "/images/samples/deco-08.svg",
-              "original": "/images/samples/deco-08.svg",
-              "alt": "Modern Floral Theme close view",
-              "caption": "Close view",
+              "thumbnail": "https://storage.googleapis.com/inv-images/matrimony/gallery/p25/3f4e4654-02d2-43ca-8fcf-5e618991934a-IMG_6378-thumbnail.JPG",
+              "display": "https://storage.googleapis.com/inv-images/matrimony/gallery/p25/a0c94fc8-24dc-438e-9bf4-bd5d6b4c1f93-IMG_6378-display.JPG",
+              "original": "https://storage.googleapis.com/inv-images/matrimony/gallery/p25/ca40bf9d-13bf-47fc-a083-7f3fb9abd3de-IMG_6378-original.JPG",
+              "alt": "Elegant floral arrangements around the wedding stage",
+              "caption": "Floral setup",
               "sortOrder": 3
+            },
+            {
+              "id": "package-500-d1-img4",
+              "thumbnail": "https://storage.googleapis.com/inv-images/matrimony/gallery/p25/e5e3c2fd-1faf-4a59-8491-f87e8e5273de-IMG_6379-thumbnail.jpg",
+              "display": "https://storage.googleapis.com/inv-images/matrimony/gallery/p25/9a752c8a-785c-438c-9c97-645982878d7e-IMG_6379-display.jpg",
+              "original": "https://storage.googleapis.com/inv-images/matrimony/gallery/p25/0e672a20-c8ce-48e4-af2b-583b2cfaab68-IMG_6379-original.jpg",
+              "alt": "Wedding seating arrangement with decorative lighting",
+              "caption": "Guest seating",
+              "sortOrder": 4
+            },
+            {
+              "id": "package-500-d1-img5",
+              "thumbnail": "https://storage.googleapis.com/inv-images/matrimony/gallery/p25/b76997a2-5ba8-446e-981e-a2de41433f0f-IMG_6381-thumbnail.jpg",
+              "display": "https://storage.googleapis.com/inv-images/matrimony/gallery/p25/81eb83b1-de46-4cc0-b86f-c1a4601a24c6-IMG_6381-display.jpg",
+              "original": "https://storage.googleapis.com/inv-images/matrimony/gallery/p25/d9c78b3a-1d20-42e9-b50b-ce1f63e251dc-IMG_6381-original.jpg",
+              "alt": "Decorative wedding aisle with elegant arrangements",
+              "caption": "Aisle decor",
+              "sortOrder": 5
+            },
+            {
+              "id": "package-500-d1-img6",
+              "thumbnail": "https://storage.googleapis.com/inv-images/matrimony/gallery/p25/c05522dd-d3d4-4c8b-bb9a-b7a236500ba8-IMG_6382-thumbnail.jpg",
+              "display": "https://storage.googleapis.com/inv-images/matrimony/gallery/p25/5bd33015-356a-40e8-a9e7-a68bf735fe7e-IMG_6382-display.jpg",
+              "original": "https://storage.googleapis.com/inv-images/matrimony/gallery/p25/b585654d-0707-49d5-a96c-b6cb419194ea-IMG_6382-original.jpg",
+              "alt": "Luxury wedding decoration featuring floral centerpieces",
+              "caption": "Centerpiece",
+              "sortOrder": 6
+            },
+            {
+              "id": "package-500-d1-img7",
+              "thumbnail": "https://storage.googleapis.com/inv-images/matrimony/gallery/p25/aa02f01d-0d97-40cb-9f70-8ba8f2aac951-IMG_6390-thumbnail.JPG",
+              "display": "https://storage.googleapis.com/inv-images/matrimony/gallery/p25/8f7410bc-b01b-4579-a0e8-7473ffa607d2-IMG_6390-display.JPG",
+              "original": "https://storage.googleapis.com/inv-images/matrimony/gallery/p25/6aca6f56-986f-45e8-8bb2-8f817077b041-IMG_6390-original.JPG",
+              "alt": "Wedding venue overview showing stage and guest area",
+              "caption": "Venue overview",
+              "sortOrder": 7
+            },
+            {
+              "id": "package-500-d1-img8",
+              "thumbnail": "https://storage.googleapis.com/inv-images/matrimony/gallery/p25/d18769ed-bc40-4441-8da5-66243d9d9c2d-IMG_6391-thumbnail.JPG",
+              "display": "https://storage.googleapis.com/inv-images/matrimony/gallery/p25/46895a63-c867-4a7a-ab51-295cc5a5387c-IMG_6391-display.JPG",
+              "original": "https://storage.googleapis.com/inv-images/matrimony/gallery/p25/bf393383-9f4c-4353-bfe4-eed4400f8616-IMG_6391-original.JPG",
+              "alt": "Premium hall decoration with elegant ambiance",
+              "caption": "Hall view",
+              "sortOrder": 8
+            },
+            {
+              "id": "package-500-d1-img9",
+              "thumbnail": "https://storage.googleapis.com/inv-images/matrimony/gallery/p25/b9973cb8-e7ad-41bc-afc3-79f9f37ec269-IMG_6392-thumbnail.JPG",
+              "display": "https://storage.googleapis.com/inv-images/matrimony/gallery/p25/4a7d91b2-2723-434e-b1f5-70d480afc6fd-IMG_6392-display.JPG",
+              "original": "https://storage.googleapis.com/inv-images/matrimony/gallery/p25/48283a83-c3d2-45e0-9ea3-2aca9f8cf96a-IMG_6392-original.JPG",
+              "alt": "Decorative wedding setup featuring floral and lighting details",
+              "caption": "Decor details",
+              "sortOrder": 9
+            },
+            {
+              "id": "package-500-d1-img10",
+              "thumbnail": "https://storage.googleapis.com/inv-images/matrimony/gallery/p25/038cbd83-cae2-4697-8f17-9a75274d8359-IMG_6394-thumbnail.JPG",
+              "display": "https://storage.googleapis.com/inv-images/matrimony/gallery/p25/8433a1f3-01b5-4216-9d1e-85404b8a31be-IMG_6394-display.JPG",
+              "original": "https://storage.googleapis.com/inv-images/matrimony/gallery/p25/2a006504-0551-4fab-91a8-8b281fef9bd0-IMG_6394-original.JPG",
+              "alt": "Elegant wedding venue showcasing premium decorative arrangements",
+              "caption": "Premium decor",
+              "sortOrder": 10
+            },
+            {
+              "id": "package-500-d1-img11",
+              "thumbnail": "https://storage.googleapis.com/inv-images/matrimony/gallery/p25/e9ab287d-cae4-4993-9b36-dce01f022c2a-IMG_6397-thumbnail.JPG",
+              "display": "https://storage.googleapis.com/inv-images/matrimony/gallery/p25/e1c832dd-6a9f-4b4f-91c3-63c20adde2b3-IMG_6397-display.JPG",
+              "original": "https://storage.googleapis.com/inv-images/matrimony/gallery/p25/ce4e6e22-1cc7-4d50-a201-eb5c78d8f0c4-IMG_6397-original.JPG",
+              "alt": "Bride and groom seated on luxury wedding stage",
+              "caption": "Wedding stage view",
+              "sortOrder": 11
+            },
+            {
+              "id": "package-500-d1-img12",
+              "thumbnail": "https://storage.googleapis.com/inv-images/matrimony/gallery/p25/c69e73e9-001f-47b9-ba20-6003f7b37546-IMG_6399-thumbnail.JPG",
+              "display": "https://storage.googleapis.com/inv-images/matrimony/gallery/p25/a3dd9403-b5bb-4729-ba8d-286f8cb1d744-IMG_6399-display.JPG",
+              "original": "https://storage.googleapis.com/inv-images/matrimony/gallery/p25/0b97311d-bced-4f10-a1bd-b3803c438303-IMG_6399-original.JPG",
+              "alt": "Decorated wedding venue with floral backdrop",
+              "caption": "Venue decor",
+              "sortOrder": 12
+            },
+            {
+              "id": "package-500-d1-img13",
+              "thumbnail": "https://storage.googleapis.com/inv-images/matrimony/gallery/p25/756d968a-8477-40bb-a3e1-c2cb3ce44952-IMG_6400-thumbnail.JPG",
+              "display": "https://storage.googleapis.com/inv-images/matrimony/gallery/p25/9e41a47f-a4c2-4c5f-ab30-441701e3c0e9-IMG_6400-display.JPG",
+              "original": "https://storage.googleapis.com/inv-images/matrimony/gallery/p25/10d56d26-1a84-4b98-ab0e-5d986a2cb4bc-IMG_6400-original.JPG",
+              "alt": "Grand engagement stage setup",
+              "caption": "Stage setup",
+              "sortOrder": 13
+            },
+            {
+              "id": "package-500-d1-img14",
+              "thumbnail": "https://storage.googleapis.com/inv-images/matrimony/gallery/p25/768e2bc4-4f26-447d-88cb-b5ccece0b84f-IMG_6402-thumbnail.JPG",
+              "display": "https://storage.googleapis.com/inv-images/matrimony/gallery/p25/d7af04ca-20b1-48df-bd4a-2ce81f622892-IMG_6402-display.JPG",
+              "original": "https://storage.googleapis.com/inv-images/matrimony/gallery/p25/3d8a0064-a544-4598-8005-da19792786ac-IMG_6402-original.JPG",
+              "alt": "Elegant floral decoration arrangement",
+              "caption": "Floral arrangement",
+              "sortOrder": 14
+            },
+            {
+              "id": "package-500-d1-img15",
+              "thumbnail": "https://storage.googleapis.com/inv-images/matrimony/gallery/p25/36a7a17e-32b5-4d78-b1e1-f72376b34273-IMG_6403-thumbnail.JPG",
+              "display": "https://storage.googleapis.com/inv-images/matrimony/gallery/p25/4bb458c5-ae32-4c84-baf7-cb1afbd1558c-IMG_6403-display.JPG",
+              "original": "https://storage.googleapis.com/inv-images/matrimony/gallery/p25/aa96af37-8312-4602-80a2-db298a846d2f-IMG_6403-original.JPG",
+              "alt": "Wide view of premium event decoration",
+              "caption": "Event decor",
+              "sortOrder": 15
+            },
+            {
+              "id": "package-500-d1-img16",
+              "thumbnail": "https://storage.googleapis.com/inv-images/matrimony/gallery/p25/e075c748-bcad-4bf0-aa14-55ca7df5646e-IMG_6415-thumbnail.JPG",
+              "display": "https://storage.googleapis.com/inv-images/matrimony/gallery/p25/5d28c46e-9602-48da-85fa-4ee3083fd54c-IMG_6415-display.JPG",
+              "original": "https://storage.googleapis.com/inv-images/matrimony/gallery/p25/40d6f780-b093-42d6-9879-f14aa259851f-IMG_6415-original.JPG",
+              "alt": "Luxury wedding seating arrangement",
+              "caption": "Seating area",
+              "sortOrder": 16
+            },
+            {
+              "id": "package-500-d1-img17",
+              "thumbnail": "https://storage.googleapis.com/inv-images/matrimony/gallery/p25/a8ae7d82-de81-4a09-9cd0-05a08ebd9d96-IMG_6416-thumbnail.JPG",
+              "display": "https://storage.googleapis.com/inv-images/matrimony/gallery/p25/02a9b48a-441d-4115-88a6-86954f76061f-IMG_6416-display.JPG",
+              "original": "https://storage.googleapis.com/inv-images/matrimony/gallery/p25/42775692-359b-451a-8a5b-24a8eeb4d13a-IMG_6416-original.JPG",
+              "alt": "Close-up of elegant wedding decoration details",
+              "caption": "Decor details",
+              "sortOrder": 17
+            },
+            {
+              "id": "package-500-d1-img18",
+              "thumbnail": "https://storage.googleapis.com/inv-images/matrimony/gallery/p25/58fef454-45cc-4084-bc1b-cfe9eec562d9-IMG_6420-thumbnail.JPG",
+              "display": "https://storage.googleapis.com/inv-images/matrimony/gallery/p25/4367fc48-8792-4783-82a7-98d905941e60-IMG_6420-display.JPG",
+              "original": "https://storage.googleapis.com/inv-images/matrimony/gallery/p25/60e3fcd1-e5be-4f7e-9c3a-26ec975c98ea-IMG_6420-original.JPG",
+              "alt": "Premium floral wedding backdrop",
+              "caption": "Backdrop view",
+              "sortOrder": 18
+            },
+            {
+              "id": "package-500-d1-img19",
+              "thumbnail": "https://storage.googleapis.com/inv-images/matrimony/gallery/p25/74b4b081-f2fb-45ea-a557-9b5574dc9e56-IMG_6422-thumbnail.JPG",
+              "display": "https://storage.googleapis.com/inv-images/matrimony/gallery/p25/71f0ca80-41fa-4200-a450-e65ed313a5de-IMG_6422-display.JPG",
+              "original": "https://storage.googleapis.com/inv-images/matrimony/gallery/p25/eeb53e09-3a47-4c54-8955-40382731afbb-IMG_6422-original.JPG",
+              "alt": "Full venue overview with complete decoration setup",
+              "caption": "Venue overview",
+              "sortOrder": 19
             }
+
           ],
           "sortOrder": 1
         },
@@ -611,24 +756,6 @@
               "sortOrder": 5
             },
             {
-              "id": "package-650-d1-img6",
-              "thumbnail": "https://storage.googleapis.com/inv-images/matrimony/gallery/7a9580d2-cfd6-413f-8a12-d793c94dd8ca/57089658-83ef-470d-9414-6b8da4250900-IMG_6430-thumbnail.JPG",
-              "display": "/images/samples/deco-05.svg",
-              "original": "https://storage.googleapis.com/inv-images/matrimony/gallery/7a9580d2-cfd6-413f-8a12-d793c94dd8ca/ce87e8f4-e199-4872-8b19-b09bb8b1aea8-IMG_6430-original1_50.jpg",
-              "alt": "Grand Palace Setup close view",
-              "caption": "Right view",
-              "sortOrder": 6
-            },
-            {
-              "id": "package-650-d1-img7",
-              "thumbnail": "https://storage.googleapis.com/inv-images/matrimony/gallery/7a9580d2-cfd6-413f-8a12-d793c94dd8ca/e5d06771-9d98-46de-8eb1-fa64a9e34779-IMG_6429-thumbnail.JPG",
-              "display": "/images/samples/deco-05.svg",
-              "original": "https://storage.googleapis.com/inv-images/matrimony/gallery/7a9580d2-cfd6-413f-8a12-d793c94dd8ca/2ecc2957-0b31-4ade-812b-b1eaaf6bf5d8-IMG_6429-original1_50.jpg",
-              "alt": "Grand Palace Setup close view",
-              "caption": "Left view",
-              "sortOrder": 7
-            },
-            {
               "id": "package-650-d1-img8",
               "thumbnail": "https://storage.googleapis.com/inv-images/matrimony/gallery/7a9580d2-cfd6-413f-8a12-d793c94dd8ca/4f10af3c-be49-4826-97d1-6ad87abf9858-6461-thumbnail.jpeg",
               "display": "/images/samples/deco-05.svg",
@@ -684,6 +811,186 @@
             }
           ],
           "sortOrder": 1
+        },
+        {
+          "id": "package-650-design-2",
+          "name": "Grand Palace Setup",
+          "description": "Palatial themed setup with ornate props and drapery.",
+          "coverImage": "https://storage.googleapis.com/inv-images/matrimony/gallery/p24/bad6ac2e-ae1b-4c7d-b6d0-7cb451791cb8-IMG_6535-thumbnail.jpg",
+          "images": [
+            {
+              "id": "package-650-d2-img1",
+              "thumbnail": "https://storage.googleapis.com/inv-images/matrimony/gallery/p24/4e08c6e0-324a-4381-84ff-366ba24a635b-IMG_6534-thumbnail.jpg",
+              "display": "https://storage.googleapis.com/inv-images/matrimony/gallery/p24/9cb9c317-b24c-4360-b35a-ff28c81ac383-IMG_6534-display.jpg",
+              "original": "https://storage.googleapis.com/inv-images/matrimony/gallery/p24/cf473306-56e8-451c-9f10-915502d1df99-IMG_6534-original.jpg",
+              "alt": "Wedding stage decoration with elegant floral arrangements",
+              "caption": "Main stage",
+              "sortOrder": 1
+            },
+            {
+              "id": "package-650-d2-img2",
+              "thumbnail": "https://storage.googleapis.com/inv-images/matrimony/gallery/p24/bad6ac2e-ae1b-4c7d-b6d0-7cb451791cb8-IMG_6535-thumbnail.jpg",
+              "display": "https://storage.googleapis.com/inv-images/matrimony/gallery/p24/2c32d84d-868e-44af-a727-91c94184b759-IMG_6535-display.jpg",
+              "original": "https://storage.googleapis.com/inv-images/matrimony/gallery/p24/4ed846af-40ec-4aef-b25d-1ea1a9aadc89-IMG_6535-original.jpg",
+              "alt": "Decorated reception area with premium event setup",
+              "caption": "Reception area",
+              "sortOrder": 2
+            },
+            {
+              "id": "package-650-d2-img3",
+              "thumbnail": "https://storage.googleapis.com/inv-images/matrimony/gallery/p24/de7c4d2d-2f17-4863-976e-021cdb90f0a6-IMG_6536-thumbnail.jpg",
+              "display": "https://storage.googleapis.com/inv-images/matrimony/gallery/p24/2e7ee511-b1d7-4b01-a717-db4faf13daba-IMG_6536-display.jpg",
+              "original": "https://storage.googleapis.com/inv-images/matrimony/gallery/p24/60b8e275-5b96-47d7-b967-11aca95c26e7-IMG_6536-original.jpg",
+              "alt": "Luxury wedding decor with ambient lighting",
+              "caption": "Decor lighting",
+              "sortOrder": 3
+            },
+            {
+              "id": "package-650-d2-img4",
+              "thumbnail": "https://storage.googleapis.com/inv-images/matrimony/gallery/p24/cf11d52e-fd01-414a-849a-f2012d079d69-IMG_6537-thumbnail.jpg",
+              "display": "https://storage.googleapis.com/inv-images/matrimony/gallery/p24/f8a433d9-51e9-4963-8ac2-ff499971c386-IMG_6537-display.jpg",
+              "original": "https://storage.googleapis.com/inv-images/matrimony/gallery/p24/22b797b1-af74-456d-a5ac-aa00d0fd0182-IMG_6537-original.jpg",
+              "alt": "Premium wedding hall decoration and seating",
+              "caption": "Hall view",
+              "sortOrder": 4
+            },
+            {
+              "id": "package-650-d2-img5",
+              "thumbnail": "https://storage.googleapis.com/inv-images/matrimony/gallery/p24/286be7a3-12fd-419f-a17b-9b217aebb6a7-IMG_6539-thumbnail.jpg",
+              "display": "https://storage.googleapis.com/inv-images/matrimony/gallery/p24/3c10a7e0-c5b6-4d2d-8ef3-36f0c83fa707-IMG_6539-display.jpg",
+              "original": "https://storage.googleapis.com/inv-images/matrimony/gallery/p24/40d31c80-bcba-4f4c-a324-c10c3ff602c0-IMG_6539-original.jpg",
+              "alt": "Wide angle view of wedding venue decorations",
+              "caption": "Venue overview",
+              "sortOrder": 5
+            },
+            {
+              "id": "package-650-d2-img6",
+              "thumbnail": "https://storage.googleapis.com/inv-images/matrimony/gallery/p24/cb6844f0-6038-40d4-a706-9130a839986e-IMG_6532-thumbnail.jpg",
+              "display": "https://storage.googleapis.com/inv-images/matrimony/gallery/p24/327d1291-e993-47b5-804f-11de78ec5eb0-IMG_6532-display.jpg",
+              "original": "https://storage.googleapis.com/inv-images/matrimony/gallery/p24/065fdf87-7bc0-468d-a222-806b6b7074f9-IMG_6532-original.jpg",
+              "alt": "Event decoration detail showcasing floral design",
+              "caption": "Floral decor",
+              "sortOrder": 6
+            },
+            {
+              "id": "package-650-d2-img7",
+              "thumbnail": "https://storage.googleapis.com/inv-images/matrimony/gallery/p24/45b26781-e6d0-4c63-ae5a-de92eeca026f-IMG_6426-thumbnail.JPG",
+              "display": "https://storage.googleapis.com/inv-images/matrimony/gallery/p24/664efa08-89cf-4457-b3f0-fd33619bbe1f-IMG_6426-display.JPG",
+              "original": "https://storage.googleapis.com/inv-images/matrimony/gallery/p24/28c0914f-9bdd-49ff-8775-a6691141d0bd-IMG_6426-original.JPG",
+              "alt": "Wedding stage side angle with decorative backdrop",
+              "caption": "Stage side",
+              "sortOrder": 7
+            },
+            {
+              "id": "package-650-d2-img8",
+              "thumbnail": "https://storage.googleapis.com/inv-images/matrimony/gallery/p24/91d53ab8-0874-4cf4-956b-3a5167c6af40-IMG_6397-thumbnail.JPG",
+              "display": "https://storage.googleapis.com/inv-images/matrimony/gallery/p24/65ccdd72-b259-462e-a132-b9c70fcb74eb-IMG_6397-display.JPG",
+              "original": "https://storage.googleapis.com/inv-images/matrimony/gallery/p24/9a37db45-3f02-4443-a37b-c5e006fb8c13-IMG_6397-original.JPG",
+              "alt": "Entrance decor and welcome arrangement",
+              "caption": "Entrance view",
+              "sortOrder": 8
+            },
+            {
+              "id": "package-650-d2-img9",
+              "thumbnail": "https://storage.googleapis.com/inv-images/matrimony/gallery/p24/358a8978-efd3-4122-b34d-eea6bef39510-IMG_6430-thumbnail.JPG",
+              "display": "https://storage.googleapis.com/inv-images/matrimony/gallery/p24/957b7ec6-131e-4c31-a98d-1bcd2f1f1b4a-IMG_6430-display.JPG",
+              "original": "https://storage.googleapis.com/inv-images/matrimony/gallery/p24/70fcf917-94cb-4631-9002-cc4c6f6629c9-IMG_6430-original.JPG",
+              "alt": "Premium table setup and decorative arrangement",
+              "caption": "Table decor",
+              "sortOrder": 9
+            },
+            {
+              "id": "package-650-d2-img10",
+              "thumbnail": "https://storage.googleapis.com/inv-images/matrimony/gallery/p24/3387c707-d505-43f6-be65-a96ba6eeb00f-IMG_6432-thumbnail.JPG",
+              "display": "https://storage.googleapis.com/inv-images/matrimony/gallery/p24/0bbb60b7-52a0-486e-a68e-f95e247dd830-IMG_6432-display.JPG",
+              "original": "https://storage.googleapis.com/inv-images/matrimony/gallery/p24/f600a3b9-9bbb-409f-a81c-091969bd5b5a-IMG_6432-original.JPG",
+              "alt": "Elegant banquet arrangement for guests",
+              "caption": "Banquet setup",
+              "sortOrder": 10
+            },
+            {
+              "id": "package-650-d2-img11",
+              "thumbnail": "https://storage.googleapis.com/inv-images/matrimony/gallery/p24/4e9aa9af-41ce-48bf-844e-13d0418e77d1-IMG_6428-thumbnail.JPG",
+              "display": "https://storage.googleapis.com/inv-images/matrimony/gallery/p24/bdde4864-5a05-48bf-a3bc-81f1e7b75460-IMG_6428-display.JPG",
+              "original": "https://storage.googleapis.com/inv-images/matrimony/gallery/p24/bde28fed-2d4b-4878-84f7-caccf4fced02-IMG_6428-original.JPG",
+              "alt": "Wedding venue decoration with floral backdrop and premium lighting",
+              "caption": "Backdrop view",
+              "sortOrder": 11
+            },
+            {
+              "id": "package-650-d2-img12",
+              "thumbnail": "https://storage.googleapis.com/inv-images/matrimony/gallery/p24/3e81d5e9-7196-4cd2-ab38-a278e9c51780-IMG_6429-thumbnail.JPG",
+              "display": "https://storage.googleapis.com/inv-images/matrimony/gallery/p24/80b07aab-71a1-45dc-8e17-a10203de105d-IMG_6429-display.JPG",
+              "original": "https://storage.googleapis.com/inv-images/matrimony/gallery/p24/d36a7560-8a9b-435e-973a-21e502c9d3c6-IMG_6429-original.JPG",
+              "alt": "Elegant wedding stage with decorative arrangements and seating",
+              "caption": "Stage decor",
+              "sortOrder": 12
+            },
+            {
+              "id": "package-650-d2-img13",
+              "thumbnail": "https://storage.googleapis.com/inv-images/matrimony/gallery/p24/e741ff8b-ab15-473b-83ee-2fde70350563-IMG_6431-thumbnail.JPG",
+              "display": "https://storage.googleapis.com/inv-images/matrimony/gallery/p24/f5335de3-5810-44dc-ac67-de178ce8f567-IMG_6431-display.JPG",
+              "original": "https://storage.googleapis.com/inv-images/matrimony/gallery/p24/18c2abe7-9759-4cda-8d40-4c1b7163e8c6-IMG_6431-original.JPG",
+              "alt": "Premium event setup showcasing floral decorations and ambiance",
+              "caption": "Event setup",
+              "sortOrder": 13
+            },
+            {
+              "id": "package-650-d2-img14",
+              "thumbnail": "https://storage.googleapis.com/inv-images/matrimony/gallery/p24/21e87e21-1eb0-4122-a0ad-429b20ade115-IMG_6433-thumbnail.JPG",
+              "display": "https://storage.googleapis.com/inv-images/matrimony/gallery/p24/ac95be7e-1ec6-4133-9397-ad04772f9725-IMG_6433-display.JPG",
+              "original": "https://storage.googleapis.com/inv-images/matrimony/gallery/p24/a7fe24d5-226d-469f-9daa-9c808a1e4501-IMG_6433-original.JPG",
+              "alt": "Wedding hall decoration with elegant seating and floral accents",
+              "caption": "Hall decor",
+              "sortOrder": 14
+            },
+            {
+              "id": "package-650-d2-img15",
+              "thumbnail": "https://storage.googleapis.com/inv-images/matrimony/gallery/p24/707d4ef2-ba3f-4d14-b3b5-bf89af07f578-IMG_6423-thumbnail.JPG",
+              "display": "https://storage.googleapis.com/inv-images/matrimony/gallery/p24/56dfd713-9fab-4471-8488-f8d004e1dfd8-IMG_6423-display.JPG",
+              "original": "https://storage.googleapis.com/inv-images/matrimony/gallery/p24/26316fa0-ccc8-4e4d-b98f-365513ba270e-IMG_6423-original.JPG",
+              "alt": "Luxury wedding venue overview with decorative details",
+              "caption": "Venue view",
+              "sortOrder": 15
+            },
+            {
+              "id": "package-650-d2-img16",
+              "thumbnail": "https://storage.googleapis.com/inv-images/matrimony/gallery/p24/3e395474-a358-4ea4-9cbc-9f7dd872c53b-IMG_6424-thumbnail.JPG",
+              "display": "https://storage.googleapis.com/inv-images/matrimony/gallery/p24/b07e2be6-e38e-49eb-9dde-c8b13f58e139-IMG_6424-display.JPG",
+              "original": "https://storage.googleapis.com/inv-images/matrimony/gallery/p24/891c6e6d-c150-4d58-be5d-9a0773c2b54a-IMG_6424-original.JPG",
+              "alt": "Decorative wedding stage from a side perspective",
+              "caption": "Side view",
+              "sortOrder": 16
+            },
+            {
+              "id": "package-650-d2-img17",
+              "thumbnail": "https://storage.googleapis.com/inv-images/matrimony/gallery/p24/503a7280-bdfa-46d7-94da-8cb4dc7f8254-1000003788-thumbnail.jpg",
+              "display": "https://storage.googleapis.com/inv-images/matrimony/gallery/p24/319f801d-9d03-4d80-9300-3c026ef60b51-1000003788-display.jpg",
+              "original": "https://storage.googleapis.com/inv-images/matrimony/gallery/p24/031a643e-452d-4699-94d5-df3cbb79e4a7-1000003788-original.jpg",
+              "alt": "Grand wedding decoration highlighting premium event arrangements",
+              "caption": "Premium decor",
+              "sortOrder": 17
+            },
+            {
+              "id": "package-650-d2-img18",
+              "thumbnail": "https://storage.googleapis.com/inv-images/matrimony/gallery/p24/0e455e35-03f0-4f5f-9a68-d89b570b4969-1000003789-thumbnail.JPG",
+              "display": "https://storage.googleapis.com/inv-images/matrimony/gallery/p24/667cd663-04ef-4bda-97b5-fb69e6d6b562-1000003789-display.JPG",
+              "original": "https://storage.googleapis.com/inv-images/matrimony/gallery/p24/931e54b2-681e-4285-98db-d7f95b260bf7-1000003789-original.JPG",
+              "alt": "Elegant wedding reception setup with luxury decorations",
+              "caption": "Reception setup",
+              "sortOrder": 18
+            },
+            {
+              "id": "package-650-d2-img19",
+              "thumbnail": "https://storage.googleapis.com/inv-images/matrimony/gallery/p24/32eb239a-2055-4e76-8678-b760f1517d51-1000003790-thumbnail.jpg",
+              "display": "https://storage.googleapis.com/inv-images/matrimony/gallery/p24/00f1b07c-a6c1-4f59-be27-ed6852060285-1000003790-display.jpg",
+              "original": "https://storage.googleapis.com/inv-images/matrimony/gallery/p24/db9a6a0e-30fd-4e4b-b3d2-1c96a7fa37b4-1000003790-original.jpg",
+              "alt": "Premium event venue showcasing complete wedding decoration theme",
+              "caption": "Full venue",
+              "sortOrder": 19
+            }            
+          ],
+          "sortOrder":2
         }
       ],
       "sortOrder": 3
