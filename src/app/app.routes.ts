@@ -34,7 +34,7 @@ export const routes: Routes = [
         loadComponent: () => import('./features/contact/contact').then((m) => m.ContactComponent),
       },
       {
-        path: 'pricing',
+        path: 'pricingadm',
         title: 'Pricing · Palmo Event Decorations',
         loadComponent: () => import('./features/pricing/pricing').then((m) => m.PricingComponent),
       },
